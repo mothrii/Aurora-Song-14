@@ -16,3 +16,9 @@
   id: genderfluid
   flavorType: Complex
   description: flavor-complex-genderfluid
+
+- type: flavor
+  id: cottonbool
+  flavorType: Complex
+  description: flavor-complex-cottonbool
+ 
