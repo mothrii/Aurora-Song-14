@@ -22,3 +22,8 @@
   flavorType: Complex
   description: flavor-complex-cottonbool
  
+- type: flavor
+  id: zombieslushie
+  flavorType: Complex
+  description: flavor-complex-zombieslushie
+  
