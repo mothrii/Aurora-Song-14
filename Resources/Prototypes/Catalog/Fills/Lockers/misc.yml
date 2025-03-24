@@ -180,6 +180,7 @@
     - id: ToolboxSyndicateFilled
     - id: BalloonSyn
     - id: NFWeaponRifleBarlowsBolt # Frontier: WeaponSniperMosin<NFWeaponRifleBarlowsBolt
+    - id: ClothingNeckCloakKaijuCloak #imp
       weight: 2
     - id: ClothingHandsKnuckleDustersSyndicate
 
