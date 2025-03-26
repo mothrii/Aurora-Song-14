@@ -181,6 +181,7 @@
     - id: BalloonSyn
     - id: NFWeaponRifleBarlowsBolt # Frontier: WeaponSniperMosin<NFWeaponRifleBarlowsBolt
     - id: ClothingNeckCloakKaijuCloak #imp
+    - id: ClothingNeckCloakFugitiveCloak #imp
       weight: 2
     - id: ClothingHandsKnuckleDustersSyndicate
 

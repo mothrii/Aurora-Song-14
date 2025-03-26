@@ -11,3 +11,17 @@
   - type: HideLayerClothing
     slots:
     - Tail
+
+- type: entity
+  parent: [ClothingNeckBase, BaseC3SyndicateContraband, ContrabandClothing ] # Aurora's Song - Tier1Contraband > BaseC3SyndicateContraband, ContrabandClothing
+  id: ClothingNeckCloakFugitiveCloak
+  name: monochrome cloak
+  description: It's a federal crime, buster.
+  components:
+  - type: Sprite
+    sprite: _Impstation/Clothing/Neck/Cloaks/fugitivecloak.rsi
+  - type: TypingIndicatorClothing
+    proto: alien
+  - type: HideLayerClothing
+    slots:
+    - Tail
