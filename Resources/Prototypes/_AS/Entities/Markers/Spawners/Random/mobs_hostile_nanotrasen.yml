@@ -1,0 +1,21 @@
+﻿- type: entity
+  name: Nanotrasen Grunt Spawner
+  id: ASSpawnMobNanotrasenGrunt
+  parent: MarkerBase
+  suffix: AI, HOSTILE
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/security.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Clothing/Head/Helmets/security.rsi
+      state: equipped-HELMET
+    - sprite: Clothing/Shoes/Boots/combatboots.rsi
+      state: equipped-FEET
+  - type: RandomSpawner
+    prototypes:
+    - MobNTSecGrunt

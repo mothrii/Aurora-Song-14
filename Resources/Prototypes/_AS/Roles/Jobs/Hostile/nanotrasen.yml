@@ -1,0 +1,11 @@
+﻿- type: startingGear
+  id: ASNanoTrasenRogueGrunt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSec
+    head: ClothingHeadHelmetBasic #ClothingHeadHelmetSwat for harder difficulty later
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorBasic
+    belt: ClothingBeltSecurity
+    back: NanoTrasenBackpackLoot_SecGrunt
+

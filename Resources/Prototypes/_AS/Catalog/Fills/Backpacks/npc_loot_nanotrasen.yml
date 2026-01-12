@@ -1,0 +1,43 @@
+﻿- type: entity
+  parent: BaseItem
+  id: NanoTrasenBackpackLoot
+  name: NT officer backpack
+  description: LOOT! LOOT! LOOT!
+  abstract: true
+  categories: [HideSpawnMenu]
+  suffix: NPC Loot
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/security.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Back/Backpacks/security.rsi
+    quickEquip: false
+    slots:
+    - back
+  - type: Item
+    size: Normal
+  - type: SpawnItemsOnUse
+    items:
+    - id: SpaceCash10
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: NanoTrasenBackpackLoot
+  id: NanoTrasenBackpackLoot_SecGrunt
+  name: NT officer backpack
+  description: Oh boy a backpack full of loot left behind by a dead person!
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: SpaceCash2500
+    - id: NFWeaponPistolMk58Expedition
+    - id: NFMagazinePistol35
+    - id: NFMagazinePistol35
+    - id: SpaceCash5000
+      prob: 0.8
+    - id: SpawnDungeonLootMaterialsBasicFull
+      prob: 0.5
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg

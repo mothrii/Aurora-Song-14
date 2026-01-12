@@ -1,0 +1,72 @@
+﻿#region base
+- type: entity
+  name: NT Rogue
+  abstract: true
+  parent:
+  - NFMobNoEquipmentOnGib
+  - MobHumanoidHostileBase
+  - MobHumanoidInvetory
+  id: MobHostileNTBase
+  components:
+  - type: CombatMode # Enable NavSmash behavior
+  - type: Damageable
+    damageModifierSet: MobHostileNanoTrasenDamageModifierEasy
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical # Aurora Song 80>100
+      110: Dead # Aurora Song 100>110
+  - type: NpcFactionMember
+    factions:
+    - ASNanoTrasenRogue
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 1.5
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: Vocalizer
+    minVocalizeInterval: 30
+    maxVocalizeInterval: 120
+    hideChat: true
+  - type: DatasetVocalizer
+    dataset: NanoTrasenHumanoidMobChatter
+  - type: AutoWakeUp
+
+#region Tier 1
+- type: entity
+  name: NT sec grunt
+  parent:
+  - MobMovementSpeedModifierRanged
+  - MobStaminaFodder
+  - MobHostileNTBase
+  - MobHumanoidHostileAISimpleRanged
+  #- MobLaserReflect # Added to prevent laser abuse from players
+  id: MobNTSecGrunt
+  description: A rogue or "plausibly deniable" NT grunt, doesn't matter for you. Cus they're going to try and kill you. That looks like a MK58 in their hands.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    templateId: human
+  - type: Loadout
+    prototypes:
+    - ASNanoTrasenRogueGrunt
+  - type: Damageable
+    damageModifierSet: MobHostileNanoTrasenDamageModifierEasy # Basic ass grunt, should go down fairly easily
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 1.5
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: BasicEntityAmmoProvider
+    proto: NFCartridgePistol35
+    capacity: 10
+    count: 10
+  - type: Gun
+    showExamineText: false
+    fireRate: 3
+    minAngle: 10
+    maxAngle: 20
+    angleIncrease: 2
+    angleDecay: 3
+    ShotsPerBurst: 1
+    SelectedMode: SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
