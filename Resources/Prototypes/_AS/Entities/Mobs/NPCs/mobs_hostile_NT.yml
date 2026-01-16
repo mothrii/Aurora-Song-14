@@ -19,10 +19,6 @@
   - type: NpcFactionMember
     factions:
     - ASNanoTrasenRogue
-  - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 1.5
-    rechargeSound:
-      path: /Audio/_NF/Effects/silence.ogg
   - type: Vocalizer
     minVocalizeInterval: 30
     maxVocalizeInterval: 120
@@ -39,8 +35,7 @@
   - MobStaminaFodder
   - MobHostileNTBase
   - MobHumanoidHostileAISimpleRanged
-  #- MobLaserReflect # Added to prevent laser abuse from players
-  id: MobNTSecGrunt
+  id: MobNTSecGruntMk58
   description: A rogue or "plausibly deniable" NT grunt, doesn't matter for you. Cus they're going to try and kill you. That looks like a MK58 in their hands.
   categories: [ HideSpawnMenu ]
   components:
@@ -48,7 +43,7 @@
     templateId: human
   - type: Loadout
     prototypes:
-    - ASNanoTrasenRogueGrunt
+    - ASNanoTrasenRogueGruntMk58
   - type: Damageable
     damageModifierSet: MobHostileNanoTrasenDamageModifierEasy # Basic ass grunt, should go down fairly easily
   - type: RechargeBasicEntityAmmo
@@ -68,5 +63,57 @@
     angleDecay: 3
     ShotsPerBurst: 1
     SelectedMode: SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
+
+- type: entity
+  name: NT sec grunt
+  parent:
+  - MobMovementSpeedModifierMelee
+  - MobStaminaFodder
+  - MobHostileNTBase
+  - MobHumanoidHostileAISimpleMelee
+  id: MobNTSecGruntStunstick
+  description: A rogue or "plausibly deniable" NT grunt, and they're ready to harmbaton.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    templateId: human
+  - type: Loadout
+    prototypes:
+    - ASNanoTrasenRogueGruntBaton
+  - type: Damageable
+    damageModifierSet: MobHostileNanoTrasenDamageModifierEasy # Basic ass grunt, should go down fairly easily
+
+- type: entity
+  name: NT sec trooper
+  parent: [MobMovementSpeedModifierRanged, MobStaminaFodder, MobHostileNTBase, MobHumanoidHostileAISimpleRanged]
+  id: MobNTSecTrooperLecter
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    templateId: human
+  - type: Loadout
+    prototypes:
+    - ASNanoTrasenRogueOfficer
+  - type: Damageable
+    damageModifierSet: MobHostileNanoTrasenDamageModifierMed # Slightly tougher modifiers
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 1.5
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: BasicEntityAmmoProvider
+    proto: NFCartridgeRifle20
+    capacity: 12
+    count: 12
+  - type: Gun
+    showExamineText: false
+    fireRate: 6
+    minAngle: 4
+    maxAngle: 12
+    angleIncrease: 2.5
+    angleDecay: 3
+    ShotsPerBurst: 1
+    SelectedMode: FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/mk58.ogg

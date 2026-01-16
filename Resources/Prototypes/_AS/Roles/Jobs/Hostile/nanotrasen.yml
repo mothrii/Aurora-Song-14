@@ -1,5 +1,5 @@
 ﻿- type: startingGear
-  id: ASNanoTrasenRogueGrunt
+  id: ASNanoTrasenRogueGruntMk58
   equipment:
     jumpsuit: ClothingUniformJumpsuitSec
     head: ClothingHeadHelmetBasic #ClothingHeadHelmetSwat for harder difficulty later
@@ -9,3 +9,26 @@
     belt: ClothingBeltSecurity
     back: NanoTrasenBackpackLoot_SecGrunt
 
+- type: startingGear
+  id: ASNanoTrasenRogueGruntBaton
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSec
+    head: ClothingHeadHelmetBasic
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorBasic
+    belt: ClothingBeltSecurity
+    back: NanoTrasenBackpackLoot_SecGrunt # todo: make and then change to baton specific backpack later
+  inhand:
+    - Stunbaton
+
+- type: startingGear
+  id: ASNanoTrasenRogueOfficer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSec
+    head: ASClothingHeadHelmetHardsuitConstableUnremoveable
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesCombat # todo: make lecter and laser carbine gloves like the syndicate commander has
+    outerClothing: ASClothingOuterHardsuitConstableUnremoveable
+    belt: ClothingBeltSecurity
+    back: NanoTrasenBackpackLoot_SecGrunt #todo: make and then change to officer specific backpack later

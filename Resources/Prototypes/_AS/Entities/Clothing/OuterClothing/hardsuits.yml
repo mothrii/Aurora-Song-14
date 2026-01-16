@@ -206,7 +206,7 @@
     sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitSecurity
+    clothingPrototype: ASClothingHeadHelmetHardsuitConstable
   - type: Tag
     tags:
     - CorgiWearable
@@ -242,7 +242,7 @@
     sprintModifier: 0.95
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitBrigmedic
+    clothingPrototype: ClothingHeadHelmetHardsuitShedu
 
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseC2ContrabandUnredeemable]
@@ -274,7 +274,7 @@
     sprintModifier: 0.85
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitWarden
+    clothingPrototype: ClothingHeadHelmetHardsuitHauberk
 
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseC2ContrabandUnredeemable] # BaseCommandContraband<BaseC2ContrabandUnredeemable
@@ -306,7 +306,44 @@
     sprintModifier: 0.875
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitSecurityRed
+    clothingPrototype: ClothingHeadHelmetHardsuitGolem
+
+# Suffixed NT Sec hardsuits - Unremoveables for NPC use
+- type: entity
+  parent: [ASClothingOuterHardsuitConstable, ContrabandClothing]
+  name: constable hardsuit
+  suffix: Aurora, NPC
+  id: ASClothingOuterHardsuitConstableUnremoveable
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+
+- type: entity
+  parent: [ASClothingOuterHardsuitShedu, ContrabandClothing]
+  name: shedu hardsuit
+  suffix: Aurora, NPC
+  id: ASClothingOuterHardsuitSheduUnremoveable
+  # categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+
+- type: entity
+  parent: [ASClothingOuterHardsuitHauberk, ContrabandClothing]
+  name: hauberk hardsuit
+  suffix: Aurora, NPC
+  id: ASClothingOuterHardsuitHauberkUnremoveable
+  # categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+
+- type: entity
+  parent: [ASClothingOuterHardsuitGolem, ContrabandClothing]
+  name: golem hardsuit
+  suffix: Aurora, NPC
+  id: ASClothingOuterHardsuitGolemUnremoveable
+  # categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
 
 - type: entity
   parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndieCommander ] #Possibly could be BaseC2ContrabandUnredeemable

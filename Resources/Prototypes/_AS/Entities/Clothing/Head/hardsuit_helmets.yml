@@ -124,3 +124,152 @@
       - state: on-equipped-HELMET
       - state: equipped-HELMET-unshaded
         shader: unshaded
+
+# Aurora Suffixed NT Sec hardsuits
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ASClothingHeadHelmetHardsuitConstable
+  name: constable hardsuit helmet
+  suffix: Aurora's Song
+  categories: [ HideSpawnMenu ]
+  description: Armored hardsuit helmet for NT security needs.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hardsuits/security.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hardsuits/security.rsi
+  - type: PointLight
+    color: "#ffeead"
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: Tag
+    tags:
+    - CorgiWearable
+    - WhitelistChameleon
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ASClothingHeadHelmetHardsuitShedu
+  name: shedu hardsuit helmet
+  suffix: Aurora's Song
+  categories: [ HideSpawnMenu ]
+  description: The lightweight helmet of the brigmedic hardsuit. Protects against viruses, and clowns.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hardsuits/brigmedic.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hardsuits/brigmedic.rsi
+  - type: PointLight
+    color: "#00FFFF"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.95
+        Radiation: 0.90
+        Caustic: 0.90
+  - type: PressureProtection
+    highPressureMultiplier: 0.6
+    lowPressureMultiplier: 1000
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ASClothingHeadHelmetHardsuitHauberk
+  name: hauberk hardsuit helmet
+  suffix: Aurora's Song
+  categories: [ HideSpawnMenu ]
+  description: A modified riot helmet. Oddly comfortable.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hardsuits/security-warden.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hardsuits/security-warden.rsi
+  - type: PointLight
+    color: "#ffeead"
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ASClothingHeadHelmetHardsuitGolem
+  name: golem hardsuit helmet
+  suffix: Aurora's Song
+  categories: [ HideSpawnMenu ]
+  description: Security hardsuit helmet with the latest top secret NT-HUD software. Reserved for Security Directors.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hardsuits/security-red.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hardsuits/security-red.rsi
+  - type: PointLight
+    color: "#ffeead"
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+# Suffixed NT Sec hardsuit helmets - Unremoveables for NPC use
+
+- type: entity
+  parent: ASClothingHeadHelmetHardsuitConstable
+  id: ASClothingHeadHelmetHardsuitConstableUnremoveable
+  name: constable hardsuit helmet
+  suffix: NPC
+  categories: [ HideSpawnMenu ]
+  description: Armored hardsuit helmet for NT security needs.
+  components:
+  - type: Unremoveable
+
+- type:  entity
+  parent: ASClothingHeadHelmetHardsuitShedu
+  id: ASClothingHeadHelmetHardsuitSheduUnremoveable
+  name: shedu hardsuit helmet
+  suffix: NPC
+  categories: [ HideSpawnMenu ]
+  description: The lightweight helmet of the brigmedic hardsuit. Protects against viruses, and clowns.
+  components:
+    - type: Unremoveable
+
+- type: entity
+  parent: ASClothingHeadHelmetHardsuitHauberk
+  id: ASClothingHeadHelmetHardsuitHauberkUnremoveable
+  name: hauberk hardsuit helmet
+  suffix: NPC
+  categories: [ HideSpawnMenu ]
+  description: A modified riot helmet. Oddly comfortable.
+  components:
+    - type: Unremoveable
+
+- type: entity
+  parent: ASClothingHeadHelmetHardsuitGolem
+  id: ASClothingHeadHelmetHardsuitGolemUnremoveable
+  name: golem hardsuit helmet
+  suffix: NPC
+  categories: [ HideSpawnMenu ]
+  description: Security hardsuit helmet with the latest top secret NT-HUD software. Reserved for Security Directors.
+  components:
+    - type: Unremoveable

@@ -18,4 +18,29 @@
       state: equipped-FEET
   - type: RandomSpawner
     prototypes:
-    - MobNTSecGrunt
+    - MobNTSecGruntMk58
+    - MobNTSecGruntStunstick
+
+- type: entity
+  name: Nanotrasen Trooper Spawner
+  id: ASSpawnMobNanotrasenTrooper
+  parent: MarkerBase
+  suffix: AI, HOSTILE
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/security.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Clothing/OuterClothing/Hardsuits/security.rsi
+      state: equipped-OUTERCLOTHING
+    - sprite: Clothing/Head/Hardsuits/security.rsi
+      state: off-equipped-HELMET
+    - sprite: Clothing/Shoes/Boots/combatboots.rsi
+      state: equipped-FEET
+  - type: RandomSpawner
+    prototypes:
+    - MobNTSecTrooperLecter
