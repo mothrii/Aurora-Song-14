@@ -15,8 +15,6 @@
     - type: ScandinavianAccent # Frontier
     - type: LizardAccent
     - type: MothAccent
-    - type: SnalienAccent
-    - type: GrayAccent
     - type: ReplacementAccent
       accent: dwarf
 
@@ -97,7 +95,7 @@
   - type: ReplacementAccent
     accent: liar
 
-- type: trait
+- type: trait # Imp addition
   id: Scrambled
   name: trait-scrambled-name
   description: trait-scrambled-desc
