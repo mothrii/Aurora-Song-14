@@ -158,7 +158,7 @@
   id: ASFillGunSafeUIVWT550
   table: !type:AllSelector
     children:
-    - id: NFWeaponSubmachineGunWT550Expedition
+    - id: NFWeaponSubMachineGunWt550Expedition
       amount: 2
     - id: NFMagazineSubMachineGunTopMounted35
       amount: 6
