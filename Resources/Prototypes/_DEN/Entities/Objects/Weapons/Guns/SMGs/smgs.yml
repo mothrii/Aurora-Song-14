@@ -7,7 +7,7 @@
 
 - type: entity
   name: WT550
-  parent: [WeaponSubMachineGunWt550, BaseBlueshieldOfficerContraband]
+  parent: [NFWeaponSubMachineGunWt550]
   id: WeaponSubMachineGunWt550BSO
   description: An excellent SMG, produced by NanoTrasen's Small Arms Division. This one has been manufactured in the BSO's colors. Uses .35 auto ammo.
   suffix: BSO

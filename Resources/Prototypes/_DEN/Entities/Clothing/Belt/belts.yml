@@ -129,8 +129,8 @@
         name: Katana
         insertVerbText: sheath-insert-verb
         ejectVerbText: sheath-eject-verb
-        insertSound: /Audio/SimpleStation14/Items/Handling/sword_sheath.ogg
-        ejectSound: /Audio/SimpleStation14/Items/Handling/sword_unsheath.ogg
+        insertSound: /Audio/Items/sheath.ogg # Aurora's Song | use basegame sounds, we don't have SimpleStation14's custom sounds
+        ejectSound: /Audio/Items/unsheath.ogg # Aurora's Song | use basegame sounds, we don't have SimpleStation14's custom sounds
         whitelist:
           tags:
           - Katana
@@ -146,7 +146,7 @@
     - BeltSlotNotBelt
 
 - type: entity
-  parent: [ BaseBlueshieldOfficerContraband, ClothingBeltStorageBase ]
+  parent: [ ClothingBeltStorageBase ]
   id: ClothingBeltBSOWebbing
   name: blueshield webbing
   description: A robust chest rig made to fit the needs of a blueshield officer.
@@ -163,9 +163,9 @@
         whitelist:
           tags:
           - Medkit
-          - Portafib
+          #- Portafib #Aurora's Song | Not a tag we use, yet
           - Compactdefib
-          - Rollerbed
+          # - Rollerbed #Aurora's Song | Not a tag we use, yet
         insertOnInteract: true
       holster:
         name: clothing-belt-sidearm
@@ -233,7 +233,7 @@
       - id: Flash
       - id: Handcuffs
       - id: FlashlightSeclite
-      - id: HandheldCrewMonitorBSO
+      #- id: HandheldCrewMonitorBSO # Aurora's Song | No actual BSOs here, we don't keep the item
   - type: ContainerFill
     containers:
       radio:

@@ -1,0 +1,25 @@
+﻿- type: entity
+  id: ASBaseShellShotgun8g
+  name: shell (8g)
+  parent: [ BaseC1Contraband, BaseShellShotgun ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun8g
+
+- type: entity
+  id: AS8gShellBuckshot
+  name: shell (8g buckshot)
+  parent: ASBaseShellShotgun8g
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Cartridges/highcaliber_shell.rsi
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: ASPelletShotgunSpread8g #todo: make and then replace prototype with 8g spread
+  - type: SpentAmmoVisuals
+    state: "base"

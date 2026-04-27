@@ -51,9 +51,6 @@
 - type: Tag
   id: MagazineBRDIP15
 
-- type: Tag
-  id: MagazineBRDIP15
-
 # Mantis tags start, alphabetized
 - type: Tag
   id: MantisBeltStorable

@@ -1,0 +1,30 @@
+﻿#region Pellets
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: ASPelletShotgun8g
+  name: pellet (8g)
+  parent: NFBasePellet
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 15
+        Structural: 15
+
+#region Spread patterns
+- type: entity
+  id: ASPelletLowShotgunSpread
+  abstract: true
+  components:
+  - type: ProjectileSpread
+    count: 5 # six total, includes the spread as a bullet
+    spread: 10
+
+#region Completed Shell Projectiles
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: ASPelletShotgunSpread8g
+  parent: [ASPelletLowShotgunSpread, ASPelletShotgun8g]
+  components:
+  - type: ProjectileSpread
+    proto: ASPelletShotgun8g

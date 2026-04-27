@@ -52,11 +52,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol
+        startingItem: NFCartridgePistol35
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol
+            - NFCartridgePistol35
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -83,7 +83,7 @@
         priority: 1
         whitelist:
           tags:
-          - CartridgePistol
+          - NFCartridgePistol35
 
 - type: entity
   name: BRDI P-15
@@ -122,4 +122,4 @@
         priority: 1
         whitelist:
           tags:
-          - CartridgePistol
+          - NFCartridgePistol35

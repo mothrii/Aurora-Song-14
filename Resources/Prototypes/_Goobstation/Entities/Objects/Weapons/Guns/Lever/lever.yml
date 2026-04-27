@@ -7,9 +7,11 @@
 
 - type: entity
   name: Chester
-  parent: [ BaseWeaponRifle, BaseGunWieldable ]
+  parent: [ BaseWeaponRifle, BaseGunWieldable]
   id: WeaponLeverChester
   description: An improved lever-action rifle designed to fire specialized 8 gauge ammunition for rapid threat removal.
+  abstract: true
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Lever/chester.rsi
@@ -66,4 +68,4 @@
   - type: Appearance
   - type: UseDelay
     delay: 0.1
-  - type: UseDelayBlockShoot
+  #- type: UseDelayBlockShoot

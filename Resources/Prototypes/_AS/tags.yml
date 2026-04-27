@@ -31,6 +31,13 @@
 - type: Tag
   id: ASMagazinePistolCaselessRifle
 
+#region shotgun 8g
+- type: Tag
+  id: ShellShotgun8g
+
+- type: Tag
+  id: MagazineShotgunLever
+
 #region Docking Tags
 - type: Tag
   id: SecDock

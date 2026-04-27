@@ -238,7 +238,7 @@
 
 - type: entity
   name: pulse PDW
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseCentcommBlueshieldContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable]
   id: WeaponPulsePDW
   description: A compact pulse weapon issued to Blueshield Officers for the rapid neutralization of close-range threats.
   components:

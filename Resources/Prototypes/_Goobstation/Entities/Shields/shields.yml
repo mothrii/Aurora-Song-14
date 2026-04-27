@@ -107,9 +107,9 @@
     - type: Battery
       maxCharge: 180
       startingCharge: 180
-    - type: RechargeableBlocking
-      dischargedRechargeRate: 7.5
-      chargedRechargeRate: 10
+    #- type: RechargeableBlocking
+    #  dischargedRechargeRate: 7.5
+    #  chargedRechargeRate: 10
     - type: BatterySelfRecharger
       autoRechargeRate: 10
       autoRecharge: true
@@ -125,4 +125,4 @@
             tags:
             - Stunbaton
       smartEquipSelfIfEmpty: true
-    - type: EmpImmune # The battery aspect is, as far as I know, used as an easily healable way to monitor the shields health, but if energy shields do not get emped, these should not either.
+    #- type: EmpImmune # The battery aspect is, as far as I know, used as an easily healable way to monitor the shields health, but if energy shields do not get emped, these should not either.

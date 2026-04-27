@@ -7,7 +7,7 @@
 
 # Blueshield Armour Vest
 - type: entity
-  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseBlueshieldOfficerContraband] #TheDen Contraband Parents
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseC2ContrabandUnredeemable] #Aurora's Song | change to C2U contraband
   id: ClothingBlueshieldArmourVest
   name: blueshield's security armour
   description: An armoured vest with the badge of the blueshield
@@ -23,8 +23,8 @@
         Slash: 0.60
         Piercing: 0.65
         Heat: 0.70
-  - type: StaminaDamageResistance #Den
-    coefficient: 0.7 #Den
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+    damageCoefficient: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.8
 
@@ -55,7 +55,7 @@
     size: Normal
 
 - type: entity
-  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, ClothingOuterStorageFoldableBase, BaseBlueshieldOfficerContraband]
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, ClothingOuterStorageFoldableBase, BaseC2ContrabandUnredeemable] #Aurora's Song | change to C2U contraband
   id: ClothingBlueshieldArmoredCoat
   name: blueshield's armored coat
   description: A coat for cold winter seasons with sewn in plates.
@@ -73,14 +73,14 @@
         Slash: 0.60
         Piercing: 0.65
         Heat: 0.70
-  - type: StaminaDamageResistance #Den
-    coefficient: 0.7 #Den
+  - type: StaminaResistance
+    damageCoefficient: 0.75
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingBlueshieldArmoredCoat] #TheDen Contraband Parents
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingBlueshieldArmoredCoat]
   id: ClothingBlueshieldArmoredCoatOpen
   name: blueshield's armored coat
   suffix: Opened

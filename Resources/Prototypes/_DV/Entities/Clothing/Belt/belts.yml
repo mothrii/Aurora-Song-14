@@ -48,23 +48,6 @@
   - type: Appearance
 
 - type: entity
-  parent: ClothingBeltBase
-  id: ClothingBeltSuspendersBlack
-  name: suspenders
-  description: For holding your pants up.
-  suffix: Black # TheDen
-  components:
-  - type: Sprite
-    sprite: _DV/Clothing/Belt/suspendersblack.rsi
-    state: icon
-  - type: Clothing
-    sprite: _DV/Clothing/Belt/suspendersblack.rsi
-    quickEquip: true
-  - type: Tag
-    tags:
-      - BeltSlotNotBelt
-
-- type: entity
   parent: [NFClothingSBeltStorageHolsterMedkitBase] # Aurora - Add explosion resist
   id: ClothingBeltCorpsmanWebbing
   name: corpsman webbing
@@ -82,9 +65,9 @@
         whitelist:
           tags:
           - Medkit
-          - Portafib
+          #- Portafib #Aurora's Song | Not a tag we use, yet
           - Compactdefib #Den change
-          - Rollerbed
+          #- Rollerbed #Aurora's Song | Not a tag we use, yet
         insertOnInteract: true
       holster:
         name: clothing-belt-sidearm

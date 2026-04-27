@@ -104,9 +104,9 @@
   - type: SpawnItemsOnUse
     items:
     - id: SpaceCash2500
-    - id: NFWeaponSubmachinegunDrozdExpedition
-    - id: NFMagazineSubmachinegun35
-    - id: NFMagazineSubmachinegun35
+    - id: NFWeaponSubMachineGunDrozdExpedition
+    - id: NFMagazineSubMachineGun35
+    - id: NFMagazineSubMachineGun35
     - id: SpaceCash5000
       prob: 0.8
     - id: SpawnDungeonLootMaterialsBasicFull

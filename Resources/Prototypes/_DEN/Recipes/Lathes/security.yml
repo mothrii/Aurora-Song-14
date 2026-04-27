@@ -40,19 +40,17 @@
 - type: latheRecipe
   id: WeaponPistolBRDIP15Standard
   result: WeaponPistolBRDIP15StandardEmpty
-  category: Weapons
+  parent: BaseWeaponRecipeLong
   completetime: 8
   materials:
-    Aluminum: 800
     Plastic: 200
     Plasteel: 400
     Steel: 500
-    Tungsten: 200
 
 - type: latheRecipe
   id: WeaponPistolEnergyRevolver
   result: WeaponEnergyRevolver
-  category: Weapons
+  parent: BaseWeaponRecipeLong
   completetime: 10
   materials:
     Steel: 1500
