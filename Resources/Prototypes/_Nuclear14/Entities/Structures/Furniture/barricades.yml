@@ -116,10 +116,10 @@
     intersectRatio: 0.2
     requiredTriggeredSpeed: 0
   - type: TriggerOnStepTrigger
- # - type: DamageUserOnTrigger #Aurora's Song | This component caused test fails.
- #   damage:
- #     types:
- #       Piercing: 5
+  - type: DamageContacts #Aurora's Song | DamageUserOnTrigger < DamageContacts
+    damage:
+      types:
+        Piercing: 5
   - type: SpeedModifierContacts
     walkSpeedModifier: 0.5
     sprintSpeedModifier: 0.5
