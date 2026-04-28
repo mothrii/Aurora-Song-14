@@ -93,3 +93,69 @@ uplink-nullrod-upgrade-desc = A vile incense burner used to transform nullrod it
 
 uplink-gay-implanter-name = Gay implanter
 uplink-gay-implanter-desc = Huh??? Why is this in here??? Is my uplink hacked??
+
+uplink-valushot-name = Deadly Dan's ValuShot 9000
+uplink-valushot-desc = Lethal weaponry at a discount price!
+
+uplink-valushotfamily-name = Deadly Dan's ValuShot Family Pack
+uplink-valushotfamily-desc = 3 ValuShot 9000 pistols for a special deal!
+
+uplink-valushotclub-name = Deadly Dan's ValuShot Club Bundle
+uplink-valushotclub-desc = Bulk buys! 14 ValuShot 9000 pistols for the price of 10!
+
+uplink-supermatter-grenade-name = Supermatter Grenade
+uplink-supermatter-grenade-desc = Grenade that simulates delamination of a supermatter engine, generates powerful gravity well. Explosion comparable to a Mini Bomb.
+
+uplink-beenade-name = Beenade
+uplink-beenade-desc = The ultimate in distraction, this foaming grenade contains enough pure concentrated bees to keep Medbay busy for quite a while. Throw it into the bar and watch everyone panic. Just don't stand too close.
+
+uplink-bros-grenade-name = BROSnade
+uplink-bros-grenade-desc = A colony of angry BROS captured in a glass bottle. UNGH
+
+uplink-pin-straight-name = Straight Pride Pin
+uplink-pin-straight-desc = Demonstrate your support for the heterosexual community with this straight pride pin.
+
+uplink-cloak-straight-name = Straight Pride Cloak
+uplink-cloak-straight-desc = Demonstrate your support for the heterosexual community (and the hamburglar) with this stripy, black-and-white cloak.
+
+uplink-super-mosin-name = K2903 Star Rifle bundle
+uplink-super-mosin-desc = A modified bolt-action service rifle with a large magazine! Not modern by any standard. Quite the steal, if you don't mind hand-loading. Comes with a handful of stripper clips.
+
+uplink-ourobros-name = OuroBROS
+uplink-ourobros-desc = UNGH!
+
+uplink-extended-pistol-magazine-caseless-name = Extended Pistol Magazine Bundle (.25 caseless)
+uplink-extended-pistol-magazine-caseless-desc = Four high-capacity pistol magazines each loaded with 16 cartridges. Compatible with the Cobra.
+
+uplink-extended-pistol-magazine-name = Extended Pistol Magazine Bundle (.35 auto)
+uplink-extended-pistol-magazine-desc = Four high-capacity pistol magazines each loaded with 20 cartridges. Compatible with the Viper.
+
+uplink-treatchunk-free-name = Complimentary TreatChunk
+uplink-treatchunk-free-desc = A free TreatChunk hard candy, as a bonus for working with the Syndicate. Enjoy!
+
+uplink-treatchunk-bag-name = TreatChunk bag (15 count)
+uplink-treatchunk-bag-desc = A bag of individually wrapped TreatChunk hard candies. Enjoy!
+
+uplink-treatchunk-big-name = Party Sized TreatChunk bag (60 count)
+uplink-treatchunk-big-desc = An impractically large bag of TreatChunk hard candies. Don't eat them all in one sitting.
+
+uplink-hotsauces-name = Discount Dan's Hot Sauce Sampler Pack
+uplink-hotsauces-desc = New from Discount Dan's! 4 levels of heat to put your spice tolerance to the test. Plus a free* gift from Discount Dan himself!
+
+uplink-taipan-name = Taipan bundle
+uplink-taipan-desc = One "Taipan" Echion crossbow, bundled with a canister of its proprietary liquid ammo.
+
+uplink-romerol-traitor-name = Romerol Micro-Injector
+uplink-romerol-traitor-desc = One romerol micro-injector for causing a zombie outbreak.
+
+uplink-muldoon-sniper-kit-name = Muldoon Sniper Conversion Kit
+uplink-muldoon-sniper-kit-desc = An upgrade kit that modifies the muldoon to allow both darts and .60 anti-material rounds to fit and fire inside.
+
+uplink-shock-dart-box-name = Shock Dart Box
+uplink-shock-dart-box-desc = A box of 4 tranquilizer darts that fit in the muldoon. Each dart contains 4 units of tazinide and will shock the target after injection.
+
+uplink-ananke-name = Ananke bundle
+uplink-ananke-desc = Brutal and unapolagetic-- the Ananke plasma shotgun, bundled with 4 canisters of its proprietary liquid ammo.
+
+uplink-glykon-name = Glykon bundle
+uplink-glykon-desc = Beautiful, elegant, and deadly. The Glykon bundled with 4 canisters of its proprietary liquid ammo.
