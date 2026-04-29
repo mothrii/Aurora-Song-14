@@ -8,6 +8,7 @@
   id: WeaponPistolBRDIP15
   description: A rugged and reliable handgun, outfitted with a heavy muzzle counterweight. Used by the special forces of the Biesel Republic Foreign Legion, they are sometimes purchased by Nanotrasen for their operatives. Uses .35 auto ammo.
   suffix: BSO
+  abstract: true # Aurora's Song | Respecting original implementation, but not using it in favour of our own weapon systems
   components:
   - type: Sprite
     sprite: _DEN/Objects/Weapons/Guns/Pistols/BRDIP_15.rsi
@@ -67,6 +68,7 @@
   parent: WeaponPistolBRDIP15
   id: WeaponPistolBRDIP15Empty
   suffix: "BSO, Empty"
+  abstract: true # Aurora's Song | Respecting original implementation, but not using it in favour of our own weapon systems
   components:
   - type: ItemSlots
     slots:
@@ -89,6 +91,7 @@
   name: BRDI P-15
   parent: [ WeaponPistolBRDIP15 ]
   id: WeaponPistolBRDIP15Standard
+  abstract: true # Aurora's Song | Respecting original implementation, but not using it in favour of our own weapon systems
   suffix: Standard
   components:
   - type: Sprite
@@ -105,6 +108,7 @@
   name: BRDI P-15
   parent: WeaponPistolBRDIP15Standard
   id: WeaponPistolBRDIP15StandardEmpty
+  abstract: true # Aurora's Song | Respecting original implementation, but not using it in favour of our own weapon systems
   suffix: "Standard, Empty"
   components:
   - type: ItemSlots
