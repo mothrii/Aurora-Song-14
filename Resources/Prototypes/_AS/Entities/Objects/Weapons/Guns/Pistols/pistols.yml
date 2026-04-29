@@ -85,7 +85,7 @@
 #region Den
 - type: entity
   id: ASWeaponPistolBRDIP15BSO
-  parent: [ NFBaseWeaponPistolChamber35, NFBaseWeaponFramePistolNanotrasen ]
+  parent: [ NFBaseWeaponPistolChamber35, ASBaseWeaponFramePistolBeckerSchulz ]
   name: BRDIP-15(B)
   suffix: AS
   description: A rugged and reliable handgun, outfitted with a heavy muzzle counterweight. Favoured by special forces and well-off security personnel.
@@ -130,8 +130,6 @@
         whitelist:
           tags:
           - NFCartridgePistol35
-  - type: NFWeaponDetails
-    manufacturer: weapon-details-manufacturer-bsa
 
 - type: entity
   id: ASWeaponPistolBRDIP15
