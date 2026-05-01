@@ -1,6 +1,6 @@
 - type: entity
   name: Anaconda
-  parent: [BaseWeaponRevolver, Tier3Contraband]
+  parent: [NFBaseWeaponFrameRevolver, BaseC3SyndicateContraband]
   id: WeaponAnaconda
   description: A junior designer at Waffle Corp. swears they submitted this as a joke. Kicks like a blood-red horse when fired. Uses .60 anti-materiel ammo.
   components:
@@ -50,22 +50,3 @@
     popupText: null
     ignoreResistances: true
     damageSound: /Audio/Weapons/boxingpunch3.ogg
-  - type: MeleeWeapon
-    range: 0.8
-    attackRate: 0.5
-    damage:
-      types:
-        Blunt: 10
-    soundHit:
-      path: /Audio/Effects/hit_kick.ogg
-    soundSwing:
-      path: /Audio/_Impstation/Weapons/Guns/Melee/shove_foley.ogg
-    resetOnHandSelected: false
-    wideAnimationRotation: -80
-  - type: AltFireMelee
-    attackType: Heavy
-  - type: DamageOtherOnHit #for throwing
-    staminaCost: 10
-    damage:
-      types:
-        Blunt: 12

@@ -1,7 +1,7 @@
 - type: entity
   name: adder plasma bolt
   id: BulletPlasmaAdder
-  parent: BulletLaser
+  parent: NFBaseBulletLaser
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -9,6 +9,25 @@
     layers:
     - state: mediumsynd
       shader: unshaded
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.1,0.1,0.1"
+        hard: false
+        mask:
+        - Impassable
+        - BulletImpassable
+      fly-by: &flybyfixture
+        shape: !type:PhysShapeCircle
+          radius: 1.5
+        layer:
+        - Impassable
+        - MidImpassable
+        - HighImpassable
+        - LowImpassable
+        hard: False
   - type: Ammo
     muzzleFlash: MuzzleFlashEffectSyndLaser
   - type: Projectile

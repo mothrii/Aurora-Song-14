@@ -1,7 +1,7 @@
 # Guns that use Echion as fuel and typically shoot plasma
 - type: entity
   name: Adder
-  parent: [BaseWeaponEchion, Tier3Contraband]
+  parent: [BaseWeaponEchion, BaseC3SyndicateContraband]
   id: WeaponPlasmaAdder
   description: The future of stellar warfare in the palm of your hand. Uses Echion, produced from advanced synthesizers.
   components:
@@ -34,7 +34,7 @@
 
 - type: entity
   name: Akurra
-  parent: [BaseWeaponEchion, BaseGunWieldable, Tier3Contraband]
+  parent: [BaseWeaponEchion, BaseGunWieldable, BaseC3SyndicateContraband]
   id: WeaponPlasmaAkurra
   description: A beautiful marriage of technology and malice in a single package. Uses Echion, produced from advanced synthesizers.
   components:
@@ -114,7 +114,7 @@
 
 - type: entity
   name: Ananke
-  parent: [BaseWeaponEchion, BaseGunWieldable, Tier3Contraband]
+  parent: [BaseWeaponEchion, BaseGunWieldable, BaseC3SyndicateContraband]
   id: WeaponPlasmaAnanke
   description: The short-range of this brutal shotgun makes it a favorite among operatives who wish to see the whites of Nanotrasen eyes in the heat of combat. Uses Echion, produced from advanced synthesizers.
   components:
@@ -165,7 +165,7 @@
 
 - type: entity
   name: Glykon
-  parent: [BaseWeaponEchion, BaseGunWieldable, Tier3Contraband]
+  parent: [BaseWeaponEchion, BaseGunWieldable, BaseC3SyndicateContraband]
   id: WeaponPlasmaGlykon
   description: Deadly, precise, and beautiful-- a state-of-the-art tool for the most merciless of assassins. Uses Echion, produced from advanced synthesizers.
   components:
