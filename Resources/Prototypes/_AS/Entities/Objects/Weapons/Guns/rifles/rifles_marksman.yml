@@ -66,14 +66,16 @@
 
 - type: entity
   id: ASWeaponRifleMosinBolt
-  parent: [ ASBaseWeaponRifleEnblocChamber30Long, NFBaseWeaponFrameRifleSteelbolt, BaseGunMelee ] #Stop parenting from self | Aurora
-  name: Mosin bolt-action rifle # Renamed: real brand name
+  parent: [ ASBaseWeaponRifleEnblocChamber30Long, NFBaseWeaponFrameRifleSteelbolt, BaseGunMelee ]
+  name: Mosin bolt-action rifle #please do not look upon my wretched creation, my hubris is boundless and my shame is immeasurable
   description: A weapon for hunting, or endless trench warfare. Equipped with bayonet.
   suffix: AS
   components:
   - type: ChamberMagazineAmmoProvider
     autoCycle: false
     autoEject: true
+    soundAutoEject:
+      path: /Audio/Weapons/Guns/Cock/batrifle_cock.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
