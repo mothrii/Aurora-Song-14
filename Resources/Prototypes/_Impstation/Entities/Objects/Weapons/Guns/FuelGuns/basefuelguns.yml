@@ -24,7 +24,9 @@
   - type: AmmoCounter
   - type: Item
     sprite: _Impstation/Objects/Weapons/Guns/FuelGuns/xiuhcoatl.rsi
-    size: Ginormous
+    size: Huge
+    shape:
+    - 0,0,4,3
   - type: NFWeaponDetails
     class: weapon-details-class-flamethrower
     manufacturer: weapon-details-manufacturer-gorlex-steel-works

@@ -43,3 +43,23 @@
     popupText: damage-on-shoot-leviathan
     damageSound: /Audio/Weapons/boxingpunch3.ogg
   - type: Appearance
+
+- type: entity
+  name: single-use Telecrystal beacon
+  parent: [ BaseItem, BaseC3SyndicateContraband ]
+  id: LeviathanTCBeacon
+  description: an advanced beacon based on telecrystal technology capable of teleporting in a single large item. But what...?
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Impstation/Objects/Weapons/Guns/Launchers/leviathan.rsi
+    layers:
+      - state: boxed
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    size: Normal
+  - type: SpawnItemsOnUse
+    items:
+      - id: WeaponLauncherBazooka
+    sound:
+      path: /Audio/_Impstation/Machines/echion_off.ogg

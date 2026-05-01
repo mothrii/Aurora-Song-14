@@ -9,7 +9,7 @@
   cost:
     Telecrystal: 1
   categories:
-  - UplinkAmm
+  - UplinkAmmo
 
 - type: listing
   id: UplinkMagazineEchion
@@ -74,8 +74,8 @@
   productEntity: EchionSynth
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 5
+    Telecrystal: 2
   cost:
-    Telecrystal: 8
+    Telecrystal: 4
   categories:
   - UplinkAmmo

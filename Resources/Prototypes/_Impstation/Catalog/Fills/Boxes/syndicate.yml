@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BoxCardboard, Tier3Contraband]
+  parent: BoxCardboard
   id: LeviathanExplosiveRocketBox
   name: Leviathan rocket box (explosive)
   description: 4 highly destructive rockets stored in a concerningly fragile container.
@@ -53,7 +53,7 @@
       - state: syndicaterocketbox
 
 - type: entity
-  parent: [BoxCardboard, Tier3Contraband]
+  parent: BoxCardboard
   id: AdderBox
   name: Adder bundle box
   description: A state-of-the-art plasma pistol, bundled with 2 canisters of its proprietary fuel.

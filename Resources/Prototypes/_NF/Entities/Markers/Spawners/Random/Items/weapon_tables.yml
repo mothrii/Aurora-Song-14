@@ -261,6 +261,9 @@
       - id: WeaponCaseKasyreExpedition # Aurora Weapon
       - id: WeaponCaseShortCobra # Cobra to T3 | Aurora Song
       - id: WeaponCaseShortN1984Expedition # N1984 to T3 | Aurora Song
+      - id: WeaponCaseShortAdderExpeditionT3 # Aurora
+      - id: WeaponCaseAnacondaExpeditionT3 # Aurora
+      - id: WeaponCaseXiuhcoatlExpeditionT3 # Aurora
     - !type:NestedSelector
       weight: 0.05
       tableId: TableDungeonLootWeaponsRangedTier4
@@ -285,6 +288,7 @@
       - id: WeaponCaseLongC20r # C20r to T4 | Aurora Song
       - id: WeaponCaseAP4CExpeditionT4 # Aurora
       - id: WeaponCaseLongEstocExpeditionT4 # Aurora
+      - id: WeaponCaseAkurraExpeditionT4 # Aurora
     - !type:NestedSelector
       weight: 0.05
       tableId: TableDungeonLootWeaponsRangedTier5
@@ -304,6 +308,9 @@
       - id: WeaponCaseLongLaserCannonExpedition
       - id: WeaponCaseLongEstocExpeditionT5 # Aurora
       #- id: WeaponCaseHeavyAsmgtExpeditions  #Aurora: t6
+      - id: WeaponCaseLongBasiliskExpeditionT5 # Aurora
+      - id: WeaponCaseAnankeExpeditionT5 # Aurora
+      - id: WeaponCaseGlykonExpeditionT5 # Aurora
     - !type:NestedSelector
       weight: 0.05
       tableId: TableDungeonLootWeaponsRangedTier6
@@ -418,6 +425,7 @@
   table: !type:GroupSelector
     children:
     - id: WeaponCaseShortAmmoBoxLethal45
+    - id: WeaponCaseShortEchionCanisterSyndicate # Aurora
     - !type:GroupSelector
       children:
       - id: WeaponCaseShortAmmoBoxLethal20
@@ -466,6 +474,7 @@
     - id: WeaponCaseShortAmmoBoxIncendiary35
     - id: WeaponCaseShortAmmoBoxIncendiaryShotgun
     - id: WeaponCaseShortAmmoBoxIncendiary45
+    - id: WeaponCaseShortEchionCanisterSyndicate # Aurora
 
 # region ammo uranium
 - type: entityTable

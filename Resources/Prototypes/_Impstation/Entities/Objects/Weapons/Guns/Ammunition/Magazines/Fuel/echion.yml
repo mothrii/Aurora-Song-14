@@ -36,8 +36,8 @@
       tank:
         reagents:
         - ReagentId: Echion
-          Quantity: 15
-        maxVol: 15
+          Quantity: 30
+        maxVol: 30
   - type: DrainableSolution
     solution: tank
   - type: PhysicalComposition
