@@ -58,7 +58,10 @@
     size: Large
     shape:
     - 0,0,3,1
+  - type: NFWeaponDetails
+    class: weapon-details-class-assault-rifle
   - type: Gun
+    examineCaliber: gun-examine-caliber-echion-medium
     projectileSpeed: 25
     clumsyProof: false
     cameraRecoilScalar: 1
@@ -138,7 +141,10 @@
     size: Large
     shape:
     - 0,0,3,1
+  - type: NFWeaponDetails
+    class: weapon-details-class-shotgun
   - type: Gun
+    examineCaliber: gun-examine-caliber-echion-high-burst
     projectileSpeed: 25
     clumsyProof: false
     cameraRecoilScalar: 1
@@ -189,7 +195,10 @@
     size: Huge
     shape:
     - 0,0,5,1
+  - type: NFWeaponDetails
+    class: weapon-details-class-sniper
   - type: Gun
+    examineCaliber: gun-examine-caliber-echion-hitscan
     clumsyProof: false
     cameraRecoilScalar: 1
     fireRate: 10

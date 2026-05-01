@@ -1,18 +1,18 @@
 - type: entity
   id: SpeedLoaderAnaconda
-  name: "speed loader (.60 anti-materiel)"
+  name: "speed loader (.60 rifle)"
   description: It's amazing that anyone thought this would be a good idea.
-  parent: [ BaseItem, BaseC3SyndicateContraband ]
+  parent: [ BaseItem, BaseC3SyndicateContraband, RecyclableItemSteelTiny ]
   components:
   - type: Tag
     tags:
       - SpeedLoaderAM
   - type: SpeedLoader
   - type: BallisticAmmoProvider
-    proto: CartridgeAntiMateriel
+    proto: NFCartridgeRifle60
     whitelist:
       tags:
-        - CartridgeAntiMateriel
+        - NFCartridgeRifle60
     capacity: 3
   - type: Sprite
     sprite: _Impstation/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/sniper.rsi

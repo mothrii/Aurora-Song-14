@@ -23,7 +23,10 @@
     - 0,0,3,0
     - 0,1,0,1
     sprite: _Impstation/Objects/Weapons/Guns/Revolvers/anaconda.rsi
+  - type: NFWeaponDetails
+    manufacturer: weapon-details-manufacturer-waffle-corp
   - type: Gun
+    examineCaliber: gun-examine-caliber-60
     fireRate: 1.0
     minAngle: 1
     maxAngle: 40
@@ -34,9 +37,9 @@
   - type: RevolverAmmoProvider
     whitelist:
       tags:
-        - CartridgeAntiMateriel
+        - NFCartridgeRifle60
         - SpeedLoaderAM
-    proto: CartridgeAntiMateriel
+    proto: NFCartridgeRifle60
     capacity: 3
     chambers: [ True, True, True ]
     ammoSlots: [ null, null, null ]

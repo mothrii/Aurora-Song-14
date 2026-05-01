@@ -3,7 +3,7 @@
   name: FG13 Xiuhcoatl
   parent: [BaseWeaponFlamer, BaseC3SyndicateContraband]
   id: WeaponFlamerXiuhcoatl
-  description: Simple as it is deadly, the Xiuhcoatl fulfills a long-standing craving of the Gorlex Marauders for Nanotrasen Barbeque. Uses welding fuel.
+  description: Simple as it is deadly, the Xiuhcoatl fulfills a long-standing craving of the Gorlex Marauders for Nanotrasen Barbeque.
   components:
   - type: Sprite
     sprite: _Impstation/Objects/Weapons/Guns/FuelGuns/xiuhcoatl.rsi
@@ -37,46 +37,3 @@
   - type: Tag
     tags:
     - WeldingTool
-
-- type: entity
-  name: FG10 Olympus
-  parent: BaseWeaponFlamer
-  id: WeaponFlamerOlympus
-  categories: [HideSpawnMenu] #see its fuel tank, where this spawns holstered in.
-  description: An effective and efficient decontamination tool used by CBURN crews. Requires a proprietary fuel tank equipped to a suit's tank slot.
-  components:
-  - type: Sprite
-    sprite: _Impstation/Objects/Weapons/Guns/FuelGuns/olympus.rsi
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: torch
-        shader: unshaded
-  - type: Appearance
-  - type: Item
-    sprite: _Impstation/Objects/Weapons/Guns/FuelGuns/olympus.rsi
-    size: Large
-  - type: GunRequiresWield
-  - type: Gun
-    projectileSpeed: 16
-    clumsyProof: false
-    cameraRecoilScalar: 0
-    fireRate: 8
-    selectedMode: FullAuto
-    availableModes:
-    - FullAuto
-    soundGunshot:
-      path: /Audio/_Impstation/Weapons/Guns/Gunshots/flamethrower.ogg
-  - type: ClothingSlotAmmoProvider
-  - type: SlotBasedConnectedContainer
-    targetSlot: SUITSTORAGE
-    containerWhitelist:
-      tags:
-      - OlympusBackTank
-  - type: SolutionRefuel
-    fuelSolutionName: tank
-    fuelReagent: WeldingFuel
-  - type: Tag
-    tags:
-    - WeldingTool
-    - OlympusFlamer

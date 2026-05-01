@@ -44,7 +44,7 @@
 
 - type: entity
   name: Basilisk-11
-  parent: [ NFBaseWeaponRifleAssaultChamber30, NFBaseWeaponFrameRifleAssaultCybersun ]
+  parent: [ NFBaseWeaponRifleAssaultChamber30, NFBaseWeaponFrameRifleAssaultCybersun, BaseC3SyndicateContraband ]
   id: ASWeaponRifleBasilisk
   description: A fearsome state-of-the-art battle rifle often used by Syndicate agents who care more for violence than secrecy.
   components:
@@ -87,10 +87,6 @@
           tags:
             - ASMagazineBRTopMountedRifle30
         whitelistFailPopup: gun-magazine-whitelist-fail
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
   - type: MagazineVisuals
     magState: mag
     steps: 1

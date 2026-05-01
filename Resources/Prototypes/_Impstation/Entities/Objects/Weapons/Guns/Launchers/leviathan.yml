@@ -2,7 +2,7 @@
   name: Leviathan
   parent: [ NFBaseWeaponLauncherChamberRockets, NFBaseWeaponFrameLauncherGorlex ]
   id: WeaponLauncherBazooka
-  description: A symbol of hubris, arrogance, and an overwhelming lust for destruction. Not intended for use without a hardsuit. Uses rockets.
+  description: A symbol of hubris, arrogance, and an overwhelming lust for destruction. Not intended for use without a hardsuit.
   components:
   - type: Sprite
     sprite: _Impstation/Objects/Weapons/Guns/Launchers/leviathan.rsi
