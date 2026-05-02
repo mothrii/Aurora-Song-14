@@ -1,0 +1,81 @@
+- type: entity
+  id: ASSyndicateEchionSynth
+  parent: BaseMachinePowered
+  name: Echion synthesizer
+  description: A causal loop in the core of this machine somehow fluctuates space and time to create the dangerous energy condensate known as Echion.
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/gravity_generator.rsi
+    layers:
+    - state: base
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: cap-1
+      visible: false
+      shader: unshaded
+      map: ["enum.SolutionContainerLayers.Fill"]
+    - state: unshaded-normal
+      visible: false
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Repairable
+    fuelCost: 10
+    doAfterDelay: 5
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+  - type: ApcPowerReceiver
+    powerLoad: 2500
+  - type: ExtensionCableReceiver
+  - type: PowerSwitch
+  - type: WiresVisuals
+  - type: WiresPanel
+  - type: Machine
+    board: CybersunEchionSynthesizerCircuitboard
+
+  - type: SolutionContainerVisuals
+    maxFillLevels: 4
+    fillBaseName: cap-
+  - type: SolutionItemStatus
+    solution: tank
+  - type: ExaminableSolution
+    solution: tank
+  - type: ReagentTank
+    tankType: Fuel
+    fuelWhitelist:
+      tags:
+        - EchionGun
+    fuelBlacklist:
+      tags:
+        - WeldingTool
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: Echion
+          Quantity: 120
+        maxVol: 120
+  - type: DrainableSolution
+    solution: tank
+
+  - type: LitOnPowered
+  - type: PointLight
+    enabled: false
+    netsync: false
+    radius: 1.5
+    energy: 1.5
+    color: "#83db2b"
+  - type: ComponentToggler
+    components:
+    - type: SolutionRegeneration
+      solution: tank
+      generated:
+          reagents:
+          - ReagentId: Echion
+            Quantity: 1

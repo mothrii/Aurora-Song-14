@@ -40,7 +40,7 @@
   icon: { sprite: /Textures/_Impstation/Objects/Weapons/Guns/Projectiles/bazooka.rsi, state: concussion }
   productEntity: LeviathanConcussionRocketBox
   cost:
-    Telecrystal: 5
+    Telecrystal: 4
   categories:
   - UplinkAmmo
 
@@ -51,7 +51,7 @@
   icon: { sprite: /Textures/_Impstation/Objects/Weapons/Guns/Projectiles/bazooka.rsi, state: explosive }
   productEntity: LeviathanExplosiveRocketBox
   cost:
-    Telecrystal: 5
+    Telecrystal: 4
   categories:
   - UplinkAmmo
 
@@ -62,7 +62,7 @@
   icon: { sprite: /Textures/_Impstation/Objects/Weapons/Guns/Projectiles/bazooka.rsi, state: incendiary }
   productEntity: LeviathanIncendiaryRocketBox
   cost:
-    Telecrystal: 5
+    Telecrystal: 4
   categories:
   - UplinkAmmo
 
@@ -70,8 +70,8 @@
   id: UplinkEchionSynth
   name: uplink-echion-synth-name
   description: uplink-echion-synth-desc
-  icon: { sprite: /Textures/_Impstation/Objects/Specific/Syndicate/echionsynth.rsi, state: icon }
-  productEntity: EchionSynth
+  icon: { sprite: /Textures/_AS/Structure/Machines/echionsynth.rsi, state: off }
+  productEntity: CybersunEchionSynthesizerCircuitboard
   discountCategory: rareDiscounts
   discountDownTo:
     Telecrystal: 2
