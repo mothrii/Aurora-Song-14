@@ -1,5 +1,19 @@
 ﻿- type: entity
   parent:
+  - BaseExpeditionWeaponTier1
+  - ASWeaponEchionBSShuvit
+  categories: [ HideSpawnMenu ]
+  id: ASWeaponShuvitExpedition
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2
+  - ASWeaponEchionCasperSlide
+  categories: [ HideSpawnMenu ]
+  id: ASWeaponEchionCasperExpedition
+
+- type: entity
+  parent:
   - BaseExpeditionWeaponTier3
   - ASWeaponKasyreLasRifle
   categories: [ HideSpawnMenu ]
@@ -81,10 +95,3 @@
   - WeaponPlasmaGlykon
   categories: [ HideSpawnMenu ]
   id: ASWeaponEchionGlykonExpedition
-
-- type: entity
-  parent:
-  - BaseExpeditionWeaponTier6
-  - LeviathanTCBeacon
-  categories: [ HideSpawnMenu ]
-  id: WeaponCaseLeviathanExpeditionT6

@@ -1,4 +1,4 @@
-# Guns that use Echion as fuel and typically shoot plasma
+# Guns that use Echion as fuel and typically shoot energy-style projectiles
 - type: entity
   name: Adder
   parent: [BaseWeaponEchion, BaseC3SyndicateContraband]
@@ -30,7 +30,7 @@
     - EchionGun
     - Sidearm
   - type: StaticPrice
-    price: 100
+    price: 500
 
 - type: entity
   name: Akurra
@@ -88,7 +88,7 @@
     proto: BulletPlasmaAkurra
     fireCost: 1
   - type: StaticPrice
-    price: 100
+    price: 500
 
 - type: entity
   name: Ananke
@@ -142,7 +142,7 @@
     proto: BulletPlasmaSpread
     fireCost: 5
   - type: StaticPrice
-    price: 100
+    price: 500
 
 - type: entity
   name: Glykon
@@ -204,3 +204,5 @@
   - type: EyeCursorOffset
     maxOffset: 3
     pvsIncrease: 0.3
+  - type: StaticPrice
+    price: 500

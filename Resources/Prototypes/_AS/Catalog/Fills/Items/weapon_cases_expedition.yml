@@ -2,6 +2,36 @@
 
 # T3
 - type: entity
+  parent: WeaponCaseShort
+  id: WeaponCaseShuvitExpeditionT1
+  suffix: Dungeon, Kasyre
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityTableContainerFill # Aurora's Song - StorageFill>EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ASWeaponShuvitExpedition
+          amount: 1
+        - id: PunkEchionCanister
+          amount: 2
+
+- type: entity
+  parent: WeaponCaseLong
+  id: WeaponCaseCasperExpeditionT2
+  suffix: Dungeon, Kasyre
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityTableContainerFill # Aurora's Song - StorageFill>EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ASWeaponEchionCasperExpedition
+          amount: 1
+        - id: PunkEchionCanister
+          amount: 4
+
+- type: entity
   parent: WeaponCaseLong
   id: WeaponCaseKasyreExpedition
   suffix: Dungeon, Kasyre
@@ -206,7 +236,7 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: ASWeaponLeviathanExpedition
+        - id: LeviathanTCBeacon
           amount: 1
         - id: CartridgeBazookaExp
           amount: 1

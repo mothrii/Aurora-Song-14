@@ -208,6 +208,7 @@
       - id: WeaponCaseLongRepeaterExpedition
       - id: WeaponCaseLongSniperCeremonialExpedition
       - id: WeaponCaseShortSvalinnExpedition # Svalinn to T1 | Aurora Song
+      - id: WeaponCaseShuvitExpeditionT1 # Aurora Song
     - !type:NestedSelector
       weight: 0.05
       tableId: TableDungeonLootWeaponsRangedTier2
@@ -235,6 +236,7 @@
       - id: WeaponCaseLongMusketExpedition # Musket to T2 | Aurora Song
       - id: WeaponCaseLongLaserCarbineExpedition # Laser Carbine to T2 | Aurora Song
       - id: WeaponCaseShortPython45Expedition # Aurora: Pyhton to T2
+      - id: WeaponCaseCasperExpeditionT2 # Aurora
     - !type:NestedSelector
       weight: 0.05
       tableId: TableDungeonLootWeaponsRangedTier3
