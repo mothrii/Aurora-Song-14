@@ -76,3 +76,14 @@
     outerClothing: ASClothingOuterHardsuitHauberkUnremoveable
     belt: ClothingBeltSecurity
     back: NanoTrasenBackpackLoot_SecWarden
+
+- type: startingGear
+  id: ASNanoTrasenRogueHoS
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoS
+    head: ASClothingHeadHelmetHardsuitGolemUnremoveable
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesColorBlackGarand
+    outerClothing: ASClothingOuterHardsuitGolemUnremoveable
+    belt: ClothingBeltSecurity
+    back: NanoTrasenBackpackLoot_SecHoS

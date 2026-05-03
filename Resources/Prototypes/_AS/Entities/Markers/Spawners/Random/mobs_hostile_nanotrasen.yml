@@ -95,3 +95,27 @@
   - type: RandomSpawner
     prototypes:
     - MobNTSecWarden
+
+- type: entity
+  name: Nanotrasen HoS Spawner
+  id: ASSpawnMobNanotrasenHoS
+  parent: MarkerBase
+  suffix: AI, HOSTILE
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/security.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Clothing/OuterClothing/Hardsuits/security-red.rsi
+      state: equipped-OUTERCLOTHING
+    - sprite: Clothing/Head/Hardsuits/security-red.rsi
+      state: off-equipped-HELMET
+    - sprite: Clothing/Shoes/Boots/combatboots.rsi
+      state: equipped-FEET
+  - type: RandomSpawner
+    prototypes:
+    - MobNTSecHoS

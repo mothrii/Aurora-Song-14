@@ -251,3 +251,36 @@
     SelectedMode: SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
+
+- type: entity
+  name: NT security director
+  parent: [MobMovementSpeedModifierRanged, MobStaminaFodder, MobHostileNTBase, MobHumanoidHostileAISimpleRanged]
+  id: MobNTSecHoS
+  description: The head of security, in charge of combat operations and team coordination.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    templateId: human
+  - type: Loadout
+    prototypes:
+    - ASNanoTrasenRogueHoS
+  - type: Damageable
+    damageModifierSet: MobHostileNanoTrasenDamageModifierMed # Slightly tougher modifiers
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2.2
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: BasicEntityAmmoProvider
+    proto: ASCartridgeRifle30Long
+    capacity: 5
+    count: 5
+  - type: Gun
+    showExamineText: false
+    fireRate: 0.9
+    minAngle: 6.8
+    maxAngle: 26
+    angleIncrease: 2.5
+    angleDecay: 3
+    SelectedMode: SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg

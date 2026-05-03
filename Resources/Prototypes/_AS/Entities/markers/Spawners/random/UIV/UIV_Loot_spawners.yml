@@ -142,10 +142,10 @@
       children:
       - !type:NestedSelector
         tableId: DungeonLootNanoTrasenUIVSuitUncommon
-        weight: 40
+        weight: 10
       - !type:NestedSelector
         tableId: DungeonLootNanoTrasenUIVSuitRare
-        weight: 60
+        weight: 50
     # 0.1% chance of the mythical damaged DS hardsuit, which is functionally a Jugsuit with slightly better movement speed
     - !type:GroupSelector
       weight: 0.1
@@ -181,11 +181,11 @@
     layers:
     - state: green
       scale: 0.7, 0.7
-    - sprite: Clothing/Uniforms/Jumpsuit/security.rsi
-      state: icon
     - sprite: Effects/crayondecals.rsi
       state: North
       color: red
+    - sprite: Structures/Storage/suit_storage.rsi
+      state: base
   - type: EntityTableSpawner
     offset: 0.0
     table: !type:NestedSelector
@@ -219,6 +219,15 @@
   id: DungeonLootNanoTrasenUIVGunsSpawner
   suffix: UIV, Gun Safes
   components:
+  - type: Sprite
+    layers:
+    - state: green
+      scale: 0.7, 0.7
+    - sprite: Effects/crayondecals.rsi
+      state: North
+      color: red
+    - sprite: Structures/Storage/closet.rsi
+      state: shotguncase
   - type: EntityTableSpawner
     offset: 0.0
     table: !type:NestedSelector
@@ -235,11 +244,11 @@
     layers:
     - state: green
       scale: 0.7, 0.7
-    - sprite: Structures/Machines/VendingMachines/secdrobe.rsi
-      state: off
     - sprite: Effects/crayondecals.rsi
       state: North
       color: red
+    - sprite: Structures/Machines/VendingMachines/secdrobe.rsi
+      state: off
   - type: EntityTableSpawner
     offset: 0.0
     table: !type:NestedSelector
@@ -256,11 +265,11 @@
     layers:
     - state: green
       scale: 0.7, 0.7
-    - sprite: Clothing/OuterClothing/Armor/captain_repeller.rsi
-      state: icon
     - sprite: Effects/crayondecals.rsi
       state: North
       color: red
+    - sprite: Clothing/OuterClothing/Armor/captain_repeller.rsi
+      state: icon
   - type: EntityTableSpawner
     offset: 0.0
     table: !type:NestedSelector
@@ -277,11 +286,11 @@
     layers:
     - state: green
       scale: 0.7, 0.7
-    - sprite: Clothing/OuterClothing/Coats/warden.rsi
-      state: icon
     - sprite: Effects/crayondecals.rsi
       state: North
       color: red
+    - sprite: Clothing/OuterClothing/Coats/warden.rsi
+      state: icon
   - type: EntityTableSpawner
     offset: 0.0
     table: !type:NestedSelector
@@ -298,11 +307,11 @@
     layers:
     - state: green
       scale: 0.7, 0.7
-    - sprite: Objects/Weapons/Guns/Pistols/N1984.rsi
-      state: icon
     - sprite: Effects/crayondecals.rsi
       state: North
       color: red
+    - sprite: Objects/Weapons/Guns/Pistols/N1984.rsi
+      state: icon
   - type: EntityTableSpawner
     offset: 0.0
     table: !type:NestedSelector
@@ -319,11 +328,11 @@
     layers:
     - state: green
       scale: 0.7, 0.7
-    - sprite: Clothing/OuterClothing/Coats/warden.rsi
-      state: icon
     - sprite: Effects/crayondecals.rsi
       state: North
       color: red
+    - sprite: Clothing/OuterClothing/Coats/warden.rsi
+      state: icon
   - type: EntityTableSpawner
     offset: 0.0
     table: !type:NestedSelector
