@@ -4809,3 +4809,12 @@ Entries:
   id: 9439
   time: '2026-05-03T22:54:16.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/999
+- author: entings
+  changes:
+    - type: Fix
+      message: >-
+        McCargo has solved their supply problems, and their meals are once again
+        fully stocked.
+  id: 9440
+  time: '2026-05-04T05:27:19.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1020
