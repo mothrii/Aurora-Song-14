@@ -64,8 +64,10 @@
     - Trash
     # - MultitoolDefibrillatorTarget - Aurora's Song
   - type: Bloodstream
-    bloodReagent: InsectBlood
-    bloodMaxVolume: 0.1
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: InsectBlood
+        Quantity: 0.1
   - type: MobPrice
     price: 50
   - type: Destructible
