@@ -10,7 +10,7 @@ namespace Content.Shared.Power.Components;
 /// <summary>
 /// Adds or removes components when an entity is powered and online.
 /// </summary>
-[RegisterComponent, NetworkedComponent, Access(typeof(PoweredComponentSystem))]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState, Access(typeof(PoweredComponentSystem))]
 public sealed partial class PoweredComponentComponent : Component
 {
         /// <summary>

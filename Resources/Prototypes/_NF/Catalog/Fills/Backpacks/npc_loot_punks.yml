@@ -58,6 +58,8 @@
       amount: 1
     - id: PunkEchionCanister # Aurora
       prob: 0.5
+    - id: ASBlueprintAmmoEchionCanisterPunk # Aurora
+      prob: 0.3
     - id: SpawnDungeonLootCircuitBoard
       prob: 0.35
       amount: 2
@@ -103,6 +105,8 @@
       amount: 1
     - id: PunkEchionCanister # Aurora
       prob: 0.5
+    - id: ASBlueprintAmmoEchionCanisterPunk # Aurora
+      prob: 0.3
     - id: GroundCannabis
       prob: 0.25
       amount: 3
@@ -158,6 +162,8 @@
       amount: 1
     - id: PunkEchionCanister # Aurora
       prob: 0.5
+    - id: ASBlueprintAmmoEchionCanisterPunk # Aurora
+      prob: 0.3
     - id: GroundCannabis
       prob: 0.25
       amount: 3
@@ -212,6 +218,8 @@
       amount: 1
     - id: PunkEchionCanister # Aurora
       prob: 0.5
+    - id: ASBlueprintAmmoEchionCanisterPunk # Aurora
+      prob: 0.3
     - id: GroundCannabis
       prob: 0.35
       amount: 3

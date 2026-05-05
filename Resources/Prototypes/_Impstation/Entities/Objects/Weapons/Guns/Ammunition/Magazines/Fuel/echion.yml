@@ -2,7 +2,7 @@
 - type: entity
   parent: [ BaseItem, BaseC3SyndicateContraband ]
   id: EchionCanister
-  name: Echion Canister
+  name: Echion canister
   description: A special containment device designed for quickly refueling Echion weapons.
   components:
   - type: Sprite
@@ -54,7 +54,7 @@
 - type: entity
   parent: [ BaseItem, BaseC2ExpeditionContraband ]
   id: PunkEchionCanister
-  name: Echion Canister
+  name: Echion canister
   description: A home-made canister designed for quickly refueling Echion weapons, but it feels kinda fragile.
   components:
   - type: Sprite
@@ -129,6 +129,43 @@
         transferForensics: true
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: Tag
+    tags:
+    - EchionGun
+
+- type: entity
+  parent: EchionCanister
+  id: SuperEchionCanister
+  name: heavy Echion canister
+  description: A special containment device designed for quickly refueling Echion weapons with an expanded capacity.
+  components:
+  - type: Sprite
+    sprite: _Impstation/Objects/Weapons/Guns/Ammunition/Magazine/Special/echioncanister.rsi
+    layers:
+      - state: canister
+        map: ["enum.GunVisualLayers.Base"]
+      - state: canister-1-unshaded
+        map: ["enum.SolutionContainerLayers.Fill"]
+        shader: unshaded
+  - type: Appearance
+  - type: Item
+    size: normal
+    shape:
+    - 0,0,1,2
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: canister-
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: Echion
+          Quantity: 120
+        maxVol: 120
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 300
+      Glass: 150
   - type: Tag
     tags:
     - EchionGun

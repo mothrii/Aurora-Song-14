@@ -10,9 +10,15 @@ public sealed class PoweredComponentSystem : EntitySystem
 {
     [Dependency] private readonly SharedPowerReceiverSystem _receiver = default!;
 
-    private void _receiver.TogglePower(Entity<PoweredComponentComponent> ent)
+public override void Initialize()
+{
+base.Initialize();
+
+SubscribeLocalEvent<PoweredComponentComponent, PowerChangedEvent>(OnPowerChanged);
+}
+    private void OnPowerChanged(Entity<PoweredComponentComponent> ent)
     {
-        if (component.Powered && !component.Broken)
+        if (ent.Comp.Powered && !ent.Comp.Broken)
         {
             var target = ent.Comp.Parent ? Transform(ent).ParentUid : ent.Owner;
 
