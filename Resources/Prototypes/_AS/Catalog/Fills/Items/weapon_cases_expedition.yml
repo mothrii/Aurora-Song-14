@@ -1,4 +1,4 @@
-﻿
+
 
 # T3
 - type: entity
@@ -183,14 +183,25 @@
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongBasiliskExpeditionT5
-  suffix: Dungeon, Basilisk-11
+  id: WeaponCaseLongHushpupExpeditionT4
+  suffix: Dungeon, Hushpup
   categories: [ HideSpawnMenu ]
   components:
   - type: EntityTableContainerFill # Aurora's Song - StorageFill>EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: ASWeaponShotgunHushpup
+          amount: 1
+        - id: NFAmmunitionBoxShellShotgunBuckshot
+          amount: 2
+
+- type: entity
+  parent: WeaponCaseLong
+  id: WeaponCaseLongBasiliskExpeditionT5
+  suffix: Dungeon, Basilisk-11
+  categories: [ HideSpawnMenu ]
+  components:
         - id: ASWeaponRifleBasiliskExpedition
           amount: 1
         - id: ASMagazineBRTopMountedRifle30
