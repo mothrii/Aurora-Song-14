@@ -77,6 +77,13 @@
 
 - type: entity
   parent:
+  - BaseExpeditionWeaponTier4
+  - ASWeaponShotgunHushpup
+  categories: [ HideSpawnMenu ]
+  id: ASWeaponShotgunHushpupExpedition
+
+- type: entity
+  parent:
   - BaseExpeditionWeaponTier5
   - ASWeaponRifleBasilisk
   categories: [ HideSpawnMenu ]

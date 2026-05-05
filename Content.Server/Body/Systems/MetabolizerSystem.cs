@@ -194,6 +194,7 @@ public sealed class MetabolizerSystem : SharedMetabolizerSystem
                 // End Frontier
 
                 var scale = (float) mostToRemove;
+                scale *= group.ScaleModifier; // Aurora's Song - control the scale of the effect
 
                 // TODO: This is a very stupid workaround to lungs heavily relying on scale = reagent quantity. Needs lung and metabolism refactors to remove.
                 // TODO: Lungs just need to have their scale be equal to the mols consumed, scale needs to be not hardcoded either and configurable per metabolizer...
