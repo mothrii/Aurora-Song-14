@@ -29,8 +29,6 @@
     tags:
     - EchionGun
     - Sidearm
-  - type: StaticPrice
-    price: 500
 
 - type: entity
   name: Akurra
@@ -87,8 +85,6 @@
     solutionId: chamber
     proto: BulletPlasmaAkurra
     fireCost: 1
-  - type: StaticPrice
-    price: 500
 
 - type: entity
   name: Ananke
@@ -141,8 +137,6 @@
     solutionId: chamber
     proto: BulletPlasmaSpread
     fireCost: 5
-  - type: StaticPrice
-    price: 500
 
 - type: entity
   name: Glykon
@@ -204,5 +198,3 @@
   - type: EyeCursorOffset
     maxOffset: 3
     pvsIncrease: 0.3
-  - type: StaticPrice
-    price: 500

@@ -62,8 +62,6 @@
     tags:
     - EchionGun
     - Sidearm
-  - type: StaticPrice
-    price: 100
 
 - type: entity
   name: Casper Slide
@@ -124,5 +122,3 @@
     solutionId: chamber
     proto: BulletPlasmaAdder
     fireCost: 1.25
-  - type: StaticPrice
-    price: 100

@@ -43,7 +43,7 @@
       path: /Audio/_Impstation/Weapons/Guns/Gunshots/flamethrower.ogg
   - type: GunRequiresWield
   - type: StaticPrice
-    price: 100
+    price: 500
   - type: PhysicalComposition
     materialComposition:
       Plastic: 100
@@ -108,4 +108,4 @@
     tags:
     - EchionGun
   - type: StaticPrice
-    price: 100
+    price: 500

@@ -53,5 +53,3 @@
     popupText: null
     ignoreResistances: true
     damageSound: /Audio/Weapons/boxingpunch3.ogg
-  - type: StaticPrice
-    price: 500

@@ -16,7 +16,7 @@ base.Initialize();
 
 SubscribeLocalEvent<PoweredComponentComponent, PowerChangedEvent>(OnPowerChanged);
 }
-    private void OnPowerChanged(Entity<PoweredComponentComponent> ent)
+    private void OnPowerChanged(Entity<PoweredComponentComponent> ent, ref PowerChangedEvent args)
     {
         if (ent.Comp.Powered && !ent.Comp.Broken)
         {

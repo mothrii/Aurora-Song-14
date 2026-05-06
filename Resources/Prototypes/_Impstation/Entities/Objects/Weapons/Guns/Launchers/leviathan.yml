@@ -43,8 +43,6 @@
     popupText: damage-on-shoot-leviathan
     damageSound: /Audio/Weapons/boxingpunch3.ogg
   - type: Appearance
-  - type: StaticPrice
-    price: 15000
 
 - type: entity
   name: single-use Telecrystal beacon
@@ -65,5 +63,3 @@
       - id: WeaponLauncherBazooka
     sound:
       path: /Audio/_Impstation/Machines/echion_off.ogg
-  - type: StaticPrice
-    price: 15000

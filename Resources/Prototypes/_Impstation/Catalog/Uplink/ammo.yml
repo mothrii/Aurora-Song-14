@@ -70,7 +70,7 @@
   id: UplinkEchionSynth
   name: uplink-echion-synth-name
   description: uplink-echion-synth-desc
-  icon: { sprite: /Textures/_AS/Structure/Machines/echionsynth.rsi, state: off }
+  icon: { sprite: /Textures/_AS/Structures/Machines/echionsynth.rsi, state: off }
   productEntity: CybersunEchionSynthesizerCircuitboard
   discountCategory: rareDiscounts
   discountDownTo:

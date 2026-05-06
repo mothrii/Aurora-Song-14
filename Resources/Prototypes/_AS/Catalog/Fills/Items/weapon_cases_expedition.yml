@@ -202,6 +202,10 @@
   suffix: Dungeon, Basilisk-11
   categories: [ HideSpawnMenu ]
   components:
+  - type: EntityTableContainerFill # Aurora's Song - StorageFill>EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
         - id: ASWeaponRifleBasiliskExpedition
           amount: 1
         - id: ASMagazineBRTopMountedRifle30
