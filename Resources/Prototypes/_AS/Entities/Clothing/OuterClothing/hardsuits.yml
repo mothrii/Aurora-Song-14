@@ -1322,8 +1322,8 @@
         Radiation: 0.3
         Caustic: 0.3
   - type: ClothingSpeedModifier
-    walkModifier: 0.95
-    sprintModifier: 0.9
+    walkModifier: 0.9
+    sprintModifier: 0.8
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ASClothingHeadHelmetHardsuitSatanus
