@@ -16,6 +16,7 @@
   - type: Appearance
   - type: Item
     size: Small
+  - type: WeaponCaseInsertable
   - type: SolutionContainerVisuals
     maxFillLevels: 4
     fillBaseName: canister-
@@ -68,6 +69,7 @@
   - type: Appearance
   - type: Item
     size: Small
+  - type: WeaponCaseInsertable
   - type: SolutionContainerVisuals
     maxFillLevels: 4
     fillBaseName: canister-
@@ -140,11 +142,11 @@
   description: A special containment device designed for quickly refueling Echion weapons with an expanded capacity.
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Weapons/Guns/Ammunition/Magazine/Special/echioncanister.rsi
+    sprite: _AS/Objects/Weapons/Guns/Ammunition/Magazine/Special/supercanister.rsi
     layers:
       - state: canister
         map: ["enum.GunVisualLayers.Base"]
-      - state: canister-1-unshaded
+      - state: canister-1
         map: ["enum.SolutionContainerLayers.Fill"]
         shader: unshaded
   - type: Appearance

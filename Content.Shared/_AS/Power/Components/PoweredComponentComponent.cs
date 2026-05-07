@@ -13,13 +13,6 @@ namespace Content.Shared.Power.Components;
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState, Access(typeof(PoweredComponentSystem))]
 public sealed partial class PoweredComponentComponent : Component
 {
-        /// <summary>
-    /// Whether or not the entity has power. We put it here
-    /// so we can network and predict it.
-    /// </summary>
-    [DataField, AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
-    public bool Powered;
-
     /// <summary>
     /// A master control for whether or not the entity is broken and can function.
     /// </summary>

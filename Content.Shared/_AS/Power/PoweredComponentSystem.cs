@@ -18,7 +18,7 @@ SubscribeLocalEvent<PoweredComponentComponent, PowerChangedEvent>(OnPowerChanged
 }
     private void OnPowerChanged(Entity<PoweredComponentComponent> ent, ref PowerChangedEvent args)
     {
-        if (ent.Comp.Powered && !ent.Comp.Broken)
+        if (args.Powered && !ent.Comp.Broken)
         {
             var target = ent.Comp.Parent ? Transform(ent).ParentUid : ent.Owner;
 
