@@ -203,7 +203,7 @@
 
 - type: entity
   id: ASMagazineBRTopMountedRifle30Empty
-  name: marksman magazine (.30 rifle, any)
+  name: top mounted rifle magazine (.30 rifle, any)
   parent: ASBaseMagazineBRTopMountedRifle30
   suffix: empty
   components:
@@ -212,7 +212,7 @@
 
 - type: entity
   id: ASMagazineBRTopMountedRifle30
-  name: marksman magazine (.30 rifle)
+  name: top mounted rifle magazine (.30 rifle)
   parent: ASBaseMagazineBRTopMountedRifle30
   components:
   - type: BallisticAmmoProvider

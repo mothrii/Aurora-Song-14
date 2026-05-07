@@ -19,6 +19,7 @@
     sprintModifier: 0.6
   - type: GunRequiresWield
   - type: Gun
+    examineCaliber: gun-examine-caliber-leviathan
     fireRate: 0.5
     soundGunshot:
       path: /Audio/_Impstation/Weapons/Guns/Gunshots/leviathan.ogg
@@ -58,6 +59,7 @@
         map: ["enum.GunVisualLayers.Base"]
   - type: Item
     size: Normal
+  - type: WeaponCaseInsertable
   - type: SpawnItemsOnUse
     items:
       - id: WeaponLauncherBazooka

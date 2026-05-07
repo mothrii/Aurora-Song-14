@@ -19,6 +19,11 @@
     slots:
       - suitStorage
       - Belt
+  - type: Gun
+    minAngle: 3
+    maxAngle: 10
+    angleIncrease: 2
+    angleDecay: 1
   - type: Appearance
   - type: Item
     sprite: _Impstation/Objects/Weapons/Guns/FuelGuns/adder.rsi
