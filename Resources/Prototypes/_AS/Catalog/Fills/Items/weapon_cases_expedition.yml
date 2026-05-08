@@ -227,7 +227,7 @@
           amount: 4
 
 - type: entity
-  parent: WeaponCaseLong
+  parent: WeaponCaseHeavy
   id: WeaponCaseGlykonExpeditionT5
   suffix: Dungeon, Glykon
   categories: [ HideSpawnMenu ]
@@ -242,7 +242,7 @@
           amount: 4
 
 - type: entity
-  parent: WeaponCaseLong
+  parent: WeaponCaseHeavy
   id: WeaponCaseLeviathanExpeditionT6
   suffix: Dungeon, Leviathan
   categories: [ HideSpawnMenu ]

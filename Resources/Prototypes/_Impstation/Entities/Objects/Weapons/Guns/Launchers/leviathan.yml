@@ -50,7 +50,6 @@
   parent: [ BaseItem, BaseC3SyndicateContraband ]
   id: LeviathanTCBeacon
   description: an advanced beacon based on telecrystal technology capable of teleporting in a single large item. But what...?
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Impstation/Objects/Weapons/Guns/Launchers/leviathan.rsi

@@ -96,16 +96,3 @@
     Telecrystal: 20
   categories:
   - UplinkWeaponry
-
-- type: listing
-  id: uplinkLeviathan
-  name: uplink-leviathan-name
-  description: uplink-leviathan-desc
-  productEntity: WeaponLauncherBazooka
-  discountCategory: veryRareDiscounts
-  discountDownTo:
-    Telecrystal: 17
-  cost:
-    Telecrystal: 20
-  categories:
-  - UplinkWeaponry
