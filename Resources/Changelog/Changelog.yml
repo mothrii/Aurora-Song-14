@@ -4996,3 +4996,12 @@ Entries:
   id: 9462
   time: '2026-05-09T23:21:52.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1040
+- author: GreyScaleHarlequin
+  changes:
+    - type: Tweak
+      message: >-
+        Changed chat sanitization to allow manually typed stutters, precede or
+        chase a word with a hyphen to cancel filtering on it.
+  id: 9463
+  time: '2026-05-10T16:19:58.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1045
