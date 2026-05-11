@@ -1,0 +1,20 @@
+﻿
+- type: vendingMachineInventory
+  id: ASNanoTrasenOfficerVend
+  startingInventory:
+    BlueShieldShield: 2
+    ASWeaponPistolBRDIP15BSOExpedition: 2
+    MagazineBRDIP15: 2
+    MagazineBRDIP15Practice: 2
+    MagazineBRDIP15Rubber: 2
+    ClothingBlueshieldArmoredKimono: 1
+    ClothingBlueshieldArmoredVest: 1
+    ClothingBlueshieldArmoredMarine: 1
+    ClothingBlueshieldArmoredCoat: 1
+    ClothingBlueshieldArmoredCowboyJacket: 1
+    ClothingBlueshieldArmoredJacket: 1
+    ClothingBlueshieldArmourVest: 1
+  emaggedInventory:
+    MagazineBRDIP15Uranium: 2
+    MagazineBRDIP15Incendiary: 2
+

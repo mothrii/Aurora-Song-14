@@ -7,6 +7,13 @@
 
 - type: entity
   parent:
+  - BaseExpeditionWeaponTier2
+  - ASWeaponPistolBRDIP15BSO
+  categories: [ HideSpawnMenu ]
+  id: ASWeaponPistolBRDIP15BSOExpedition
+
+- type: entity
+  parent:
   - BaseExpeditionWeaponTier3
   - ASWeaponKasyreLasRifle
   categories: [ HideSpawnMenu ]

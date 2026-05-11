@@ -27,6 +27,8 @@
     damageCoefficient: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.8
+  - type: StaticPrice
+    price: 350
 
 - type: entity
   parent: ClothingBlueshieldArmourVest
@@ -47,6 +49,8 @@
     sprite: _Goobstation/Clothing/OuterClothing/Armor/blueshield_jacket.rsi
   - type: Item
     size: Normal
+  - type: StaticPrice
+    price: 250
 
 - type: entity
   parent: ClothingBlueshieldArmourVest
@@ -67,6 +71,8 @@
     sprite: _Goobstation/Clothing/OuterClothing/Armor/blueshield_cowboy_jacket.rsi
   - type: Item
     size: Normal
+  - type: StaticPrice
+    price: 400
 
 - type: entity
   parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, ClothingOuterStorageFoldableBase, BaseC2ContrabandUnredeemable] #Aurora's Song | change to C2U contraband
@@ -92,6 +98,8 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
+  - type: StaticPrice
+    price: 300
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingBlueshieldArmoredCoat]
@@ -118,6 +126,8 @@
     sprite: _Goobstation/Clothing/OuterClothing/Armor/blueshield_marine.rsi
   - type: Item
     size: Normal
+  - type: StaticPrice
+    price: 475
 
 - type: entity
   parent: ClothingBlueshieldArmourVest
@@ -151,3 +161,5 @@
     sprite: _Goobstation/Clothing/OuterClothing/Armor/blueshield_kimono.rsi
   - type: Item
     size: Normal
+  - type: StaticPrice
+    price: 350

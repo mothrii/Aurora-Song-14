@@ -47,6 +47,8 @@
     steps: 12
     zeroVisible: false
   - type: Appearance
+  - type: StaticPrice
+    price: 200
 
 - type: entity
   id: MagazineBRDIP15Practice
@@ -66,6 +68,8 @@
     steps: 12
     zeroVisible: false
   - type: Appearance
+  - type: StaticPrice
+    price: 150
 
 - type: entity
   id: MagazineBRDIP15Rubber
@@ -85,6 +89,8 @@
     steps: 12
     zeroVisible: false
   - type: Appearance
+  - type: StaticPrice
+    price: 150
 
 - type: entity
   id: MagazineBRDIP15Incendiary
@@ -104,6 +110,8 @@
     steps: 12
     zeroVisible: false
   - type: Appearance
+  - type: StaticPrice
+    price: 1000
 
 - type: entity
   id: MagazineBRDIP15Uranium
@@ -123,6 +131,8 @@
     steps: 12
     zeroVisible: false
   - type: Appearance
+  - type: StaticPrice
+    price: 1500
 
 #- type: entity #Aurora's Song | We don't have Shrapnel rounds, not sure if we ever will
 #  id: MagazineBRDIP15Shrapnel
@@ -144,3 +154,5 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
+  - type: StaticPrice
+    price: 100

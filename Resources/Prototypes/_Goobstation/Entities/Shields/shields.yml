@@ -102,8 +102,6 @@
     - type: Appearance
     - type: Damageable
       damageContainer: Shield
-    - type: StaticPrice
-      price: 350
     - type: Battery
       maxCharge: 180
       startingCharge: 180
@@ -126,3 +124,5 @@
             - Stunbaton
       smartEquipSelfIfEmpty: true
     #- type: EmpImmune # The battery aspect is, as far as I know, used as an easily healable way to monitor the shields health, but if energy shields do not get emped, these should not either.
+    - type: StaticPrice #Aurora's Song | Give these things a larger value for the vend to grab
+      price: 1000

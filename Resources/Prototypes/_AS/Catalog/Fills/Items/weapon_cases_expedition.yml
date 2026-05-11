@@ -17,6 +17,21 @@
 
 - type: entity
   parent: WeaponCaseShort
+  id: WeaponCaseBRDPIBSOExpedition
+  suffix: Dungeon, BRDPI 15
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ASWeaponPistolBRDIP15BSOExpedition
+          amount: 1
+        - id: MagazineBRDIP15
+          amount: 2
+
+- type: entity
+  parent: WeaponCaseShort
   id: WeaponCaseInspectorExpedition
   suffix: Dungeon, Inspector
   categories: [ HideSpawnMenu ]

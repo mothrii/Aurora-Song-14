@@ -241,3 +241,30 @@
     pack: ASPTechSLEInventory
   - type: AccessReader
     access: [["HeadOfSecurity"]]
+
+# NanoTrasen CommandVend
+- type: entity
+  parent: [BaseStructureDisableAnchoring, VendingMachine]
+  id: ASVendingMachineNanoVend
+  name: NT Officer Vend
+  description: A vending machine for authorised NanoTrasen agents to acquire high tech equipment.
+  components:
+  - type: VendingMachine
+    pack: ASNanoTrasenOfficerVend
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: DatasetVocalizer
+    dataset: NfsdDrobeAds # todo: Make vocalizers for NanoTrasen CommandVend
+  - type: Sprite
+    sprite: _AS/Structures/Machines/VendingMachines/nanovend.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["ASNanoTrasenCommand"]]
