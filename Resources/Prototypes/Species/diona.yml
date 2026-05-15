@@ -43,6 +43,12 @@
       points: 2 #imp
       required: false
     HeadSide:
+      points: 1
+      required: false
+    UndergarmentTop:
+      points: 1
+      required: false
+    UndergarmentBottom:
       points: 2 #imp
       required: false
     Chest:
