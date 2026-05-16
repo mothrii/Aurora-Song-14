@@ -73,45 +73,6 @@ marking-VitiligoLegL = Vitiligo (Left)
 marking-VitiligoChestF = Vitiligo Spread
 marking-VitiligoChestSpots = Vitiligo Spots
 
-# moths
-marking-MothTrueButterfly = Wings (Rainbow)
-marking-MothTrueButterfly-mothtruebutterfly1 = Stripes
-marking-MothTrueButterfly-mothtruebutterfly2 = Dots
-marking-MothTrueButterfly-mothtruebutterfly3 = Wings
-marking-MothGlowAntenna = Antennae (Glowing)
-marking-MothGlowAntenna-mothglowantenna = Antennae (Glowing)
-marking-MothFireflyOverlay = Firefly Overlay
-marking-MothFireflyOverlay-mothfirefly1 = Firefly Overlay
-marking-MothFirefly = Wings (Firefly)
-marking-MothFirefly-mothfirefly2 = Firefly Wings
-marking-MothBee = Wings (Bumblebee)
-# Frontier: stripes < Stripes
-marking-MothBee-bee1 = Outer Stripes
-marking-MothBee-bee2 = Wings
-# Frontier: stripe < Stripe
-marking-MothBee-bee3 = Inner Stripe
-marking-MothBeetleTail = Beetle Wings (Junebug)
-marking-MothBeetleTail-beetle1 = Outline
-marking-MothBeetleTail-beetle2 = Wings
-marking-MothBeetleTail-beetle3 = Shine
-marking-MothBeetleHorn1 = Beetle Horn (Pronged)
-marking-MothBeetleHorn1-mothbeetlehorn1 = Beetle Horn (Pronged)
-marking-MothBeetleHorn2 = Beetle Horn (Lance)
-marking-MothBeetleHorn2-mothbeetlehorn2 = Beetle Horn (Lance)
-marking-MothBiggerEyes = Bigger Eyes
-marking-MothBiggerEyes-mothbiggereyes = Bigger Eyes
-marking-MothSnoth = Wings (Snoth)
-marking-MothSnoth-snoth1 = Wings
-marking-MothSnoth-snoth2 = Shell
-marking-MothGlasswing = Wings (Glasswing)
-marking-MothGlasswing-glasswing1 = Outer
-marking-MothGlasswing-glasswing2 = Inner
-marking-MothGlasswing-glasswing3 = Stripe
-marking-MothRhinoBeetle = Beetle Wings (Rhino)
-marking-MothRhinoBeetle-rhinobeetle1 = Outline
-marking-MothRhinoBeetle-rhinobeetle2 = Shine
-marking-MothRhinoBeetle-rhinobeetle3 = Wings
-
 # slimes
 marking-fizz = Fizz
 marking-fizz-fizz = Fizz

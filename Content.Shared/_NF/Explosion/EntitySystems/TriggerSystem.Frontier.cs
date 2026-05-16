@@ -20,7 +20,6 @@ public sealed partial class TriggerSystem
     [Dependency] private readonly GibbingSystem _gibbing = default!;
     [Dependency] private readonly SharedStationSystem _station = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
-    [Dependency] private readonly SharedBodySystem _body = default!;
 
 
     private void NFInitialize()

@@ -1,3 +1,32 @@
+# Hair
+
+- type: marking
+  id: SpiderHair1
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Arachnid ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Arachnid/hair.rsi
+    state: fluffy
+
+- type: marking
+  id: SpiderHair2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Arachnid ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Arachnid/hair.rsi
+    state: longhorned
+
+- type: marking
+  id: SpiderHair3
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Arachnid ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Arachnid/hair.rsi
+    state: wisps
+
 # Eyes
 - type: marking
   id: ArachnidEyesDefault
@@ -141,16 +170,54 @@
   - sprite: _Impstation/Mobs/Customization/Arachnid/head.rsi
     state: head_segments2
 
-# Chelicerae
+# HeadSide
+
 - type: marking
   id: ArachnidCheliceraeSmall
   bodyPart: HeadSide
   markingCategory: HeadSide
-  speciesRestriction: [Arachnid]
-  forcedColoring: false
+  speciesRestriction: [ Arachnid ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Arachnid/chelicerae.rsi
+  - sprite: _Impstation/Mobs/Customization/Arachnid/headside.rsi
     state: small
+
+- type: marking
+  id: ArachnidCheliceraeBig
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [ Arachnid ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Arachnid/headside.rsi
+    state: big
+
+- type: marking
+  id: ArachnidCheliceraeSolifugid
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [ Arachnid ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Arachnid/headside.rsi
+    state: solifugid
+
+- type: marking
+  id: ArachnidCheliceraeLongjaw
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [ Arachnid ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Arachnid/headside.rsi
+    state: longjaw
+
+# Snout
+
+- type: marking
+  id: WhipSpiderMouth
+  bodyPart: Snout
+  markingCategory: HeadSide
+  speciesRestriction: [ Arachnid ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Arachnid/snout.rsi
+    state: whipspidermouth
 
 # Chest
 - type: marking
@@ -161,9 +228,9 @@
   forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/Arachnid/chest.rsi
-    state: chest_segments1
+    state: segments1
   - sprite: _Impstation/Mobs/Customization/Arachnid/chest.rsi
-    state: chest_segments2
+    state: segments2
 
 - type: marking
   id: SpiderMirror
@@ -176,6 +243,15 @@
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: spidermirror
     shader: unshaded
+
+- type: marking
+  id: ArachnidOverlayFluffy
+  bodyPart: Chest
+  markingCategory: Overlay
+  speciesRestriction: [ Arachnid ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Arachnid/chest.rsi
+    state: fluffy
 
 # Arms
 - type: marking
@@ -234,9 +310,9 @@
   markingCategory: Tail
   speciesRestriction: [ Arachnid ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+  - sprite: _Impstation/Mobs/Customization/Arachnid/tail.rsi
     state: abdomenbasic1
-  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+  - sprite: _Impstation/Mobs/Customization/Arachnid/tail.rsi
     state: abdomenbasic2
 
 - type: marking
@@ -245,9 +321,9 @@
   markingCategory: Tail
   speciesRestriction: [ Arachnid ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+  - sprite: _Impstation/Mobs/Customization/Arachnid/tail.rsi
     state: widow1
-  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+  - sprite: _Impstation/Mobs/Customization/Arachnid/tail.rsi
     state: widow2
 
 - type: marking
@@ -256,15 +332,14 @@
   markingCategory: Tail
   speciesRestriction: [ Arachnid ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+  - sprite: _Impstation/Mobs/Customization/Arachnid/tail.rsi
     state: creepy
 
-# Overlay
 - type: marking
-  id: ArachnidOverlayFluffy
-  bodyPart: Chest
-  markingCategory: Overlay
-  speciesRestriction: [Arachnid]
+  id: AppendagesScorpion
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [ Arachnid ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Arachnid/overlay.rsi
-    state: fluffy
+  - sprite: _Impstation/Mobs/Customization/Arachnid/tail.rsi
+    state: scorpion

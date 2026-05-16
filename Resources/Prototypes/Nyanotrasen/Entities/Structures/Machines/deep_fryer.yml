@@ -57,7 +57,7 @@
     whitelist:
       components:
       # It's what meat is.
-      - BodyPart
+      - Organ # Aurora's Song - BodyPart>Organ
       # Some clothes, shoes, uniforms.
       - Butcherable
       # It's already food.

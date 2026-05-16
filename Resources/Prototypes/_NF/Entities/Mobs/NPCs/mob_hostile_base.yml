@@ -437,7 +437,8 @@
   - MobBloodstream
   - MobFlammable
   - MobEnhancedMovement
-  - BaseMobSpecies
+  - AppearanceHuman # Aurora's Song
+  - BaseSpeciesMob # Aurora's Song - BaseMobSpecies>BaseSpeciesMob
   - MobHumanoidHostileAIComplex
   - BaseC3MobHuman
   - NFBaseMobRestrictions
