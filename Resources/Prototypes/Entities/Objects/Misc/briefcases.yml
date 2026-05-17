@@ -34,7 +34,7 @@
     size: Huge
 
 - type: entity
-  parent: [BriefcaseBase, BaseSyndicateContraband]
+  parent: [BriefcaseBase, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
   id: BriefcaseWeapon
   name: secure weapon case
   suffix: Gun, Empty

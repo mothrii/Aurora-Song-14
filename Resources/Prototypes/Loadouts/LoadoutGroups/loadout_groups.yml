@@ -1338,7 +1338,7 @@
   - EmergencyOxygenSecurity
   - LoadoutSpeciesVoxNitrogen
   - EmergencyIPCBox # DeltaV
-  - EmergencyWaterVaporSyndicate # DeltaV
+  - EmergencyWaterVaporSecurity # DeltaV
 
 # Wildcards
 - type: loadoutGroup
