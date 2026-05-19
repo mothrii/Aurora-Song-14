@@ -918,6 +918,19 @@
   - ContractorHandheldCrewMonitor
   - ContractorHypoMini
   - ContractorBible
+  - ContractorHolyTextQuran # Aurora's Song -- More holy books
+  - ContractorHolyTextTanakh # Aurora's Song -- More holy books
+  - ContractorHolyTextHolyScroll # Aurora's Song -- More holy books
+  - ContractorHolyTextHolyTablet # Aurora's Song -- More holy books
+  - ContractorHolyTextGreybible # Aurora's Song -- More holy books
+  - ContractorHolyTextKojiki # Aurora's Song -- More holy books
+  - ContractorHolyTextTaoTeachings # Aurora's Song -- More holy books
+  - ContractorHolyTextPrincipiaDiscordia # Aurora's Song -- More holy books
+  - ContractorHolyTextChaplainsGrimoire # Aurora's Song -- More holy books
+  - ContractorHolyTextUnitologyTome # Aurora's Song -- More holy books
+  - ContractorHolyTextExtremeTeenBible # Aurora's Song -- More holy books
+  - ContractorHolyTextBibble # Aurora's Song -- More holy books
+  - ContractorHolyTextMansus # Aurora's Song -- More holy books
   - ContractorBodycam
 
 - type: loadoutGroup

@@ -122,6 +122,17 @@
     },
     {
       "name": "unitology"
+    },
+        {
+      "name": "codex-horae"
+    },
+    {
+      "name": "codex-horae-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "codex-horae-inhand-right",
+      "directions": 4
     }
   ]
 }
