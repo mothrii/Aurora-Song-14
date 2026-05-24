@@ -2,7 +2,7 @@ using Content.Shared.Humanoid.Prototypes;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
-namespace Content.Server.Humanoid.Components;
+namespace Content.Shared.Humanoid.Components; // Aurora's Song - Move to shared
 
 /// <summary>
 ///     This is added to a marker entity in order to spawn a randomized

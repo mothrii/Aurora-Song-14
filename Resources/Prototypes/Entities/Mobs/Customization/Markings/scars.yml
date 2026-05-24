@@ -52,6 +52,7 @@
   id: ScarSlimeNeck
   bodyPart: Overlay
   groupWhitelist: [Slime]
+  forcedColoring: true # Aurora's Song
   followSkinColor: true
   sprites:
   - sprite: Mobs/Customization/scars.rsi
@@ -85,6 +86,7 @@
   id: ScarSlimeFace1
   bodyPart: Overlay
   groupWhitelist: [Slime] # Aurora's Song - moved slime's marking to overlay
+  forcedColoring: true # Aurora's Song
   followSkinColor: true
   sprites:
   - sprite: Mobs/Customization/scars.rsi
@@ -102,6 +104,7 @@
   id: ScarSlimeFace2
   bodyPart: Overlay
   groupWhitelist: [Slime]
+  forcedColoring: true # Aurora's Song
   followSkinColor: true
   sprites:
   - sprite: Mobs/Customization/scars.rsi

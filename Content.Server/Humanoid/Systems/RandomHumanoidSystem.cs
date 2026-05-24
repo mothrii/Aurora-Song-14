@@ -1,4 +1,4 @@
-using Content.Server.Humanoid.Components;
+using Content.Shared.Humanoid.Components; // Aurora's Song - Move to shared
 using Content.Server.RandomMetadata;
 using Content.Shared.Body;
 using Content.Shared.Humanoid.Prototypes;

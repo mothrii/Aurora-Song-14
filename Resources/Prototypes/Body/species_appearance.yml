@@ -46,6 +46,7 @@
     # Stuff that goes in front of equipment
     - map: [ "enum.HumanoidVisualLayers.SnoutCover" ]
     - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
+    - map: [ "enum.HumanoidVisualLayers.NeckFluff" ] # DEN
     - map: [ "enum.HumanoidVisualLayers.Hair" ]
     - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
     - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
@@ -68,6 +69,11 @@
       sprite: "Effects/creampie.rsi"
       state: "creampie_human"
       visible: false
+
+    # Delta V Begin - Harpies
+    - map: [ "enum.HumanoidVisualLayers.RArmExtension" ]
+    - map: [ "enum.HumanoidVisualLayers.LArmExtension" ]
+    # Delta V End
 
 - type: entity
   id: BaseSpeciesAppearance

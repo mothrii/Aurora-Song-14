@@ -10,7 +10,7 @@
     state: tail
 
 - type: marking
-  id: TajaranTailAnimated # Aurora's Song - Support wagging
+  id: TajaranTailRetroAnimated # Aurora's Song - Support wagging
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [] # Aurora's Song - Hidden because its set by wagging
@@ -30,7 +30,7 @@
     state: tail_rings
 
 - type: marking
-  id: TajaranTailRingsAnimated # Aurora's Song - Support wagging
+  id: TajaranTailRetroRingsAnimated # Aurora's Song - Support wagging
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [] # Aurora's Song - Hidden because its set by wagging
