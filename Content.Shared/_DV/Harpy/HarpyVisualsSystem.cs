@@ -1,8 +1,8 @@
 using Content.Shared.Inventory.Events;
 // using Content.Shared.Tag; // Frontier
 using Content.Shared.Humanoid;
-using Content.Shared._NF.Clothing.Components;
-using Content.Shared.Inventory; // Frontier
+using Content.Shared._NF.Clothing.Components; // Frontier
+using Content.Shared.Inventory; // Aurora's Song
 
 namespace Content.Shared._DV.Harpy;
 
@@ -26,8 +26,8 @@ public sealed class HarpyVisualsSystem : EntitySystem
     {
         if (args.Slot == "outerClothing" && HasComp<HarpyHideWingsComponent>(args.Equipment)) // Frontier: Swap tag to comp
         {
-            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.RArmExtension, false, SlotFlags.OUTERCLOTHING); // Frontier: RArm<RArmExtension
-            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.Tail, false, SlotFlags.OUTERCLOTHING);
+            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.RArmExtension, false, SlotFlags.OUTERCLOTHING); // Frontier: RArm<RArmExtension // Aurora's Song
+            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.Tail, false, SlotFlags.OUTERCLOTHING); // Aurora's Song
         }
     }
 
@@ -35,8 +35,8 @@ public sealed class HarpyVisualsSystem : EntitySystem
     {
         if (args.Slot == "outerClothing" && HasComp<HarpyHideWingsComponent>(args.Equipment)) // Frontier: Swap tag to comp
         {
-            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.RArmExtension, true, SlotFlags.OUTERCLOTHING); // Frontier: RArm<RArmExtension
-            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.Tail, true, SlotFlags.OUTERCLOTHING);
+            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.RArmExtension, true, SlotFlags.OUTERCLOTHING); // Frontier: RArm<RArmExtension // Aurora's Song
+            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.Tail, true, SlotFlags.OUTERCLOTHING); // Aurora's Song
         }
     }
 }
