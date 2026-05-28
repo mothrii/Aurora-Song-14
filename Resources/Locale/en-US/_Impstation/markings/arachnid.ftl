@@ -18,6 +18,9 @@ marking-ArachnidHeadSegments-segments2 = Stripe
 
 # Snout
 
+marking-WhipSpiderMouth = Chelicerae (Whip)
+marking-WhipSpiderMouth-whipspidermouth = Chelicerae
+
 # Eyes
 
 marking-ArachnidEyesDefault = Eyes
@@ -84,6 +87,30 @@ marking-ArachnidLLegSegments-segments2 = Shin
 
 # UndergarmentTop
 
+marking-UndergarmentTopBinderA = Binder
+marking-UndergarmentTopBinderA-binder = Binder
+
+marking-UndergarmentTopTanktopA = Tanktop
+marking-UndergarmentTopTanktopA-tanktop = Tanktop
+
+marking-UndershirtBraSportsA = Bra (Sports)
+marking-UndershirtBraSportsA-sports = Bra
+
+marking-UndershirtBraStraplessA = Bra (Strapless)
+marking-UndershirtBraStraplessA-strapless = Bra
+
+marking-UndershirtDefaultA = Undershirt
+marking-UndershirtDefaultA-undershirt = Undershirt
+
+marking-UndershirtGrossSleevelessA = Tanktop (Gross)
+marking-UndershirtGrossSleevelessA-grosssleeveless = Tanktop
+
+marking-UndershirtNanotrasenA = Undershirt (Nanotrasen)
+marking-UndershirtNanotrasenA-nanotrasen = Undershirt
+
+marking-UndershirtRolledA = Undershirt (Cropped)
+marking-UndershirtRolledA-rolledundershirt = Undershirt
+
 # LFoot
 
 # RFoot
@@ -97,11 +124,19 @@ marking-ArachnidLLegSegments-segments2 = Shin
 # Hair
 
 marking-SpiderHair1 = Fluffy
+marking-SpiderHair2 = Long Horned
+marking-SpiderHair3 = Wisps
 
 # HeadSide
 
 marking-ArachnidCheliceraeSmall = Chelicerae (Small)
 marking-ArachnidCheliceraeSmall-small = Chelicerae
+marking-ArachnidCheliceraeBig = Chelicerae (Big)
+marking-ArachnidCheliceraeBig-big = Chelicerae
+marking-ArachnidCheliceraeSolifugid = Chelicerae (Solifugid)
+marking-ArachnidCheliceraeSolifugid-solifugid = Chelicerae
+marking-ArachnidCheliceraeLongjaw = Chelicerae (Longjaw)
+marking-ArachnidCheliceraeLongjaw-longjaw = Chelicerae
 
 # HeadTop
 
@@ -117,5 +152,8 @@ marking-AbdomenWidow-widow2 = Marking
 
 marking-CreepyArms = Creepy Arms
 marking-CreepyArms-creepy = Creepy Arms
+
+marking-AppendagesScorpion = Appendages (Scorpion)
+marking-AppendagesScorpion-scorpion = Legs and Pincers
 
 # RArmExtension

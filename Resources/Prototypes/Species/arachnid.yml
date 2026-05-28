@@ -6,7 +6,7 @@
   sprites: MobArachnidSprites
   defaultSkinTone: "#385878"
   markingLimits: MobArachnidMarkingLimits
-  dollPrototype: MobArachnidDummy
+  dollPrototype: AppearanceArachnid
   skinColoration: HumanAnimal # Aurora's Song - Replaced with HumanAnimal
   maleFirstNames: NamesArachnidFirst
   femaleFirstNames: NamesArachnidFirst
@@ -19,6 +19,7 @@
   sprites:
     Head: MobArachnidHead
     Snout: MobHumanoidAnyMarking
+    Hair: MobHumanoidAnyMarking # imp, arachnid hair arachnid hair!
     UndergarmentTop: MobHumanoidAnyMarking
     UndergarmentBottom: MobHumanoidAnyMarking
     Chest: MobArachnidTorso
@@ -50,7 +51,7 @@
       required: true
       defaultMarkings: [ ArachnidEyesDefault ]
     Hair:
-      points: 0
+      points: 1 # imp 0<1
       required: false
     FacialHair:
       points: 0

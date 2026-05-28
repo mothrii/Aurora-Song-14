@@ -191,7 +191,7 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: ASWeaponShotgunHushpup
+        - id: ASWeaponShotgunHushpupExpedition
           amount: 1
         - id: NFAmmunitionBoxShellShotgunBuckshot
           amount: 2

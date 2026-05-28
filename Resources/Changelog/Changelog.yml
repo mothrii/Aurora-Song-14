@@ -4939,3 +4939,69 @@ Entries:
   id: 9455
   time: '2026-05-05T11:41:42.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1024
+- author: assignedgod
+  changes:
+    - type: Fix
+      message: Fixed consent toggles letting no aphro chems fire at all
+  id: 9456
+  time: '2026-05-06T04:42:57.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1028
+- author: Phoenix51505
+  changes:
+    - type: Add
+      message: Added a toggle to pinpointers to extend their range brackets by 128-256x
+  id: 9457
+  time: '2026-05-06T04:52:05.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1029
+- author: portfiend
+  changes:
+    - type: Fix
+      message: You can no longer eat entire deep fryers.
+    - type: Fix
+      message: >-
+        Or kegs. Or casks. Or spray bottles. Or squeeze bottles. Or condiment
+        bottles. Or amphorae. Or jerry cans. Or the janicart
+  id: 9458
+  time: '2026-05-08T12:50:25.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1035
+- author: portfiend
+  changes:
+    - type: Tweak
+      message: >-
+        Bees / honeycomb now have a distinct sprite when they're ready to
+        harvest. Soil botanists, rejoice!
+  id: 9459
+  time: '2026-05-08T12:51:25.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1032
+- author: Zenixic
+  changes:
+    - type: Fix
+      message: Fixed command access configurators not configuring accesses.
+  id: 9460
+  time: '2026-05-08T12:54:46.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1031
+- author: Karlm4x
+  changes:
+    - type: Tweak
+      message: >-
+        Reduced the reflect chance of Hypereuctatic Blade. You gotta actually
+        face the problems head on now.
+  id: 9461
+  time: '2026-05-08T12:56:08.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/985
+- author: TheLuggage05
+  changes:
+    - type: Fix
+      message: The Hushpup should be able to be registered or sold now.
+  id: 9462
+  time: '2026-05-09T23:21:52.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1040
+- author: GreyScaleHarlequin
+  changes:
+    - type: Tweak
+      message: >-
+        Changed chat sanitization to allow manually typed stutters, precede or
+        chase a word with a hyphen to cancel filtering on it.
+  id: 9463
+  time: '2026-05-10T16:19:58.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1045
