@@ -28,37 +28,41 @@
       required: true
       default: [ VulpTailVulp ]
     enum.HumanoidVisualLayers.LArm:
-      limit: 2
+      limit: 8 # Aurora 2<8
       required: false
     enum.HumanoidVisualLayers.RArm:
-      limit: 2
+      limit: 8 # Aurora 2<8
       required: false
     enum.HumanoidVisualLayers.LHand:
-      limit: 2
+      limit: 8 # Aurora 2<8
       required: false
     enum.HumanoidVisualLayers.RHand:
-      limit: 2
+      limit: 8 # Aurora 2<8
       required: false
     enum.HumanoidVisualLayers.LLeg:
-      limit: 2
+      limit: 8 # Aurora 2<8
       required: false
     enum.HumanoidVisualLayers.RLeg:
-      limit: 2
+      limit: 8 # Aurora 2<8
       required: false
     enum.HumanoidVisualLayers.LFoot:
-      limit: 2
+      limit: 8 # Aurora 2<8
       required: false
     enum.HumanoidVisualLayers.RFoot:
-      limit: 2
+      limit: 8 # Aurora 2<8
       required: false
-    enum.HumanoidVisualLayers.UndergarmentTop:
-      limit: 1
+    enum.HumanoidVisualLayers.Chest: # Aurora's Song - matching human values
+      points: 2
       required: false
-      nudityDefault: [ UndergarmentTopTanktopVulpkanin ]
-    enum.HumanoidVisualLayers.UndergarmentBottom:
-      limit: 1
-      required: false
-      nudityDefault: [ UndergarmentBottomBoxersVulpkanin ]
+# Aurora's Song - Use human undergarments
+#    enum.HumanoidVisualLayers.UndergarmentTop:
+#      limit: 1
+#      required: false
+#      nudityDefault: [ UndergarmentTopTanktopVulpkanin ]
+#    enum.HumanoidVisualLayers.UndergarmentBottom:
+#      limit: 1
+#      required: false
+#      nudityDefault: [ UndergarmentBottomBoxersVulpkanin ]
 
 - type: entity
   parent: BaseSpeciesAppearance
@@ -78,7 +82,7 @@
       FootLeft: OrganVulpkaninFootLeft
       FootRight: OrganVulpkaninFootRight
       Brain: OrganVulpkaninBrain
-      Eyes: OrganVulpkaninEyes
+      Eyes: OrganHumanEyes # Aurora's Song - Upstream appearance
       Tongue: OrganVulpkaninTongue
       Appendix: OrganVulpkaninAppendix
       Ears: OrganVulpkaninEars
@@ -91,55 +95,7 @@
     species: Vulpkanin
   - type: Inventory
     speciesId: vulpkanin
-#    displacements: # Aurora's Song - Disable displacements fully
-    # begin starcup: use delta-v sprites
-    #   jumpsuit:
-    #     sizeMaps:
-    #       32:
-    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
-    #         state: jumpsuit
-    #   back:
-    #     sizeMaps:
-    #       32:
-    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
-    #         state: back
-    #   outerClothing:
-    #     sizeMaps:
-    #       32:
-    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
-    #         state: outerwear
-    #   gloves:
-    #     sizeMaps:
-    #       32:
-    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
-    #         state: hand
-    #   shoes:
-    #     sizeMaps:
-    #       32:
-    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
-    #         state: shoes
-# Aurora's Song - Disable displacements fully
-#      head:
-#        sizeMaps:
-#          32:
-#            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-#            state: head
-    #   neck:
-    #     sizeMaps:
-    #       32:
-    #        sprite: Mobs/Species/Vulpkanin/displacement.rsi
-    #         state: neck
-    #   eyes:
-    #     sizeMaps:
-    #       32:
-    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
-    #         state: eyes
-    #   belt:
-    #     sizeMaps:
-    #       32:
-    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
-    #         state: belt
-    # end starcup
+    # Aurora's Song - Remove displacements entirely
 
 - type: entity
   parent:
@@ -291,9 +247,10 @@
   parent: [ OrganBaseBrain, OrganSpriteHumanInternal, OrganVulpkaninInternal ]
   id: OrganVulpkaninBrain
 
-- type: entity
-  parent: [ OrganVulpkaninVisual, OrganBaseEyes, OrganVulpkaninInternal ]
-  id: OrganVulpkaninEyes
+# Aurora's Song - Use human eyes
+# - type: entity
+#   parent: [ OrganVulpkaninVisual, OrganBaseEyes, OrganVulpkaninInternal ]
+#   id: OrganVulpkaninEyes
 
 - type: entity
   parent: [ OrganBaseTongue, OrganVulpkaninInternal ]
