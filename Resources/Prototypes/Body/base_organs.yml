@@ -125,7 +125,7 @@
     state: r_foot
 
 - type: entity
-  parent: OrganBase
+  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
   id: OrganBaseBrain
   name: brain
   abstract: true
@@ -144,6 +144,15 @@
   - type: InputMover
   - type: Examiner
   - type: BlockMovement
+# Aurora's Song - edible, grindable organs
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: GreyMatter
+          Quantity: 5
+# Aurora's Song edit ends
   - type: BadFood
   - type: FoodSequenceElement
     entries:
@@ -151,7 +160,7 @@
       Taco: Brain
 
 - type: entity
-  parent: OrganBase
+  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
   id: OrganBaseEyes
   name: eyes
   abstract: true
@@ -165,7 +174,7 @@
     - state: eyeball-r
 
 - type: entity
-  parent: OrganBase
+  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
   id: OrganBaseTongue
   name: tongue
   abstract: true
@@ -178,7 +187,7 @@
     - state: tongue
 
 - type: entity
-  parent: OrganBase
+  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
   id: OrganBaseAppendix
   name: appendix
   abstract: true
@@ -191,7 +200,7 @@
     - state: appendix
 
 - type: entity
-  parent: OrganBase
+  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
   id: OrganBaseEars
   name: ears
   abstract: true
@@ -204,7 +213,7 @@
     - state: ears
 
 - type: entity
-  parent: OrganBase
+  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
   id: OrganBaseLungs
   name: lungs
   abstract: true
@@ -225,6 +234,13 @@
       Lung:
         maxVol: 100.0
         canReact: false
+# Aurora's Song - edible, grindable organs
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+# Aurora's Song edit ends
   - type: Sprite
     layers:
     - state: lung-l
@@ -233,7 +249,7 @@
     heldPrefix: lungs
 
 - type: entity
-  parent: OrganBase
+  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
   id: OrganBaseHeart
   name: heart
   abstract: true
@@ -253,7 +269,7 @@
     - id: Cryogenic # Aurora's Song - Metabolizes cryogenics separately
 
 - type: entity
-  parent: OrganBase
+  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
   id: OrganBaseStomach
   name: stomach
   abstract: true
@@ -266,6 +282,13 @@
     solutions:
       stomach:
         maxVol: 50
+# Aurora's Song - edible, grindable organs
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+# Aurora's Song edit ends
   - type: Metabolizer
     maxReagents: 3
     groups:
@@ -278,7 +301,7 @@
     heldPrefix: stomach
 
 - type: entity
-  parent: OrganBase
+  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
   id: OrganBaseLiver
   name: liver
   abstract: true
@@ -297,7 +320,7 @@
     - id: Alcohol
 
 - type: entity
-  parent: OrganBase
+  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
   id: OrganBaseKidneys
   name: kidneys
   abstract: true

@@ -96,7 +96,7 @@
   id: MobIPC
   name: Urist McPositronic
   description: A positronic brain in a metal body.
-  components:
+  components: # Aurora's Song - Components cleaned up for the nubody changes to silicon_base
   - type: PowerCellSlot
     cellSlotId: cell_slot
     fitsInCharger: true
@@ -146,23 +146,12 @@
       Dead: BorgDead
   - type: TypingIndicator
     proto: robot
-  - type: Destructible
-    thresholds:
-      - trigger:
-          !type:DamageTypeTrigger
-          damageType: Blunt
-          damage: 400
-        behaviors:
-          - !type:GibBehavior { }
   - type: SlowOnDamage
     speedModifierThresholds:
       60: 0.7
       80: 0.5 # DeltaV - was 90
       100: 0.3 # DeltaV - was 120, which is irrelvant?
   - type: SiliconDownOnDead
-  - type: Speech
-  - type: Deathgasp
-    prototype: SiliconDeathgasp
   - type: GuideHelp
     guides:
       - IPC
@@ -187,20 +176,30 @@
   - type: DeadStartupButton
     sound:
       path: /Audio/_EE/Effects/Silicon/startup.ogg
-# Erro de linter
-#   - type: Wires
-#     layoutId: IPC
   - type: EmitBuzzWhileDamaged
-  - type: CanHostGuardian
   - type: WeldingHealable
-  - type: CombatMode # DeltaV - let IPCs disarm
-    canDisarm: true
   - type: SnoutHelmet # DeltaV - IPC Snouts
   #  replacementRace: vulpkanin # Aurora's Song - Refactored helmet component
   - type: Wagging # Aurora's Song - Add wagging
   - type: DamagedSiliconAccent # Aurora's Song - Add silicon accent
     enableChargeCorruption: false
     damageAtMaxCorruption: 200
+  - type: DamageOnHighSpeedImpact
+    damage:
+      types:
+        Blunt: 10
+    soundHit:
+      path: /Audio/Effects/hit_kick.ogg
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      collection: Punch
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 6 # It's tough.
 
 - type: entity
   parent: OrganBase

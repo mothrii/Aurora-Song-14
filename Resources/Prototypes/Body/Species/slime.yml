@@ -60,7 +60,7 @@
   - type: Speech
     speechVerb: Slime
     speechSounds: Slime
-    allowedEmotes: ['Squish']
+    allowedEmotes: ['Squish', 'Bubble', 'Pop'] # Imp: add Bubble, Pop
   - type: TypingIndicator
     proto: slime
   - type: Vocal
@@ -210,6 +210,15 @@
     solutions:
       stomach:
         maxVol: 50.0
+# Aurora's Song - edible, grindable organs
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: GreyMatter
+          Quantity: 5
+# Aurora's Song edit ends
   - type: Stomach
   - type: Metabolizer
     maxReagents: 6

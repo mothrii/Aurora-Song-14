@@ -21,7 +21,7 @@
       - !type:ModifyLungGas
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Vox, Sheleg ] # Aurora's Song - Add sheleg
+          type: [ Vox, Sheleg, Slime ] # Aurora's Song - Add sheleg and slime
           inverted: true
         ratios:
           CarbonDioxide: 1.0
@@ -52,7 +52,7 @@
       - !type:ModifyLungGas
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Vox, Sheleg ] # Aurora's Song - Add sheleg
+          type: [ Vox, Sheleg, Slime ] # Aurora's Song - Add sheleg and slime
           inverted: true
         ratios:
           CarbonDioxide: 1.0

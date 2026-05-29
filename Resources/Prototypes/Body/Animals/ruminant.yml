@@ -13,6 +13,13 @@
     solutions:
       stomach:
         maxVol: 80
+# Aurora's Song - edible, grindable organs
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+# Aurora's Song edit ends
 
 - type: entity
   id: BaseMobRuminant

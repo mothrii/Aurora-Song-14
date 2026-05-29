@@ -127,6 +127,7 @@
       types:
         Piercing: 2
         Slash: 3
+  - type: DogVision # Aurora's Song - Add back missing traits
   - type: Temperature # Same as moth temperatures until below is solved.
     specificHeat: 44
   - type: TemperatureDamage
@@ -154,6 +155,15 @@
 #        pitch: 1.33
 #        volume: -5
 #        variation: 0.05
+  # Frontier: interaction & tall/short traits
+  - type: ShortWhitelist
+    scale: 0.8
+    density: 140
+    pseudoItem: true
+    cosmeticOnly: false
+  - type: TallWhitelist
+    scale: 1.2
+  # End Frontier
 
 - type: entity
   parent: OrganBase

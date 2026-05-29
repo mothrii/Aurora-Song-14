@@ -186,6 +186,13 @@
     solutions:
       stomach:
         maxVol: 30
+# Aurora's Song - edible, grindable organs
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+# Aurora's Song edit ends
   - type: Metabolizer
     updateInterval: 1.5
     groups:

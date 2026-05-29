@@ -981,7 +981,7 @@ public sealed partial class AdminVerbSystem
             Icon = new SpriteSpecifier.Rsi(new("Interface/Actions/voice-mask.rsi"), "icon"),
             Act = () =>
             {
-                EnsureComp<BarkAccentComponent>(args.Target);
+                // EnsureComp<BarkAccentComponent>(args.Target); # Aurora's Song - Disable bark accent
                 EnsureComp<BleatingAccentComponent>(args.Target);
                 EnsureComp<FrenchAccentComponent>(args.Target);
                 EnsureComp<GermanAccentComponent>(args.Target);

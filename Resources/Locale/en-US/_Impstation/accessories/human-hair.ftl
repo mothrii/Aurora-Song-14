@@ -1,6 +1,7 @@
 marking-HumanHairGatheredlow = Gathered Low
 marking-HumanHairFrenchBraid = French Braid
 marking-HumanHairLowpigtails = Low Pigtails
+marking-HumanHairSpikyPonytailLong = Ponytail (Spiky Long)
 marking-HumanHairMessyPonytail = Messy Ponytail
 
 marking-HumanHairEyeBangLong = Eye Bang (Long)
