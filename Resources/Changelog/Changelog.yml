@@ -5098,3 +5098,10 @@ Entries:
   id: 9476
   time: '2026-05-26T06:48:17.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1085
+- author: snezshiba
+  changes:
+    - type: Fix
+      message: Fixed missing species undergarments and duplicate vulp undergarments
+  id: 9477
+  time: '2026-05-26T05:22:54.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1030
