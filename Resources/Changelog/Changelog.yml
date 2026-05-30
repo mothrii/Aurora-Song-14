@@ -5279,3 +5279,10 @@ Entries:
   id: 9499
   time: '2026-05-16T23:35:19.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1054
+- author: WallflowerGhost
+  changes:
+    - type: Add
+      message: Two new hair styles, with mirrored bangs
+  id: 9500
+  time: '2026-05-16T23:31:14.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1051
