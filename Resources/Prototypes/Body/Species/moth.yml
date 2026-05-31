@@ -147,7 +147,7 @@
   - type: Speech
     speechVerb: Moth
     speechSounds: Moth # Frontier: upstream#37297
-    allowedEmotes: ['Chitter', 'Squeak', 'Flap']
+    allowedEmotes: ['Chitter', 'Squeak', 'Flap', "Flutter"] # Aurora's Song - Add fairy flutter
   - type: TypingIndicator
     proto: moth
   - type: Bloodstream

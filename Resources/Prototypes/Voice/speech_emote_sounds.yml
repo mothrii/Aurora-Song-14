@@ -702,6 +702,8 @@
         volume: -6
     Salute:
       collection: Salutes
+    Flutter: # Aurora's Song - Add flutter from fairy
+      path: /Audio/Voice/Moth/moth_flap.ogg
 
 # mobs
 - type: emoteSounds

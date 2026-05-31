@@ -29,7 +29,13 @@
       collection: FairyGasp
     DefaultDeathgasp:
       collection: FairyDeathgasp
+
+- type: emoteSounds
+  id: FairyBodySounds
+  sounds:
     FairyGlimmer:
       collection: FairyGlimmer
-    FairyFlutter:
+    Flutter:
+      collection: FairyFlutter
+    Flap:
       collection: FairyFlutter

@@ -108,7 +108,7 @@
   - type: Speech
     speechSounds: Fairy
     speechVerb: Fairy
-    allowedEmotes: ['FairyFlutter', 'FairyGlimmer']
+    allowedEmotes: ['Flutter', 'FairyGlimmer', "Flap"]
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:
@@ -146,6 +146,8 @@
       Male: FairySpeech
       Female: FairySpeech
       Unsexed: FairySpeech
+  - type: BodyEmotes
+    soundsId: FairyBodyEmotes
   - type: FaxableObject
     insertingState: inserting_mouse
   - type: NpcFactionMember
