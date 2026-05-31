@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Content.Shared._AS.Metabolism; // Aurora's Song
 using Content.Shared.Body.Events;
 using Content.Shared.Body;
 using Content.Shared.Chemistry.Components;
@@ -15,6 +16,7 @@ using Content.Shared.EntityEffects.Effects.Solution;
 using Content.Shared.FixedPoint;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Random.Helpers;
+using Content.Shared.Tag; // Aurora's Song
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
@@ -30,6 +32,7 @@ public sealed class MetabolizerSystem : EntitySystem
     [Dependency] private readonly SharedEntityConditionsSystem _entityConditions = default!;
     [Dependency] private readonly SharedEntityEffectsSystem _entityEffects = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solutionContainerSystem = default!;
+    [Dependency] private readonly TagSystem _tagSystem = default!; // Aurora's Song
 
     private EntityQuery<OrganComponent> _organQuery;
     private EntityQuery<SolutionContainerManagerComponent> _solutionQuery;
@@ -205,9 +208,17 @@ public sealed class MetabolizerSystem : EntitySystem
 
             var actualEntity = ent.Comp2?.Body ?? solutionOwner.Value;
 
+            // Aurora's Song - Check for tag whitelist to skip effects per-tag
+            var isWhitelisted = !TryComp<MetabolizerTagWhitelistComponent>(ent, out var tagWhitelist) || // Missing comp = whitelisted
+                                tagWhitelist.Tags.Overlaps(proto.Tags) && tagWhitelist.Stages.Contains(stage.Id); // Has to match stage to be whitelisted
+
             // do all effects, if conditions apply
             foreach (var effect in entry.Effects)
             {
+                // Aurora's Song - Skip effects if not whitelisted
+                if (!isWhitelisted)
+                    break;
+
                 if (scale < effect.MinScale)
                     continue;
 
@@ -245,7 +256,8 @@ public sealed class MetabolizerSystem : EntitySystem
                 solution.RemoveReagent(reagent, mostToRemove);
 
                 // We have processed a reagant, so count it towards the cap
-                reagents += 1;
+                if (isWhitelisted) // Aurora's Song - We skip adding to the metabolizer count to not drown other functional chems
+                    reagents += 1;
 
                 if (transferSolution is not null && entry.Metabolites is not null)
                 {
