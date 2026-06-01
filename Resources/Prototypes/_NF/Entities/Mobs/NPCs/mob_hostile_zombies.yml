@@ -6,17 +6,16 @@
   components:
   - type: PassiveDamage
     damage:
-      groups:
-        types: # Aurora's Song - Convert from groups to types
-          Blunt: -0.14
-          Slash: -0.13
-          Piercing: -0.13
-          Heat: -0.05
-          Shock: -0.05
-          Cold: -0.05
-          Caustic: -0.05
-          Asphyxiation: -0.5
-          Bloodloss: -0.5
+      types: # Aurora's Song - Convert from groups to types
+        Blunt: -0.14
+        Slash: -0.13
+        Piercing: -0.13
+        Heat: -0.05
+        Shock: -0.05
+        Cold: -0.05
+        Caustic: -0.05
+        Asphyxiation: -0.5
+        Bloodloss: -0.5
 
 - type: entity
   abstract: true

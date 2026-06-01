@@ -223,9 +223,11 @@
             max: 213.0
           damage:
             types:
-             Cellular: -4 # Frontier: -2<-4
-            groups: # Frontier
-                Brute: 1 # Frontier
+              Cellular: -4 # Frontier: -2<-4
+              # Aurora's Song - Convert from groups to types
+              Blunt: 0.33
+              Slash: 0.33
+              Piercing: 0.33
 
 - type: reagent
   id: Dermaline

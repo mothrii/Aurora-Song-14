@@ -44,8 +44,10 @@
           types:
             Poison: -6
             Radiation: -3
-          groups:
-            Brute: 3
+            # Aurora's Song - Convert from groups to types
+            Blunt: 1
+            Slash: 1
+            Piercing: 1
 
 #impstation
 - type: reagent
