@@ -15,10 +15,6 @@
             "directions": 4
         },
         {
-            "name": "head_f",
-            "directions": 4
-        },
-        {
             "name": "head",
             "directions": 4
         },
@@ -52,10 +48,6 @@
         },
         {
             "name": "r_leg",
-            "directions": 4
-        },
-        {
-            "name": "torso_f",
             "directions": 4
         },
         {
