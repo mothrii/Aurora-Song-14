@@ -5374,3 +5374,10 @@ Entries:
   id: 9512
   time: '2026-06-04T21:59:14.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1112
+- author: GreyScaleHarlequin
+  changes:
+    - type: Tweak
+      message: Merc Captain will now check your attitude with a flashbang
+  id: 9513
+  time: '2026-06-04T22:09:28.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1115
