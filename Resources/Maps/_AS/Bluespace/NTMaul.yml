@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 05/09/2026 19:56:04
-  entityCount: 1290
+  time: 06/08/2026 20:26:47
+  entityCount: 1291
 maps: []
 grids:
 - 1
@@ -5967,6 +5967,13 @@ entities:
     components:
     - type: Transform
       pos: 9.5,-12.5
+      parent: 1
+- proto: NanoTrasenBridgeVendUIVSpawner
+  entities:
+  - uid: 1291
+    components:
+    - type: Transform
+      pos: -2.5,23.5
       parent: 1
 - proto: NanoTrasenVendUIVSpawner
   entities:
