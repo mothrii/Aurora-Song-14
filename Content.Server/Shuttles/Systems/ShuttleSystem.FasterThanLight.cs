@@ -39,6 +39,9 @@ namespace Content.Server.Shuttles.Systems;
 public sealed partial class ShuttleSystem
 {
     [Dependency] private readonly SharedPopupSystem _popup = default!; // AS
+
+    [Dependency] private readonly EntityManager _entity = default!;
+
     /*
      * This is a way to move a shuttle from one location to another, via an intermediate map for fanciness.
      */
@@ -284,7 +287,7 @@ public sealed partial class ShuttleSystem
         }
 
         // Mono: Check if the shuttle is in an expedition
-        if (TryComp<TransformComponent>(shuttleUid, out var xform) &&
+        if (_entity.TryGetComponent<TransformComponent>(shuttleUid, out var xform) &&
             xform.MapUid != null &&
             HasComp<SalvageExpeditionComponent>(xform.MapUid))
         {
@@ -824,7 +827,7 @@ public sealed partial class ShuttleSystem
         // Docking FTL
         else if (HasComp<MapGridComponent>(target.EntityId) && !HasComp<MapComponent>(target.EntityId))
         {
-            var config = _dockSystem.GetDockingConfigAt(uid, target.EntityId, target, comp.TargetAngle);
+            var config = _dockSystem.GetDockingConfigAt(uid, target.EntityId, target, comp.TargetAngle, priorityTag: entity.Comp1.PriorityTag); // Aurora's Song: Priority Discrimination
             var mapCoordinates = _transform.ToMapCoordinates(target);
 
             // Couldn't dock somehow so just fallback to regular position FTL.

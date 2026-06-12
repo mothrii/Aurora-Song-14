@@ -34,11 +34,9 @@ public sealed partial class ContrabandTurnInSystem : SharedContrabandTurnInSyste
 {
     [Dependency] private readonly IPrototypeManager _protoMan = default!;
     [Dependency] private readonly AudioSystem _audio = default!; // Aurora
-    [Dependency] private readonly AccessReaderSystem _reader = default!; // Aurora
     [Dependency] private readonly PopupSystem _popup = default!; // Aurora
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly HandsSystem _hands = default!;
-    [Dependency] private readonly InventorySystem _inventory = default!; // Aurora
     [Dependency] private readonly StackSystem _stack = default!;
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
@@ -357,7 +355,7 @@ public sealed partial class ContrabandTurnInSystem : SharedContrabandTurnInSyste
                 }
             }
 
-            Del(oldEnt);
+            QueueDel(oldEnt); // Aurora's Song - Replace Del with QueueDel as a potential fix for registration duplication
             Log.Debug($"{ent.Comp.Faction} registered {oldEnt} into {newEnt}");
         }
 

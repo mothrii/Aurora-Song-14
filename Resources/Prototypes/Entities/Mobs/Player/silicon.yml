@@ -78,6 +78,7 @@
     title: comms-console-announcement-title-station-ai
     color: "#5ed7aa"
   - type: ShowJobIcons
+  - type: ShowCrewIcons
   - type: DamagedSiliconAccent
     startPowerCorruptionAtCharIdx: 4
     maxPowerCorruptionAtCharIdx: 20
@@ -106,6 +107,7 @@
       enum.SiliconLawsUiKey.Key:
         type: SiliconLawBoundUserInterface
   - type: ShowJobIcons
+  - type: ShowCrewIcons
 
 # Ai
 - type: entity
@@ -507,6 +509,7 @@
     - state: ai_camera
       shader: unshaded
       map: ["base"]
+  - type: DeletionCensusExempt # Aurora's Song
 
 # The holographic representation of the AI that is projected from a holopad.
 - type: entity
@@ -649,6 +652,7 @@
       borg_brain:
       - PositronicBrain
       borg_module:
+      - BorgModulePrying
       - BorgModuleTool
       # - BorgModuleFireExtinguisher # Frontier: jetpack is superior
       - BorgModuleJetpack # Frontier
@@ -688,6 +692,7 @@
       borg_brain:
       - PositronicBrain
       borg_module:
+        - BorgModulePrying
         - BorgModuleTool
         # - BorgModuleFireExtinguisher # Frontier: jetpack is superior
         - BorgModuleJetpack # Frontier
@@ -724,6 +729,7 @@
       borg_brain:
       - PositronicBrain
       borg_module:
+      - BorgModulePrying
       - BorgModuleTool
       # - BorgModuleFireExtinguisher # Frontier: jetpack is superior
       - BorgModuleJetpack # Frontier
@@ -762,6 +768,7 @@
       borg_brain:
       - PositronicBrain
       borg_module:
+      - BorgModulePrying
       - BorgModuleTool
       # - BorgModuleFireExtinguisher # Frontier: jetpack is superior
       - BorgModuleJetpack # Frontier
@@ -801,6 +808,7 @@
       borg_brain:
       - PositronicBrain
       borg_module:
+      - BorgModulePrying
       - BorgModuleTool #No fire extinguisher, traversal is better
       - BorgModuleMining
       - BorgModuleTraversal

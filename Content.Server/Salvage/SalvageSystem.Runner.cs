@@ -62,7 +62,7 @@ public sealed partial class SalvageSystem
         }
 
         // TODO: This is terrible but need bluespace harnesses or something.
-        var query = EntityQueryEnumerator<HumanoidAppearanceComponent, MobStateComponent, TransformComponent>();
+        var query = EntityQueryEnumerator<HumanoidProfileComponent, MobStateComponent, TransformComponent>();
 
         while (query.MoveNext(out var uid, out _, out var mobState, out var mobXform))
         {
@@ -453,7 +453,7 @@ public sealed partial class SalvageSystem
 
         var query =
             EntityQueryEnumerator<
-                HumanoidAppearanceComponent,
+                HumanoidProfileComponent, // Aurora's Song
                 MindContainerComponent,
                 MobStateComponent,
                 TransformComponent>();
@@ -624,7 +624,7 @@ public sealed partial class SalvageSystem
 
             Log.Debug($"Strap point found: {strapuid}");
             SafetyWarp(player, xform.Coordinates);
-            _buckle.TryBuckle(strapuid, null, strapuid);
+            _buckle.TryBuckle(player, null, strapuid);
             return;
         }
 

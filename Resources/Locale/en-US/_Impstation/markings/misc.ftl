@@ -73,20 +73,6 @@ marking-VitiligoLegL = Vitiligo (Left)
 marking-VitiligoChestF = Vitiligo Spread
 marking-VitiligoChestSpots = Vitiligo Spots
 
-# slimes
-marking-fizz = Fizz
-marking-fizz-fizz = Fizz
-marking-bubble = Bubbles
-marking-bubble-bubble = Bubbles
-marking-fishbowl = Fishbowl
-marking-fishbowl-fishbowl1 = Fish
-# Frontier: bubbles < Bubbles
-marking-fishbowl-fishbowl2 = Fish Bubbles
-marking-FadingStars = Fading Starlight
-marking-FadingStars-fadingstars1 = Brightest
-marking-FadingStars-fadingstars2 = Middling
-marking-FadingStars-fadingstars3 = Darkest
-
 # vox
 marking-VoxCocktail = Cocktail
 marking-VoxCocktail-voxcocktail1 = Feathers

@@ -334,6 +334,15 @@
   - ContractorClothingWinterCoatMantisMu  # Aurora Song - Mantis drip merge
   - ContractorClothingOuterMoon # Aurora's Song - Chaplain drip
   - ContractorClothingOuterSilent # Aurora's Song - Chaplain drip
+  - ContractorClothingOuterCoatBomberBlack # Aurora's Song - Departmental bombers
+  - ContractorClothingOuterCoatBomberWhite # Aurora's Song - Departmental bombers
+  - ContractorClothingOuterCoatBomberCargo # Aurora's Song - Departmental bombers
+  - ContractorClothingOuterCoatBomberEngineer # Aurora's Song - Departmental bombers
+  - ContractorClothingOuterCoatBomberAtmos # Aurora's Song - Departmental bombers
+  - ContractorClothingOuterCoatBomberAtmosHolo # Aurora's Song - Departmental bombers
+  - ContractorClothingOuterCoatBomberMedical # Aurora's Song - Departmental bombers
+  - ContractorClothingOuterCoatBomberScience # Aurora's Song - Departmental bombers
+  - ContractorClothingOuterCoatBomberSecurity # Aurora's Song - Departmental bombers
   - ContractorClothingOuterHoodieGrey
   - ContractorClothingOuterVestHazard
   - ContractorClothingOuterApron
@@ -846,6 +855,7 @@
   - ContractorFlippoLighterMantis  # Aurora Song - Mantis drip merge
   - ContractorSyringeMantis  # Aurora Song - Mantis drip merge
   - ContractorKnifeRavel  # Aurora Song - Mantis drip merge
+  - ContractorHoloprojectorPrivate # Aurora Song - Consent Projector
   - ContractorCigarCase
   - ContractorHolocigar # Aurora's Song
   - ContractorNFAshtray
@@ -939,6 +949,25 @@
   - ContractorHandheldCrewMonitor
   - ContractorHypoMini
   - ContractorBible
+  - ContractorHolyTextQuran # Aurora's Song -- More holy books
+  - ContractorHolyTextTanakh # Aurora's Song -- More holy books
+  - ContractorHolyTextHolyScroll # Aurora's Song -- More holy books
+  - ContractorHolyTextHolyTablet # Aurora's Song -- More holy books
+  - ContractorHolyTextGreybible # Aurora's Song -- More holy books
+  - ContractorHolyTextKojiki # Aurora's Song -- More holy books
+  - ContractorHolyTextTaoTeachings # Aurora's Song -- More holy books
+  - ContractorHolyTextPrincipiaDiscordia # Aurora's Song -- More holy books
+  - ContractorHolyTextChaplainsGrimoire # Aurora's Song -- More holy books
+  - ContractorHolyTextUnitologyTome # Aurora's Song -- More holy books
+  - ContractorHolyTextExtremeTeenBible # Aurora's Song -- More holy books
+  - ContractorHolyTextBibble # Aurora's Song -- More holy books
+  - ContractorHolyTextMansus # Aurora's Song -- More holy books
+  - ContractorBibleDruid # Aurora's Song -- More holy books
+  - ContractorBibleCommunistManifesto # Aurora's Song -- More holy books
+  - ContractorBibleNarsie # Aurora's Song -- More holy books
+  - ContractorBibleNanoTrasen # Aurora's Song -- More holy books
+  - ContractorBibleHonk # Aurora's Song -- More holy books
+  - ContractorBibleRatvar # Aurora's Song -- More holy books
   - ContractorBodycam
 
 - type: loadoutGroup
