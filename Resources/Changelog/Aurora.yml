@@ -1389,3 +1389,14 @@ Entries:
   id: 9535
   time: '2026-06-14T22:54:44.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1135
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: Slimes now have a few new tail markings, including arachnid arms.
+    - type: Tweak
+      message: >-
+        Slimes using the Large Snake tail marking may need to re-add it to their
+        character.
+  id: 9536
+  time: '2026-06-14T23:30:15.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1124
