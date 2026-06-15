@@ -420,7 +420,7 @@ ent-14DoorShutterRoller = garage shutter
     .desc = A lightweight airtight roller shutter door.
 
 ent-N14DoorGlassStore = store door
-    .desc = It's a glass door found at pre-war stores. Hey, that rhymes!
+    .desc = It's a glass door found at old stores. Hey, that rhymes!
 
 ent-N14DoorGlassStoreDirty = dirty store door
     .desc = It's a glass door used at pre-war stores. It doesn't seem like it's been washed recently.
@@ -435,11 +435,11 @@ ent-14DoorTentClothflap = tent flap
 ent-N14DoorWoodHousePainted = wooden door
     .desc = It's a painted door.
 ent-N14DoorWoodRoom = wooden door
-    .desc = A door used inside pre-war buildigs that section off rooms.
+    .desc = A wooden door used section off rooms.
 ent-N14DoorWoodInterior = wooden door
-    .desc = A door used inside pre-war buildings.
+    .desc = A wooden door.
 ent-N14DoorWoodRoomDamaged = wooden door
-    .desc = A door used inside pre-war houses. Unsuprisingly, it looks like it'll fall apart at any moment.
+    .desc =  A wooden door. It looks like it could fall apart at any moment.
 ent-N14DoorWoodSlanted = wooden door
     .desc = A wooden door.
 ent-N14DoorWoodTall = wooden door
@@ -515,7 +515,7 @@ ent-N14ClosetBaseW = closet
     .desc = a basic closet for storing things.
 
 ent-N14ClosetCabinetWood = cabinet
-    .desc = An old pre-war wooden cabinet.
+    .desc = An old wooden cabinet.
 ent-N14ClosetCabinetWoodRefilling = cabinet
 ent-N14LootClosetCabinetWood = cabinet
 
