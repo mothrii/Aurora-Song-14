@@ -85,7 +85,7 @@
       Appendix: OrganHumanAppendix
       Ears: OrganHumanEars
       Lungs: OrganHarpyLungs
-      Heart: OrganHumanHeart
+      Heart: OrganAnimalHeart # Aurora's Song - Human>Animal
       Stomach: OrganAnimalStomach
       Liver: OrganAnimalLiver
       Kidneys: OrganAnimalKidneys
@@ -250,7 +250,7 @@
   id: OrganHarpyFootRight
 
 - type: entity
-  parent: [ OrganBaseLungs, OrganHumanInternal, OrganHumanMetabolizer ]
+  parent: [ OrganBaseLungs, OrganHarpy, OrganHumanInternal, OrganAnimalMetabolizer ] # Aurora's Song - HumanMetabolizer>AnimalMetabolizer
   id: OrganHarpyLungs
   name: lungs
   description: An advanced pair of avian lungs. Filters oxygen by way of moving air constantly through air sacs.
