@@ -19,6 +19,8 @@
       grid: !type:GridSpawnGroup
         nameLoc:
         - station-event-bluespace-name-UnidentifiedVessel
+        minCount: 2
+        maxCount: 4
         minimumDistance: 1500
         maximumDistance: 2500
         addComponents:
