@@ -1333,3 +1333,164 @@ Entries:
   id: 9529
   time: '2026-06-12T22:00:26.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1061
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: Slimes and Avali can select more Head (Side) markings.
+    - type: Fix
+      message: Slimes and Arachnids now have working eyes
+  id: 9530
+  time: '2026-06-13T03:53:10.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1131
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: cargo computer and bounties should work again
+  id: 9531
+  time: '2026-06-14T02:07:24.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1140
+- author: ZigTag
+  changes:
+    - type: Tweak
+      message: it should now be more obvious whether a bounty is for medical or not
+  id: 9532
+  time: '2026-06-14T21:17:20.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1144
+- author: Zenixic
+  changes:
+    - type: Tweak
+      message: Replaced the Merc hardsuit on the Scorpion with an EVA suit.
+    - type: Tweak
+      message: >-
+        Redid pipes on the Scorpion, added cables under the whole AME, there is
+        now also cables running under the south blast doors.
+  id: 9533
+  time: '2026-06-14T21:46:01.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1138
+- author: salamanderskies
+  changes:
+    - type: Tweak
+      message: >-
+        Most species now have the same marking allotments for their heads,
+        chests, arms, and legs.
+    - type: Tweak
+      message: Slimes and arachnids can select multiple eye markings.
+    - type: Fix
+      message: >-
+        Humans can have tails again, and Vox no longer have access to DO NOT USE
+        markings.
+  id: 9534
+  time: '2026-06-14T22:39:44.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1141
+- author: Toasterblast
+  changes:
+    - type: Tweak
+      message: Medical pouches look slightly nicer now.
+  id: 9535
+  time: '2026-06-14T22:54:44.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1135
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: Slimes now have a few new tail markings, including arachnid arms.
+    - type: Tweak
+      message: >-
+        Slimes using the Large Snake tail marking may need to re-add it to their
+        character.
+  id: 9536
+  time: '2026-06-14T23:30:15.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1124
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: custom money stack splitting (finally)
+  id: 9537
+  time: '2026-06-15T02:10:57.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1143
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: harpies can eat raw meat again
+  id: 9538
+  time: '2026-06-15T02:34:13.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1147
+- author: ZigTag
+  changes:
+    - type: Tweak
+      message: tweak is now a valid PR type, developers rejoice!
+  id: 9539
+  time: '2026-06-15T20:48:15.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1151
+- author: AvianMaiden
+  changes:
+    - type: Fix
+      message: Vox are no longer forced to have feather-colored arms and legs
+    - type: Add
+      message: Vox can now have any color scutes they desire.
+  id: 9540
+  time: '2026-06-17T17:35:52.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1153
+- author: emergency-ketchup
+  changes:
+    - type: Tweak
+      message: Changed up some tiles and mass scanners around LBK.
+    - type: Add
+      message: Cryosleep pod to LBK.
+    - type: Add
+      message: Occupancy lights to LBK shacks.
+  id: 9541
+  time: '2026-06-18T00:41:59.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1148
+- author: KieueCaprie
+  changes:
+    - type: Fix
+      message: >-
+        Mimes rejoice (silently!). Mime PDAs now have cartridge parity with the
+        rest of their PDA brethren.
+  id: 9542
+  time: '2026-06-18T02:33:22.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1150
+- author: GreyScaleHarlequin
+  changes:
+    - type: Fix
+      message: Width slider display in character preview
+  id: 9543
+  time: '2026-06-18T02:46:42.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1160
+- author: BudaLope
+  changes:
+    - type: Fix
+      message: Toggle Internals action on magboots with them now works
+  id: 9544
+  time: '2026-06-18T03:03:22.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1156
+- author: salamanderskies
+  changes:
+    - type: Fix
+      message: Sofa corners and bench middle pieces can no longer be rotated.
+  id: 9545
+  time: '2026-06-18T03:03:40.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1158
+- author: snaviian
+  changes:
+    - type: Add
+      message: >-
+        Added 68 new phrases for the AAC tablet, including location names,
+        common words and punctuation.
+  id: 9546
+  time: '2026-06-18T03:38:32.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1069
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: SLE Filled Locker
+  id: 9547
+  time: '2026-06-18T04:30:07.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1125
+- author: GreyScaleHarlequin
+  changes:
+    - type: Add
+      message: Rechargeable blocking on energy shields is now a thing!
+  id: 9548
+  time: '2026-06-18T04:37:11.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1062

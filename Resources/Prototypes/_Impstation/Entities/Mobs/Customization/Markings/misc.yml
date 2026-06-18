@@ -466,7 +466,7 @@
 
 - type: marking
   id: VoxLegGradientRLeg
-  bodyPart: RFoot
+  bodyPart: RLeg    # Aurora's Song -- RFoot > RLeg
   groupWhitelist: [ Vox ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
@@ -586,7 +586,7 @@
 
 - type: marking
   id: VoxLegsStripesRLeg
-  bodyPart: RFoot
+  bodyPart: RLeg    # Aurora's Song -- RFoot > RLeg
   groupWhitelist: [ Vox ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi

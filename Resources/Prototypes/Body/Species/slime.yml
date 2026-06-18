@@ -2,6 +2,12 @@
   parent: Undergarments
   id: Slime
   limits:
+    # Aurora's Song Start
+    enum.HumanoidVisualLayers.Eyes:
+      limit: 2
+      required: true
+      default: [SlimeEyes]
+    # Aurora's Song End
     enum.HumanoidVisualLayers.Hair:
       limit: 1
       required: false
@@ -10,7 +16,7 @@
       required: false
     # Aurora's Song Start - Buncha new stuff
     enum.HumanoidVisualLayers.Tail:
-      limit: 1
+      limit: 2 # Aurora's Song - 1 > 2
       required: false
     enum.HumanoidVisualLayers.Head:
       limit: 1
@@ -20,37 +26,39 @@
       limit: 2
       required: false
     enum.HumanoidVisualLayers.HeadSide:
-      limit: 2
+      limit: 4  # Aurora's Song -- 2 > 4
       required: false
     # Aurora's Song End
     enum.HumanoidVisualLayers.Chest:
       limit: 4 # imp 2<4
       required: false
     enum.HumanoidVisualLayers.LArm:
-      limit: 8 # Aurora: 1>8
+      limit: 4 # Aurora: 1>4
       required: false
     enum.HumanoidVisualLayers.RArm:
-      limit: 8 # Aurora: 1>8
+      limit: 4 # Aurora: 1>4
       required: false
     enum.HumanoidVisualLayers.LHand:
-      limit: 8 # Aurora: 1>8
+      limit: 4 # Aurora: 1>4
       required: false
     enum.HumanoidVisualLayers.RHand:
-      limit: 8 # Aurora: 1>8
+      limit: 4 # Aurora: 1>4
       required: false
     enum.HumanoidVisualLayers.LLeg:
-      limit: 8 # Aurora: 1>8
+      limit: 4 # Aurora: 1>4
       required: false
     enum.HumanoidVisualLayers.RLeg:
-      limit: 8 # Aurora: 1>8
+      limit: 4 # Aurora: 1>4
       required: false
     enum.HumanoidVisualLayers.LFoot:
-      limit: 8 # Aurora: 1>8
+      limit: 4 # Aurora: 1>4
       required: false
     enum.HumanoidVisualLayers.RFoot:
-      limit: 8 # Aurora: 1>8
+      limit: 4 # Aurora: 1>4
       required: false
   appearances:
+    enum.HumanoidVisualLayers.Head:
+      matchSkin: true # Aurora's Song -- Don't let animal heads get recolored
     enum.HumanoidVisualLayers.Hair:
       layerAlpha: 0.75 # imp 0.72<0.75
       matchSkin: true
@@ -95,6 +103,7 @@
       FootLeft: OrganSlimePersonFootLeft
       FootRight: OrganSlimePersonFootRight
       Brain: OrganSlimePersonCore
+      Eyes: OrganSlimeEyes # Aurora's Song
       Lungs: OrganSlimePersonLungs
   - type: HumanoidProfile
     species: SlimePerson
@@ -323,3 +332,14 @@
   components:
   - type: Lung
     alert: LowNitrogen
+
+# Aurora's Song Start
+- type: entity
+  parent: [ OrganBaseEyes, OrganSlimePerson, OrganHumanInternal, OrganSlimePersonExternal]
+  id: OrganSlimeEyes
+  components:
+  - type: VisualOrgan
+    data:
+      sprite: null
+      state: null
+# Aurora's Song End

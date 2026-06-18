@@ -59,7 +59,7 @@
 - type: marking
   parent: [BaseSpeciesEyesStandard]   # Aurora's Song
   id: HeadSeptum
-  bodyPart: Snout
+  bodyPart: HeadSide  # Aurora's Song
   coloring:
     default:
       type:

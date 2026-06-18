@@ -73,7 +73,7 @@
 - type: marking
   parent: [BaseTattoo, BaseSpeciesEyesStandard]   # Aurora's Song
   id: HeadHeavyTattoos
-  bodyPart: Head
+  bodyPart: HeadSide # Aurora's Song -- Head>HeadSide
   coloring:
     default:
       type:

@@ -66,7 +66,7 @@
 
 - type: marking
   id: FadingStars
-  bodyPart: HeadSide # Aurora's Song Head>HeadSide
+  bodyPart: Chest # Aurora's Song Head>Chest
   groupWhitelist: [ Slime ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/SlimePerson/head.rsi
@@ -79,7 +79,7 @@
 
 - type: marking
   id: fizz
-  bodyPart: HeadSide # Aurora's Song Head>HeadSide
+  bodyPart: Chest # Aurora's Song Head>Chest
   groupWhitelist: [ Slime ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/SlimePerson/head.rsi
@@ -132,7 +132,7 @@
 - type: marking # TODO: If we ever figure out how to make markings use shaders, make this unshaded! For now, this at least gives the right impression.
   id: SlimeEyeglow
   bodyPart: Eyes
-  groupWhitelist: [Slime]
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:

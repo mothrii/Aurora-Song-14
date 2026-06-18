@@ -9,7 +9,7 @@
 - type: marking
   id: SnakeLargeTail
   bodyPart: Tail
-  groupWhitelist: [Reptilian, Slime, IPC]
+  groupWhitelist: [Reptilian, IPC]      # Aurora's Song -- Removed Slime
   sprites:
   - sprite: _White/Mobs/Customization/reptilian_64x32.rsi
     state: snake_large

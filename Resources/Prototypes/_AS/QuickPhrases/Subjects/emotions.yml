@@ -111,3 +111,10 @@
   tab: Subjects
   group: Emotions
   styleClass: ButtonColorGray
+
+- type: quickPhrase
+  id: EmotionFun
+  text: phrase-emotion-fun
+  tab: Subjects
+  group: Emotions
+  styleClass: ButtonColorGray

@@ -20,7 +20,7 @@
       limit: 1
       required: false
     enum.HumanoidVisualLayers.HeadSide:
-      limit: 2 # Aurora's Song - So earrings don't detonate the ears
+      limit: 3 # Aurora's Song - So earrings don't detonate the ears + other markings shuffled to HeadSide
       required: true
       default: [ AvaliEarsBase ]
     enum.HumanoidVisualLayers.Chest:

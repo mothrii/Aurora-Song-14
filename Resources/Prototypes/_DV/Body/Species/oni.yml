@@ -9,7 +9,7 @@
       limit: 1
       required: false
     enum.HumanoidVisualLayers.HeadTop:
-      limit: 1
+      limit: 2 # Aurora: 1>2
       required: true
       default: [ OniHornSingleCurved ]
     enum.HumanoidVisualLayers.Snout: # Aurora's Song
@@ -19,31 +19,31 @@
       limit: 1 # Frontier
       required: false # Frontier
     enum.HumanoidVisualLayers.Chest:
-      limit: 4 # Frontier 1<4
+      limit: 4 # Aurora: 1>4
       required: false
     enum.HumanoidVisualLayers.LArm:
-      limit: 8 # Frontier 1<8
+      limit: 4 # Aurora: 1>4
       required: false
     enum.HumanoidVisualLayers.RArm:
-      limit: 8 # Frontier 1<8
+      limit: 4 # Aurora: 1>4
       required: false
     enum.HumanoidVisualLayers.LHand:
-      limit: 8 # Frontier 1<8
+      limit: 4 # Aurora: 1>4
       required: false
     enum.HumanoidVisualLayers.RHand:
-      limit: 8 # Frontier 1<8
+      limit: 4 # Aurora: 1>4
       required: false
     enum.HumanoidVisualLayers.LLeg:
-      limit: 8 # Frontier 1<8
+      limit: 4 # Aurora: 1>4
       required: false
     enum.HumanoidVisualLayers.RLeg:
-      limit: 8 # Frontier 1<8
+      limit: 4 # Aurora: 1>4
       required: false
     enum.HumanoidVisualLayers.LFoot:
-      limit: 8 # Frontier 1<8
+      limit: 4 # Aurora: 1>4
       required: false
     enum.HumanoidVisualLayers.RFoot:
-      limit: 8 # Frontier 1<8
+      limit: 4 # Aurora: 1>4
       required: false
 
 - type: entity

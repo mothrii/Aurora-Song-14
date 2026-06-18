@@ -21,7 +21,7 @@
 
 - type: marking
   id: ArmProstheticRight
-  bodyPart: LArm
+  bodyPart: RArm # Aurora's Song LArm>RArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Oni, Goblin, Felinid, Vulpkanin, Tajaran] # Frontier: add Oni, Felinid | Aurora's Song - Vulpkanin, Tajaran
   coloring:
     default:
@@ -34,7 +34,7 @@
 
 - type: marking
   id: ArmTwistingRight
-  bodyPart: LArm
+  bodyPart: RArm # Aurora's Song LArm>RArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Oni, Goblin, Felinid, Vulpkanin, Tajaran] # Frontier: add Oni, Felinid | Aurora's Song - Vulpkanin, Tajaran
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi

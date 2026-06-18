@@ -4,7 +4,7 @@
   onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Eyes:
-      limit: 1
+      limit: 2 # Aurora's Song -- 1 > 2
       required: true
       default: [ ArachnidEyesDefault ]
     enum.HumanoidVisualLayers.Hair:
@@ -18,24 +18,38 @@
       required: true
       default: [ ArachnidAppendagesDefault ]
     enum.HumanoidVisualLayers.Chest:
-      limit: 2
+      limit: 4 # Aurora's Song -- 2 > 4
       required: false
     enum.HumanoidVisualLayers.HeadSide:
       limit: 1
       required: true
       default: [ ArachnidCheliceraeDownwards ]
     enum.HumanoidVisualLayers.LArm:
-      limit: 8 # imp 2<8
+      limit: 4 # Aurora's Song -- 2 > 4
       required: false
     enum.HumanoidVisualLayers.RArm:
-      limit: 8 # imp 2<8
+      limit: 4 # Aurora's Song -- 2 > 4
       required: false
     enum.HumanoidVisualLayers.LLeg:
-      limit: 8 # imp 2<8
+      limit: 4 # Aurora's Song -- 2 > 4
       required: false
     enum.HumanoidVisualLayers.RLeg:
-      limit: 8 # imp 2<8
+      limit: 4 # Aurora's Song -- 2 > 4
       required: false
+    # Aurora's Song Start
+    enum.HumanoidVisualLayers.LHand:
+      limit: 4
+      required: false
+    enum.HumanoidVisualLayers.RHand:
+      limit: 4
+      required: false
+    enum.HumanoidVisualLayers.LFoot:
+      limit: 4
+      required: false
+    enum.HumanoidVisualLayers.RFoot:
+      limit: 4
+      required: false
+    # Aurora's Song End
 
 - type: entity
   parent: BaseSpeciesAppearance
@@ -238,6 +252,11 @@
 - type: entity
   parent: [ OrganArachnidVisual, OrganBaseEyes, OrganArachnidInternal ]
   id: OrganArachnidEyes
+  components: # Aurora's Song - Allow interchangeable eyes
+  - type: VisualOrgan
+    data:
+      sprite: null
+      state: null
 
 - type: entity
   parent: [ OrganBaseTongue, OrganArachnidInternal ]
