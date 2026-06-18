@@ -33,8 +33,6 @@ public sealed class ReflectSystem : EntitySystem
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
-    //[Dependency] private readonly InventorySystem _inventorySystem = default!; // Aurora's Song | Not used
-    //[Dependency] private readonly DamageableSystem _damageable = default!; // WD EDIT
 
     public override void Initialize()
     {
@@ -129,14 +127,6 @@ public sealed class ReflectSystem : EntitySystem
 
         if (Resolve(projectile, ref projectile.Comp, false))
         {
-            // WD EDIT START
-            //if (reflect.DamageOnReflectModifier != 0)
-            //{
-            //    _damageable.TryChangeDamage(reflector, projectileComp.Damage * reflect.DamageOnReflectModifier,
-            //        projectileComp.IgnoreResistances, origin: projectileComp.Shooter);
-            //}
-            // WD EDIT END
-
             _adminLogger.Add(LogType.BulletHit, LogImpact.Medium, $"{ToPrettyString(user)} reflected {ToPrettyString(projectile)} from {ToPrettyString(projectile.Comp.Weapon)} shot by {projectile.Comp.Shooter}");
 
             projectile.Comp.Shooter = user;
