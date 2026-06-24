@@ -1561,3 +1561,10 @@ Entries:
   id: 9555
   time: '2026-06-24T06:46:24.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1130
+- author: WallflowerGhost
+  changes:
+    - type: Tweak
+      message: The message that says where your ship is now also says to remove your ID
+  id: 9556
+  time: '2026-06-24T18:20:44.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1169
