@@ -472,7 +472,11 @@
         - Cartridge
     preinstalled:
     - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
     - NewsReaderCartridge
+    - AstroNavCartridge
+    - NanoChatCartridge # Auroras Song
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:

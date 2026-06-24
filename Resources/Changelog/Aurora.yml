@@ -1421,3 +1421,159 @@ Entries:
   id: 9539
   time: '2026-06-15T20:48:15.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1151
+- author: AvianMaiden
+  changes:
+    - type: Fix
+      message: Vox are no longer forced to have feather-colored arms and legs
+    - type: Add
+      message: Vox can now have any color scutes they desire.
+  id: 9540
+  time: '2026-06-17T17:35:52.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1153
+- author: emergency-ketchup
+  changes:
+    - type: Tweak
+      message: Changed up some tiles and mass scanners around LBK.
+    - type: Add
+      message: Cryosleep pod to LBK.
+    - type: Add
+      message: Occupancy lights to LBK shacks.
+  id: 9541
+  time: '2026-06-18T00:41:59.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1148
+- author: KieueCaprie
+  changes:
+    - type: Fix
+      message: >-
+        Mimes rejoice (silently!). Mime PDAs now have cartridge parity with the
+        rest of their PDA brethren.
+  id: 9542
+  time: '2026-06-18T02:33:22.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1150
+- author: GreyScaleHarlequin
+  changes:
+    - type: Fix
+      message: Width slider display in character preview
+  id: 9543
+  time: '2026-06-18T02:46:42.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1160
+- author: BudaLope
+  changes:
+    - type: Fix
+      message: Toggle Internals action on magboots with them now works
+  id: 9544
+  time: '2026-06-18T03:03:22.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1156
+- author: salamanderskies
+  changes:
+    - type: Fix
+      message: Sofa corners and bench middle pieces can no longer be rotated.
+  id: 9545
+  time: '2026-06-18T03:03:40.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1158
+- author: snaviian
+  changes:
+    - type: Add
+      message: >-
+        Added 68 new phrases for the AAC tablet, including location names,
+        common words and punctuation.
+  id: 9546
+  time: '2026-06-18T03:38:32.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1069
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: SLE Filled Locker
+  id: 9547
+  time: '2026-06-18T04:30:07.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1125
+- author: GreyScaleHarlequin
+  changes:
+    - type: Add
+      message: Rechargeable blocking on energy shields is now a thing!
+  id: 9548
+  time: '2026-06-18T04:37:11.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1062
+- author: DOSRG, SalamanderSkies, Fulgrimm
+  changes:
+    - type: Add
+      message: Ported Nuclear14 Craftable and Mapping Assets. Happy Decorating!
+  id: 9549
+  time: '2026-06-19T14:09:43.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/976
+- author: salamanderskies
+  changes:
+    - type: Tweak
+      message: The Dove has received a hull update.
+    - type: Tweak
+      message: The Dove is now priced at 65k, from 77k.
+  id: 9550
+  time: '2026-06-20T02:12:06.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1116
+- author: Zenixic
+  changes:
+    - type: Fix
+      message: >-
+        Fixed the desk bell on the Ceres being superglued to the floor, you can
+        now pick it up.
+  id: 9551
+  time: '2026-06-20T03:35:47.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1162
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: IPCs can weld themselves again
+  id: 9552
+  time: '2026-06-20T04:29:49.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1161
+- author: portfiend, SleepyScarecrow
+  changes:
+    - type: Add
+      message: You can now find pompom seeds and pomegranate seeds randomly on wrecks.
+    - type: Add
+      message: >-
+        You can also print pompom seeds and pomegranate seeds in the
+        biogenerator.
+    - type: Add
+      message: >-
+        Pomegranates can be sliced into pomegranate slices. Both pomegranates
+        and their slices can be stacked on burgers and tacos.
+    - type: Remove
+      message: Never ask me for anything ever again.
+  id: 9553
+  time: '2026-06-20T21:05:31.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1163
+- author: ZigTag
+  changes:
+    - type: Add
+      message: IPCs can now eat and drink food, and get drunk too!
+  id: 9554
+  time: '2026-06-22T07:29:29.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1167
+- author: salamanderskies
+  changes:
+    - type: Fix
+      message: Various Damascus fixes.
+    - type: Fix
+      message: >-
+        Damascus Scientists should now no longer be irradiated by the
+        singularity, when it is active.
+  id: 9555
+  time: '2026-06-24T06:46:24.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1130
+- author: WallflowerGhost
+  changes:
+    - type: Tweak
+      message: The message that says where your ship is now also says to remove your ID
+  id: 9556
+  time: '2026-06-24T18:20:44.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1169
+- author: salamanderskies
+  changes:
+    - type: Fix
+      message: Nuclear14 tiles now have sprites as items, and names attached to them.
+    - type: Fix
+      message: Nuclear14 tiles are no longer yucky and slippery to walk around on.
+  id: 9557
+  time: '2026-06-24T18:50:04.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1173

@@ -78,6 +78,9 @@
   id: Cryogenic
 
 - type: Tag
+  id: IPC
+
+- type: Tag
   id: Narcotic
 
 - type: Tag
