@@ -1568,3 +1568,12 @@ Entries:
   id: 9556
   time: '2026-06-24T18:20:44.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1169
+- author: salamanderskies
+  changes:
+    - type: Fix
+      message: Nuclear14 tiles now have sprites as items, and names attached to them.
+    - type: Fix
+      message: Nuclear14 tiles are no longer yucky and slippery to walk around on.
+  id: 9557
+  time: '2026-06-24T18:50:04.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1173
