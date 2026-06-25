@@ -1591,3 +1591,13 @@ Entries:
   id: 9559
   time: '2026-06-25T00:18:06.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1053
+- author: KieueCaprie
+  changes:
+    - type: Fix
+      message: >-
+        Mime PDAs and Quartermaster PDAs now have *proper* cartridge parity with
+        the rest of the loadout PDAs by including the long lost Bounty Contracts
+        program.
+  id: 9560
+  time: '2026-06-25T00:19:05.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1165
