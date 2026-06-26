@@ -1642,3 +1642,10 @@ Entries:
   id: 9565
   time: '2026-06-26T20:31:40.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1184
+- author: DevilishMilk
+  changes:
+    - type: Fix
+      message: CDETs should no longer target people wearing debranded hardsuits.
+  id: 9566
+  time: '2026-06-26T20:38:42.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1168
