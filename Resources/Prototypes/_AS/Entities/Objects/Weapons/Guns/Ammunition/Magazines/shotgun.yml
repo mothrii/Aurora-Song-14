@@ -45,7 +45,7 @@
 
 - type: entity
   id: MagazineShotgunLeverEmpty
-  name: en-block (8 gauge, any)
+  name: en-bloc (8 gauge, any)
   parent: MagazineShotgunLever
   suffix: Empty
   components:
