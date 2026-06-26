@@ -194,6 +194,9 @@
     items:
     - id: SpaceCash5000
     - id: NFWeaponShotgunEnforcerExpedition
+      orGroup: Weapon
+    - id: WeaponEnergyShotgun
+      orGroup: Weapon
     - id: SpaceCash5000
       prob: 0.8
     - id: JetpackSecurityFilled
@@ -222,6 +225,8 @@
       prob: 0.8
     - id: EncryptionKeyNanotrasen
     - id: JetpackSecurityFilled
+    - id: WeaponEnergyMagnum
+      prob: 0.05
     - id: SpawnDungeonLootMaterialsBasicFull
       prob: 0.5
     sound:
