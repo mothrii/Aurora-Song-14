@@ -5,17 +5,7 @@
   components:
   - type: Sprite
     sprite: Objects/Tanks/generic.rsi
-    layers:
-    - state: icon
-    - state: integrity-unshaded-0
-      map: [ "enum.MaxPressureVisualLayers.BaseUnshaded" ]
-      shader: unshaded
-      visible: false
-    - state: mask
-      map: [ "enum.MaxPressureVisualLayers.Base" ]
-      visible: false
-  - type: Appearance
-  - type: MaxPressureVisuals
+    state: icon # Aurora's Song - Undo changes from maxcap refactor (damage states)
   - type: Item
     size: Normal
     sprite: Objects/Tanks/generic.rsi
