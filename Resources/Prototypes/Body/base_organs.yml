@@ -246,7 +246,7 @@
       - RFoot
 
 - type: entity
-  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
+  parent: OrganBase
   id: OrganBaseBrain
   name: brain
   abstract: true
@@ -265,15 +265,6 @@
   - type: InputMover
   - type: Examiner
   - type: BlockMovement
-# Aurora's Song - edible, grindable organs
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 5
-        reagents:
-        - ReagentId: GreyMatter
-          Quantity: 5
-# Aurora's Song edit ends
   - type: BadFood
   - type: FoodSequenceElement
     entries:
@@ -281,7 +272,7 @@
       Taco: Brain
 
 - type: entity
-  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
+  parent: OrganBase
   id: OrganBaseEyes
   name: eyes
   abstract: true
@@ -304,7 +295,7 @@
       - Eyes
 
 - type: entity
-  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
+  parent: OrganBase
   id: OrganBaseTongue
   name: tongue
   abstract: true
@@ -317,7 +308,7 @@
     - state: tongue
 
 - type: entity
-  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
+  parent: OrganBase
   id: OrganBaseAppendix
   name: appendix
   abstract: true
@@ -330,7 +321,7 @@
     - state: appendix
 
 - type: entity
-  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
+  parent: OrganBase
   id: OrganBaseEars
   name: ears
   abstract: true
@@ -343,7 +334,7 @@
     - state: ears
 
 - type: entity
-  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
+  parent: OrganBase
   id: OrganBaseLungs
   name: lungs
   abstract: true
@@ -357,7 +348,6 @@
   - type: SolutionManager
     solutions:
     - SolutionLungGas
-    # TODO: Grindable organs
   - type: Sprite
     layers:
     - state: lung-l
@@ -377,7 +367,7 @@
       canReact: false
 
 - type: entity
-  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
+  parent: OrganBase
   id: OrganBaseHeart
   name: heart
   abstract: true
@@ -393,7 +383,7 @@
     stages: [ Bloodstream ]
 
 - type: entity
-  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
+  parent: OrganBase
   id: OrganBaseStomach
   name: stomach
   abstract: true
@@ -405,7 +395,6 @@
   - type: SolutionManager
     solutions:
     - SolutionStomach
-    # TODO: Grindable organs
   - type: Metabolizer
     maxReagents: 3
     stages: [ Digestion ]
@@ -426,7 +415,7 @@
       maxVol: 150 # 1.25 liters which is average for a human
 
 - type: entity
-  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
+  parent: OrganBase
   id: OrganBaseLiver
   name: liver
   abstract: true
@@ -444,7 +433,7 @@
     stages: [ Metabolites ]
 
 - type: entity
-  parent: [ OrganBase, OrganEdible ] # Aurora's Song - added OrganEdible
+  parent: OrganBase
   id: OrganBaseKidneys
   name: kidneys
   abstract: true

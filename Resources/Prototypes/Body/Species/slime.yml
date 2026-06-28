@@ -309,7 +309,6 @@
   - type: SolutionManager
     solutions:
     - SolutionStomach
-    # TODO: Grindable organs
   - type: Stomach
   - type: Metabolizer
     maxReagents: 6

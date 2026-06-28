@@ -12,7 +12,6 @@
   - type: SolutionManager
     solutions:
     - SolutionStomachRuminant
-    # TODO: Add grindable organs back
 
 - type: entity
   parent: SolutionStomach
