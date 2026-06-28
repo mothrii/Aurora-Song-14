@@ -229,7 +229,7 @@
   - type: AutoToggleableOuterClothing
 
 - type: entity
-  parent: OrganBase
+  parent: OrganBaseOrganic # Aurora's Song - OrganBase>OrganBaseOrganic
   id: OrganSheleg
   abstract: true
   suffix: Sheleg

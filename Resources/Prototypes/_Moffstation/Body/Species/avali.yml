@@ -155,7 +155,7 @@
 
 
 - type: entity
-  parent: OrganBase
+  parent: OrganBaseOrganic # Aurora's Song - OrganBase>OrganBaseOrganic
   id: OrganAvali
   abstract: true
   suffix: Avali

@@ -191,7 +191,7 @@
   - type: AlwaysTriggerMousetrap # DeltaV Code
 
 - type: entity
-  parent: OrganBase
+  parent: OrganBaseOrganic # Aurora's Song - OrganBase>OrganBaseOrganic
   id: OrganGoblin
   abstract: true
   suffix: goblin

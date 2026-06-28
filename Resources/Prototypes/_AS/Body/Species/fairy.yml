@@ -186,7 +186,7 @@
     energy: 10
 
 - type: entity
-  parent: OrganBase
+  parent: OrganBaseOrganic
   id: OrganFairy
   abstract: true
   suffix: Fairy
