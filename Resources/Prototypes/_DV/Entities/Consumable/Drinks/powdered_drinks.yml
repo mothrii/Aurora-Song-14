@@ -39,7 +39,7 @@
     damage:
       types:
         Blunt: 3
-  - type: Damageable
+  - type: Injurable # Aurora's Song - Extract damageContainer to Injurable
     damageContainer: Inorganic
   - type: StaticPrice
     price: 50

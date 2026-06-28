@@ -19,7 +19,7 @@
     damage:
       types:
         Blunt: 1
-  - type: Damageable
+  - type: Injurable # Aurora's Song - Extract damageContainer to Injurable
     damageContainer: Biological
   - type: Destructible
     thresholds:

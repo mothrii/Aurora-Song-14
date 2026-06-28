@@ -749,8 +749,9 @@
     layers:
     - state: spawner
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: Zombie
+  - type: Injurable # Aurora's Song - Extract damageContainer to Injurable
+    damageContainer: Biological
   - type: Destructible
     thresholds:
     - trigger:

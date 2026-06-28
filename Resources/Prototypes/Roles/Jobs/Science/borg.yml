@@ -26,7 +26,6 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 12h # 12 hrs # Frontier: 10<12 hrs
-  canBeAntag: false # Aurora's Song
   icon: JobIconBorg
   supervisors: job-supervisors-hire # Frontier
   jobEntity: PlayerBorgBattery

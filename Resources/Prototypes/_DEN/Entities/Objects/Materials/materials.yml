@@ -40,8 +40,9 @@
         - ReagentId: MnemolithReagent
           Quantity: 15
   - type: Damageable
-    damageContainer: Inorganic
     damageModifierSet: Metallic
+  - type: Injurable # Aurora's Song - Extract damageContainer to Injurable
+    damageContainer: Inorganic
   - type: Destructible # No real reason to break it, but if you do it turns into powder
     thresholds:
     - trigger:
@@ -148,8 +149,9 @@
     castShadows: false
     color: "#d9418d"
   - type: Damageable
-    damageContainer: Inorganic
     damageModifierSet: Glass
+  - type: Injurable # Aurora's Song - Extract damageContainer to Injurable
+    damageContainer: Inorganic
   - type: Destructible # No real reason to break it, but if you do it just splits into shards like its description suggests
     thresholds:
     - trigger:

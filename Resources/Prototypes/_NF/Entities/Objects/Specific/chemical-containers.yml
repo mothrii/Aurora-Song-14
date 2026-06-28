@@ -152,7 +152,7 @@
     inHandsFillBaseName: -fill-
   - type: StaticPrice
     price: 10
-  - type: Damageable
+  - type: Injurable # Aurora's Song - Extract damageContainer to Injurable
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
