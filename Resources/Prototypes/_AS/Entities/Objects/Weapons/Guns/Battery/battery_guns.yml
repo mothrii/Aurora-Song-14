@@ -583,3 +583,6 @@
   - type: Battery
     maxCharge: 480
     startingCharge: 480
+  - type: BatterySelfRecharger
+    autoRechargeRate: 50
+    autoRechargePauseTime: 6
