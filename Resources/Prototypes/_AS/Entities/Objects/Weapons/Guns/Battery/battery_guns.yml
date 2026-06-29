@@ -396,7 +396,7 @@
 
 - type: entity
   name: Mk.1 UE pulse rifle
-  parent: [ ASBaseWeaponFramePulseRifle, BaseC3Contraband, ASBaseWeaponManufacturerNanoTrasen ]
+  parent: [ ASBaseWeaponFramePulseRifle, BaseC3NanoTrasenContraband, ASBaseWeaponManufacturerNanoTrasen ]
   description: the MK.1 "Unit-Expeditionary" pulse rifle is a limited production run from NanoTrasen, designed for commando units targeting HVTs in high-risk environments.
   id: ASWeaponMk1UEPulseRifle
   components:
