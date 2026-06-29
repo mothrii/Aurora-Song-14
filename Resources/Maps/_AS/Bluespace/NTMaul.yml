@@ -4,7 +4,7 @@ meta:
   engineVersion: 272.0.1
   forkId: ""
   forkVersion: ""
-  time: 06/29/2026 09:47:10
+  time: 06/29/2026 18:21:38
   entityCount: 1325
 maps: []
 grids:
@@ -113,7 +113,264 @@ entities:
     - type: DecalGrid
       chunkCollection:
         version: 2
-        nodes: []
+        nodes:
+        - node:
+            color: '#FF4C4DFF'
+            id: BrickTileSteelCornerNe
+          decals:
+            80: 9,0
+            89: -6,1
+        - node:
+            color: '#FF4C4DFF'
+            id: BrickTileSteelCornerNw
+          decals:
+            79: -9,0
+            88: 6,1
+        - node:
+            color: '#FF4C4DFF'
+            id: BrickTileSteelCornerSe
+          decals:
+            83: 9,-4
+        - node:
+            color: '#FF4C4DFF'
+            id: BrickTileSteelCornerSw
+          decals:
+            92: -9,-4
+        - node:
+            color: '#FF4C4DFF'
+            id: BrickTileSteelInnerNe
+          decals:
+            67: 8,-8
+            68: 9,-8
+            69: 10,-8
+        - node:
+            color: '#FF4C4DFF'
+            id: BrickTileSteelInnerNw
+          decals:
+            70: 10,-8
+            71: 9,-8
+            72: 11,-8
+        - node:
+            color: '#FF4C4DFF'
+            id: BrickTileSteelInnerSe
+          decals:
+            73: 8,-7
+            74: 9,-7
+            75: 10,-7
+        - node:
+            color: '#FF4C4DFF'
+            id: BrickTileSteelInnerSw
+          decals:
+            76: 9,-7
+            77: 10,-7
+            78: 11,-7
+        - node:
+            color: '#FF4C4DFF'
+            id: BrickTileSteelLineE
+          decals:
+            84: 9,-1
+            85: 9,-2
+            97: -6,-1
+            98: -6,-2
+            99: -6,-3
+        - node:
+            color: '#FF4C4DFF'
+            id: BrickTileSteelLineN
+          decals:
+            95: -8,0
+            96: 8,0
+        - node:
+            color: '#FF4C4DFF'
+            id: BrickTileSteelLineS
+          decals:
+            81: 6,-4
+            82: 7,-4
+            93: -7,-4
+            94: -6,-4
+        - node:
+            color: '#FF4C4DFF'
+            id: BrickTileSteelLineW
+          decals:
+            86: 6,-2
+            87: 6,-1
+            90: -9,-1
+            91: -9,-2
+            100: 6,-3
+            101: 6,-2
+            102: 6,-1
+        - node:
+            color: '#004CAEFF'
+            id: BrickTileWhiteBox
+          decals:
+            134: -2,21
+            135: 2,21
+        - node:
+            color: '#004CAEFF'
+            id: BrickTileWhiteLineE
+          decals:
+            103: 1,4
+            104: 1,5
+            105: 1,6
+            106: 1,7
+            107: 1,8
+            108: 1,9
+            109: 1,10
+            110: 1,11
+            111: 1,12
+            112: 1,13
+            113: 1,14
+            114: 1,15
+            115: 1,16
+            138: 0,18
+            139: 0,19
+            142: 0,19
+        - node:
+            color: '#004CAEFF'
+            id: BrickTileWhiteLineN
+          decals:
+            140: 0,19
+        - node:
+            color: '#004CAEFF'
+            id: BrickTileWhiteLineW
+          decals:
+            116: -1,16
+            117: -1,15
+            118: -1,14
+            119: -1,14
+            120: -1,13
+            121: -1,12
+            122: -1,11
+            123: -1,10
+            124: -1,9
+            125: -1,8
+            126: -1,7
+            127: -1,6
+            128: -1,6
+            129: -1,5
+            130: -1,5
+            131: -1,5
+            132: -1,4
+            136: 0,19
+            137: 0,18
+            141: 0,19
+        - node:
+            color: '#FF4F63FF'
+            id: ConcreteTrimInnerNe
+          decals:
+            3: -10,-8
+            6: -9,-8
+            12: -11,-8
+        - node:
+            color: '#FF4F63FF'
+            id: ConcreteTrimInnerNw
+          decals:
+            4: -9,-8
+            5: -8,-8
+            11: -10,-8
+        - node:
+            color: '#FF4F63FF'
+            id: ConcreteTrimInnerSe
+          decals:
+            10: -11,-7
+            18: -10,-7
+            19: -9,-7
+        - node:
+            color: '#FF4F63FF'
+            id: ConcreteTrimInnerSw
+          decals:
+            8: -8,-7
+            20: -10,-7
+            21: -9,-7
+        - node:
+            color: '#FF4F63FF'
+            id: ConcreteTrimLineE
+          decals:
+            43: 4,1
+            46: 12,-7
+            47: 12,-8
+        - node:
+            color: '#FF4F63FF'
+            id: ConcreteTrimLineN
+          decals:
+            13: -11,-6
+            14: -10,-6
+            15: -9,-6
+            22: -7,-6
+            23: -6,-6
+            37: -3,2
+            38: -2,2
+            39: 0,2
+            40: 2,2
+            41: 3,2
+            48: 11,-6
+            49: 10,-6
+            50: 9,-6
+            51: 7,-6
+            52: 6,-6
+        - node:
+            color: '#FF4F63FF'
+            id: ConcreteTrimLineS
+          decals:
+            16: -9,-9
+            17: -8,-9
+            24: -9,-4
+            25: -7,-4
+            26: -6,-4
+            27: -4,0
+            28: 4,0
+            29: 3,0
+            30: 2,0
+            31: 1,0
+            32: 0,0
+            33: 0,0
+            34: -1,0
+            35: -2,0
+            36: -3,0
+            53: 8,-9
+            54: 9,-9
+        - node:
+            color: '#FF4F63FF'
+            id: ConcreteTrimLineW
+          decals:
+            42: -4,1
+            44: -12,-7
+            45: -12,-8
+        - node:
+            color: '#41E2FFFF'
+            id: MiniTileWhiteCornerNe
+          decals:
+            56: 11,-11
+        - node:
+            color: '#41E2FFFF'
+            id: MiniTileWhiteCornerNw
+          decals:
+            55: 9,-11
+        - node:
+            color: '#41E2FFFF'
+            id: MiniTileWhiteCornerSw
+          decals:
+            62: 8,-16
+        - node:
+            color: '#41E2FFFF'
+            id: MiniTileWhiteLineE
+          decals:
+            57: 11,-12
+            58: 11,-13
+            59: 11,-14
+            64: 12,-16
+        - node:
+            color: '#41E2FFFF'
+            id: MiniTileWhiteLineS
+          decals:
+            65: 10,-17
+            66: 11,-17
+        - node:
+            color: '#41E2FFFF'
+            id: MiniTileWhiteLineW
+          decals:
+            60: 9,-12
+            61: 9,-13
+            63: 8,-15
     - type: GridAtmosphere
       version: 2
       data:
@@ -361,6 +618,11 @@ entities:
       rot: 3.141592653589793 rad
       pos: -3.5,20.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        1282:
+        - - DoorStatus
+          - Open
     - type: DeviceLinkSink
       invokeCounter: 1
 - proto: AirlockEngineeringGlass
@@ -6615,6 +6877,11 @@ entities:
       invokeCounter: 1
 - proto: SpawnMoBWeaponTurretNanoTrasenRogue
   entities:
+  - uid: 582
+    components:
+    - type: Transform
+      pos: 11.5,1.5
+      parent: 1
   - uid: 1286
     components:
     - type: Transform
@@ -6635,12 +6902,12 @@ entities:
   - uid: 1307
     components:
     - type: Transform
-      pos: -4.5,27.5
+      pos: -7.5,27.5
       parent: 1
   - uid: 1308
     components:
     - type: Transform
-      pos: 5.5,27.5
+      pos: 8.5,27.5
       parent: 1
   - uid: 1309
     components:
@@ -6650,24 +6917,17 @@ entities:
   - uid: 1310
     components:
     - type: Transform
-      pos: 7.5,-12.5
+      pos: -11.5,-18.5
       parent: 1
   - uid: 1311
     components:
     - type: Transform
-      pos: -6.5,-12.5
-      parent: 1
-  - uid: 1318
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -3.5,4.5
+      pos: 12.5,-18.5
       parent: 1
   - uid: 1319
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 4.5,4.5
+      pos: -10.5,1.5
       parent: 1
 - proto: SubstationBasic
   entities:
@@ -7053,15 +7313,6 @@ entities:
       enabled: False
     - type: ApcPowerReceiver
       powerLoad: 1
-  - uid: 577
-    components:
-    - type: Transform
-      pos: 11.5,1.5
-      parent: 1
-    - type: Thruster
-      enabled: False
-    - type: ApcPowerReceiver
-      powerLoad: 1
   - uid: 578
     components:
     - type: Transform
@@ -7093,15 +7344,6 @@ entities:
     components:
     - type: Transform
       pos: -7.5,2.5
-      parent: 1
-    - type: Thruster
-      enabled: False
-    - type: ApcPowerReceiver
-      powerLoad: 1
-  - uid: 582
-    components:
-    - type: Transform
-      pos: -10.5,1.5
       parent: 1
     - type: Thruster
       enabled: False
@@ -8580,6 +8822,12 @@ entities:
     - type: Transform
       pos: 12.5,-8.5
       parent: 1
+  - uid: 577
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 10.5,18.5
+      parent: 1
   - uid: 888
     components:
     - type: Transform
@@ -8591,6 +8839,12 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -5.5,17.5
+      parent: 1
+  - uid: 1318
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -9.5,18.5
       parent: 1
 - proto: WarpPoint
   entities:
