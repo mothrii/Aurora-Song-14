@@ -55,9 +55,6 @@
   id: ASWeaponShotgunHushpupExpedition
 
 - type: entity
-  parent:
-  - BaseExpeditionWeaponTier5
-  - ASWeaponEnergyPistolPulse
-  - BaseC3NanoTrasenContrabandLowValue
+  parent: [ASWeaponEnergyPistolPulse, BaseC3NanoTrasenContrabandLowValue, BaseExpeditionWeaponTier5]
   categories: [ HideSpawnMenu ]
   id: ASWeaponEnergyPistolPulseExpedition
