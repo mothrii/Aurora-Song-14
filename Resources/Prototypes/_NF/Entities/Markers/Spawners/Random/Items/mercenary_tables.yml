@@ -361,6 +361,12 @@
     - !type:GroupSelector
       weight: 0.15
       children:
+    #  - id: CrateAmmoBoxRubber20 Aurora's Song - Commented out rubbers
+    #  - id: CrateAmmoBoxRubber25 Aurora's Song - Commented out rubbers
+    #  - id: CrateAmmoBoxRubber30 Aurora's Song - Commented out rubbers
+    #  - id: CrateAmmoBoxRubber35 Aurora's Song - Commented out rubbers
+    #  - id: CrateAmmoBoxRubber45 Aurora's Song - Commented out rubbers
+    #  - id: CrateAmmoBoxRubberShotgun Aurora's Song - Commented out rubbers
       - id: CrateAmmoBoxLethal20
       - id: CrateAmmoBoxLethal25
       - id: CrateAmmoBoxLethal30
@@ -368,12 +374,6 @@
       - id: CrateAmmoBoxLethal45
       - id: CrateAmmoBoxLethalShotgun
       - id: CrateAmmoBoxSlugShotgun
-    #  - id: CrateAmmoBoxRubber20 Aurora's Song - Commented out rubbers
-    #  - id: CrateAmmoBoxRubber25 Aurora's Song - Commented out rubbers
-    #  - id: CrateAmmoBoxRubber30 Aurora's Song - Commented out rubbers
-    #  - id: CrateAmmoBoxRubber35 Aurora's Song - Commented out rubbers
-    #  - id: CrateAmmoBoxRubber45 Aurora's Song - Commented out rubbers
-    #  - id: CrateAmmoBoxRubberShotgun Aurora's Song - Commented out rubbers
     # T2 - Unommon
     - !type:GroupSelector
       weight: 0.3
@@ -400,9 +400,9 @@
       - id: CrateAmmoBoxBigLethal20
       - id: CrateAmmoBoxBigLethal25
       - id: CrateAmmoBoxBigLethal30
-      - id: CrateAmmoBoxFlareShotgun
     #  - id: CrateAmmoBoxBigRubber20 Aurora's Song - Commented out rubbers
     #  - id: CrateAmmoBoxBigRubber25 Aurora's Song - Commented out rubbers
+      - id: CrateAmmoBoxFlareShotgun
     # T5 - Legendary
     # - !type:GroupSelector
     #   weight: 0.05

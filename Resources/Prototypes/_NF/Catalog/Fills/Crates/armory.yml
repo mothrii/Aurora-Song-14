@@ -161,17 +161,16 @@
       entity_storage: !type:NestedSelector
         tableId: StorageFillAmmoBoxBigLethal20
 
-- type: entity
-  parent:
-  - CrateAmmoSecureMercenary
-
-  # id: CrateAmmoBoxRubber20 Aurora's Song - Commented out rubbers
-  # categories: [ HideSpawnMenu ]
-  # components:
-  # - type: EntityTableContainerFill # Aurora's Song - Convert to entityTable
-  #   containers:
-  #     entity_storage: !type:NestedSelector
-  #       tableId: StorageFillAmmoBoxRubber20
+# - type: entity
+#   parent:
+#   - CrateAmmoSecureMercenary
+# id: CrateAmmoBoxRubber20 Aurora's Song - Commented out rubbers
+# categories: [ HideSpawnMenu ]
+# components:
+# - type: EntityTableContainerFill # Aurora's Song - Convert to entityTable
+#   containers:
+#     entity_storage: !type:NestedSelector
+#       tableId: StorageFillAmmoBoxRubber20
 
 # - type: entity Aurora's Song - Commented out rubbers
 #   parent:
@@ -189,11 +188,11 @@
 #   - CrateAmmoSecureMercenary
 #   id: CrateAmmoBoxPractice20
 #   categories: [ HideSpawnMenu ]
-  # components:
-  # - type: EntityTableContainerFill # Aurora's Song - Convert to entityTable
-  #   containers:
-  #     entity_storage: !type:NestedSelector
-  #       tableId: StorageFillAmmoBoxPractice20
+# components:
+# - type: EntityTableContainerFill # Aurora's Song - Convert to entityTable
+#   containers:
+#     entity_storage: !type:NestedSelector
+#       tableId: StorageFillAmmoBoxPractice20
 
 - type: entity
   parent:
@@ -254,13 +253,13 @@
 # - type: entity
 #   parent:
 #   - CrateAmmoSecureMercenary
-# #   id: CrateAmmoBoxPractice30
+#   id: CrateAmmoBoxPractice30
 #   categories: [ HideSpawnMenu ]
-  # components:
-  # - type: EntityTableContainerFill # Aurora's Song - Convert to entityTable
-  #   containers:
-  #     entity_storage: !type:NestedSelector
-  #       tableId: StorageFillAmmoBoxPractice30
+# components:
+# - type: EntityTableContainerFill # Aurora's Song - Convert to entityTable
+#   containers:
+#     entity_storage: !type:NestedSelector
+#       tableId: StorageFillAmmoBoxPractice30
 
 - type: entity
   parent:
@@ -310,13 +309,13 @@
 # - type: entity
 #   parent:
 #   - CrateAmmoSecureMercenary
-# #   id: CrateAmmoBoxPractice35
+#   id: CrateAmmoBoxPractice35
 #   categories: [ HideSpawnMenu ]
-  # components:
-  # - type: EntityTableContainerFill # Aurora's Song - Convert to entityTable
-  #   containers:
-  #     entity_storage: !type:NestedSelector
-  #       tableId: StorageFillAmmoBoxPractice35
+# components:
+# - type: EntityTableContainerFill # Aurora's Song - Convert to entityTable
+#   containers:
+#     entity_storage: !type:NestedSelector
+#       tableId: StorageFillAmmoBoxPractice35
 
 - type: entity
   parent:
@@ -399,13 +398,13 @@
 # - type: entity
 #   parent:
 #   - CrateAmmoSecureMercenary
-# #   id: CrateAmmoBoxPractice25
+#   id: CrateAmmoBoxPractice25
 #   categories: [ HideSpawnMenu ]
-  # components:
-  # - type: EntityTableContainerFill # Aurora's Song - Convert to entityTable
-  #   containers:
-  #     entity_storage: !type:NestedSelector
-  #       tableId: StorageFillAmmoBoxPractice25
+# components:
+# - type: EntityTableContainerFill # Aurora's Song - Convert to entityTable
+#   containers:
+#     entity_storage: !type:NestedSelector
+#       tableId: StorageFillAmmoBoxPractice25
 
 ## Shotgun
 - type: entity
@@ -433,13 +432,13 @@
 # - type: entity
 #   parent:
 #   - CrateAmmoSecureMercenary
-# #   id: CrateAmmoBoxPracticeShotgun
+#   id: CrateAmmoBoxPracticeShotgun
 #   categories: [ HideSpawnMenu ]
-  # components:
-  # - type: EntityTableContainerFill # Aurora's Song - Convert to entityTable
-  #   containers:
-  #     entity_storage: !type:NestedSelector
-  #       tableId: StorageFillAmmoBoxPracticeShotgun
+# components:
+# - type: EntityTableContainerFill # Aurora's Song - Convert to entityTable
+#   containers:
+#     entity_storage: !type:NestedSelector
+#       tableId: StorageFillAmmoBoxPracticeShotgun
 
 - type: entity
   parent:
@@ -513,11 +512,11 @@
 #   - CrateAmmoSecureMercenary
 # #   id: CrateAmmoBoxPractice45
 #   categories: [ HideSpawnMenu ]
-  # components:
-  # - type: EntityTableContainerFill # Aurora's Song - Convert to entityTable
-  #   containers:
-  #     entity_storage: !type:NestedSelector
-  #       tableId: StorageFillAmmoBoxPractice45
+# components:
+# - type: EntityTableContainerFill # Aurora's Song - Convert to entityTable
+#   containers:
+#     entity_storage: !type:NestedSelector
+#       tableId: StorageFillAmmoBoxPractice45
 
 - type: entity
   parent:
