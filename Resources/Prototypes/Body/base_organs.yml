@@ -41,6 +41,10 @@
     tags:
     - Raw
     - Meat
+  # Aurora's Song Start - Make them grindable
+  - type: Extractable
+    grindableSolutionName: food
+  # Aurora's Song End
 
 - type: entity
   parent: OrganBase # Aurora's Song - OrganBaseOrganic>OrganBase
