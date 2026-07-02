@@ -1688,3 +1688,10 @@ Entries:
   id: 9571
   time: '2026-07-01T06:28:05.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1172
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: Added the XED Scavenger to the expedition shipyard.
+  id: 9572
+  time: '2026-07-02T02:50:03.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1164
