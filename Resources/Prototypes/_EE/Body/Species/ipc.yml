@@ -90,6 +90,8 @@
       Tongue: OrganIPCTongue
       Ears: OrganIPCEars
       Heart: OrganIPCPump
+      Stomach: OrganIPCStomach # Aurora's Song
+      Liver: OrganIPCLiver # Aurora's Song
   - type: HumanoidProfile
     species: IPC
   - type: Sprite
@@ -153,6 +155,7 @@
 - type: entity
   parent:
   - AppearanceIPC
+  - MobBloodstream # Aurora's Song
   - PlayerSiliconHumanoidBase
   id: MobIPC
   name: Urist McPositronic
@@ -261,6 +264,18 @@
     damage:
       types:
         Blunt: 6 # It's tough.
+  # Aurora's Song Start - RP Metabolizer
+  - type: Bloodstream
+    maxBleedAmount: 0 # IPCs should not bleed, as Oil is not easy to replenish
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Oil
+        Quantity: 300
+  - type: BlockInjection
+    #blockHypospray: true # Aurora's Song: This field is broken and thus no longer used
+    blockInjectOnProjectile: true
+  - type: CanNotVomit
+  # Aurora's Song End
 
 - type: entity
   parent: OrganBase
@@ -275,6 +290,18 @@
         - ReagentId: Oil
           Quantity: 10
 
+# Aurora's Song
+- type: entity
+  id: OrganIPCMetabolizer
+  abstract: true
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ IPC ]
+  - type: MetabolizerTagWhitelist
+    tags:
+    - IPC
+    stages: [ "Bloodstream" ]
+
 - type: entity
   parent: OrganIPC
   id: OrganIPCInternal
@@ -282,6 +309,15 @@
   components:
   - type: Sprite
     sprite: _EE/Mobs/Species/IPC/organs.rsi
+
+# Aurora's Song
+- type: entity
+  parent: OrganIPC
+  id: OrganIPCInternalAS
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _AS/Mobs/Species/IPC/organs.rsi
 
 - type: entity
   id: OrganIPCVisual
@@ -379,11 +415,24 @@
   description: "A set of highly attuned membranes, capable of sensing anything an organic ear can sense" # DeltaV
 
 - type: entity
-  parent: [ OrganIPCInternal ]
+  parent: [ OrganBaseHeart, OrganIPCInternal, OrganIPCMetabolizer ] # Aurora's Song - Add BaseHeart and Metabolizer
   id: OrganIPCPump
   name: micro pump
   description: "A micro pump, used to circulate coolant."
+
+# Aurora's Song Start - More IPC organs
+- type: entity
+  parent: [ OrganBaseStomach, OrganIPCInternalAS, OrganIPCMetabolizer ]
+  id: OrganIPCStomach
+  name: synthetic stomach
+  description: "A synthetic stomach typically given to IPCs so they can eat without fear."
+
+- type: entity
+  parent: [ OrganBaseLiver, OrganIPCInternalAS, OrganIPCMetabolizer ]
+  id: OrganIPCLiver
+  name: synthetic liver
+  description: "A synthetic liver typically given to IPCs so they can filter out the deliciousness of food."
   components:
-  - type: Sprite
-    state: heart-on
-  - type: Organ
+  - type: Metabolizer
+    maxReagents: 5 # To make it like a liver
+# Aurora's Song End

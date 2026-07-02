@@ -5,6 +5,7 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Administration.Logs;
+using Content.Shared._AS.PersistentSystems; // Aurora
 using Content.Shared._Floof.Consent;
 using Content.Shared.Administration.Logs;
 using Content.Shared.CCVar;
@@ -318,6 +319,19 @@ namespace Content.Server.Database
         Task<bool> UpsertIPIntelCache(DateTime time, IPAddress ip, float score);
         Task<IPIntelCache?> GetIPIntelCache(IPAddress ip);
         Task<bool> CleanIPIntelCache(TimeSpan range);
+
+        #endregion
+
+        // Aurora Song
+        #region Persistent Game Systems
+
+        Task<RecordCharacter?> GetCharacterRecord(int recordId);
+        Task<List<RecordCharacter>> GetFilteredCharacterRecords(RecordType? recordType, int? targetCharacterId = null, Guid? authorUserId = null, int? authorCharacterId = null, bool? hidden = false, bool? deleted = false);
+        Task<RecordUpdateStatus> HideRecord(int recordId, Guid? authorUserId, int? authorCharacterId, bool allowNonOwner = false, bool updateEdits = false);
+        Task<RecordUpdateStatus> UnhideRecord(int recordId, Guid? authorUserId, int? authorCharacterId, bool allowNonOwner = false, bool updateEdits = false);
+        Task<RecordUpdateStatus> DeleteRecord(int recordId, Guid? authorUserId);
+        Task<RecordUpdateStatus> UndeleteRecord(int recordId, Guid? authorUserId);
+        Task<List<RecordEdit>> GetRecordEdits(int recordId);
 
         #endregion
 
@@ -1003,6 +1017,53 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.RemoveGhostRoleWhitelist(player, ghostRole));
         }
         // End Frontier
+
+        // Aurora Song
+        #region Persistent Game Systems
+
+        public Task<RecordCharacter?> GetCharacterRecord(int recordId)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetCharacterRecord(recordId));
+        }
+
+        public Task<List<RecordCharacter>> GetFilteredCharacterRecords(RecordType? recordType, int? targetCharacterId = null, Guid? authorUserId = null, int? authorCharacterId = null, bool? hidden = false, bool? deleted = false)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetFilteredCharacterRecords(recordType, targetCharacterId, authorUserId, authorCharacterId, hidden, deleted));
+        }
+
+        public Task<RecordUpdateStatus> HideRecord(int recordId, Guid? authorUserId, int? authorCharacterId, bool allowNonOwner = false, bool updateEdits = false)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.HideRecord(recordId, authorUserId, authorCharacterId, allowNonOwner,  updateEdits));
+        }
+
+        public Task<RecordUpdateStatus> UnhideRecord(int recordId, Guid? authorUserId, int? authorCharacterId, bool allowNonOwner = false,  bool updateEdits = false)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.UnhideRecord(recordId, authorUserId, authorCharacterId, allowNonOwner, updateEdits));
+        }
+
+        public Task<RecordUpdateStatus> DeleteRecord(int recordId, Guid? authorUserId)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.DeleteRecord(recordId, authorUserId));
+        }
+
+        public Task<RecordUpdateStatus> UndeleteRecord(int recordId, Guid? authorUserId)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.UndeleteRecord(recordId, authorUserId));
+        }
+
+        public Task<List<RecordEdit>> GetRecordEdits(int recordId)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetRecordEdits(recordId));
+        }
+
+        #endregion
 
         public Task<bool> UpsertIPIntelCache(DateTime time, IPAddress ip, float score)
         {

@@ -52,6 +52,11 @@ public sealed class VomitSystem : EntitySystem
 
     private void TryVomitSolution(Entity<StomachComponent> ent, ref BodyRelayedEvent<TryVomitEvent> args)
     {
+        // Aurora's Song Start - Allow vomit cancellation
+        if (args.Args.Cancelled)
+            return;
+        // Aurora's Song End
+
         if (!_solutionContainer.ResolveSolution(ent.Owner,
                 StomachSystem.DefaultSolutionName,
                 ref ent.Comp.Solution,
@@ -137,4 +142,4 @@ public sealed class VomitSystem : EntitySystem
 }
 
 [ByRefEvent]
-public record struct TryVomitEvent(Solution Sol, bool Forced = false, bool Handled = false);
+public record struct TryVomitEvent(Solution Sol, bool Forced = false, bool Handled = false, bool Cancelled = false); // Aurora's Song - Add canceling

@@ -1494,3 +1494,239 @@ Entries:
   id: 9548
   time: '2026-06-18T04:37:11.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1062
+- author: DOSRG, SalamanderSkies, Fulgrimm
+  changes:
+    - type: Add
+      message: Ported Nuclear14 Craftable and Mapping Assets. Happy Decorating!
+  id: 9549
+  time: '2026-06-19T14:09:43.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/976
+- author: salamanderskies
+  changes:
+    - type: Tweak
+      message: The Dove has received a hull update.
+    - type: Tweak
+      message: The Dove is now priced at 65k, from 77k.
+  id: 9550
+  time: '2026-06-20T02:12:06.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1116
+- author: Zenixic
+  changes:
+    - type: Fix
+      message: >-
+        Fixed the desk bell on the Ceres being superglued to the floor, you can
+        now pick it up.
+  id: 9551
+  time: '2026-06-20T03:35:47.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1162
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: IPCs can weld themselves again
+  id: 9552
+  time: '2026-06-20T04:29:49.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1161
+- author: portfiend, SleepyScarecrow
+  changes:
+    - type: Add
+      message: You can now find pompom seeds and pomegranate seeds randomly on wrecks.
+    - type: Add
+      message: >-
+        You can also print pompom seeds and pomegranate seeds in the
+        biogenerator.
+    - type: Add
+      message: >-
+        Pomegranates can be sliced into pomegranate slices. Both pomegranates
+        and their slices can be stacked on burgers and tacos.
+    - type: Remove
+      message: Never ask me for anything ever again.
+  id: 9553
+  time: '2026-06-20T21:05:31.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1163
+- author: ZigTag
+  changes:
+    - type: Add
+      message: IPCs can now eat and drink food, and get drunk too!
+  id: 9554
+  time: '2026-06-22T07:29:29.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1167
+- author: salamanderskies
+  changes:
+    - type: Fix
+      message: Various Damascus fixes.
+    - type: Fix
+      message: >-
+        Damascus Scientists should now no longer be irradiated by the
+        singularity, when it is active.
+  id: 9555
+  time: '2026-06-24T06:46:24.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1130
+- author: WallflowerGhost
+  changes:
+    - type: Tweak
+      message: The message that says where your ship is now also says to remove your ID
+  id: 9556
+  time: '2026-06-24T18:20:44.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1169
+- author: salamanderskies
+  changes:
+    - type: Fix
+      message: Nuclear14 tiles now have sprites as items, and names attached to them.
+    - type: Fix
+      message: Nuclear14 tiles are no longer yucky and slippery to walk around on.
+  id: 9557
+  time: '2026-06-24T18:50:04.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1173
+- author: BudaLope
+  changes:
+    - type: Tweak
+      message: Readded parts to biogenerators that can be upgraded
+  id: 9558
+  time: '2026-06-25T00:16:29.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1175
+- author: GreyScaleHarlequin
+  changes:
+    - type: Add
+      message: foot protectors, and the choice to go shoeless in loadout
+  id: 9559
+  time: '2026-06-25T00:18:06.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1053
+- author: KieueCaprie
+  changes:
+    - type: Fix
+      message: >-
+        Mime PDAs and Quartermaster PDAs now have *proper* cartridge parity with
+        the rest of the loadout PDAs by including the long lost Bounty Contracts
+        program.
+  id: 9560
+  time: '2026-06-25T00:19:05.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1165
+- author: BudaLope
+  changes:
+    - type: Tweak
+      message: Powered fans now draw 1 kW instead of 10 kW
+    - type: Add
+      message: adds battery to powered fans, you get 10 seconds
+  id: 9561
+  time: '2026-06-25T00:31:23.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1174
+- author: BudaLope
+  changes:
+    - type: Tweak
+      message: wallet magnets no longer pick up paper
+    - type: Tweak
+      message: wallet inventory has been expanded to be 4x3
+    - type: Tweak
+      message: scu and doubloons now count as coins and get picked up by wallets
+  id: 9562
+  time: '2026-06-25T00:41:05.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1177
+- author: Zenixic
+  changes:
+    - type: Fix
+      message: Fixed two air alarms on SLEO not being powered
+  id: 9563
+  time: '2026-06-25T01:32:41.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1170
+- author: salamanderskies
+  changes:
+    - type: Tweak
+      message: Artifacts will now only teleport people from 100 meters away.
+  id: 9564
+  time: '2026-06-26T12:43:23.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1183
+- author: DevilishMilk
+  changes:
+    - type: Fix
+      message: Techfabs now have proper sprites for crafting
+  id: 9565
+  time: '2026-06-26T20:31:40.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1184
+- author: DevilishMilk
+  changes:
+    - type: Fix
+      message: CDETs should no longer target people wearing debranded hardsuits.
+  id: 9566
+  time: '2026-06-26T20:38:42.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1168
+- author: BudaLope
+  changes:
+    - type: Tweak
+      message: Exped FTL mass check from 150 meters to 50
+  id: 9567
+  time: '2026-06-29T16:48:55.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1192
+- author: salamanderskies
+  changes:
+    - type: Tweak
+      message: Prayers and engravings can now be longer.
+  id: 9568
+  time: '2026-06-29T18:00:38.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1186
+- author: CombustibleToast
+  changes:
+    - type: Tweak
+      message: Site Workers and Site Managers can now equip foot protectors.
+  id: 9569
+  time: '2026-06-29T18:06:48.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1190
+- author: Dizzy-Eevee
+  changes:
+    - type: Fix
+      message: Sheleg and IPCs can no longer be injected with syringes/hyposprays.
+  id: 9570
+  time: '2026-06-29T19:24:48.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1188
+- author: solstar
+  changes:
+    - type: Add
+      message: ITS REAL! (persistence)
+    - type: Tweak
+      message: Added canon time and id number to pda display.
+    - type: Add
+      message: more to come...
+  id: 9571
+  time: '2026-07-01T06:28:05.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1172
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: Added the XED Scavenger to the expedition shipyard.
+  id: 9572
+  time: '2026-07-02T02:50:03.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1164
+- author: BudaLope
+  changes:
+    - type: Fix
+      message: Feroxi can now eat sausage
+  id: 9573
+  time: '2026-07-02T04:37:56.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1193
+- author: BudaLope
+  changes:
+    - type: Tweak
+      message: Removed Rubber and Practice ammo from loot pools
+  id: 9574
+  time: '2026-07-02T04:38:03.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1191
+- author: BudaLope
+  changes:
+    - type: Fix
+      message: Wrenches and drills no longer try to anchor worn bags
+  id: 9575
+  time: '2026-07-02T04:41:02.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1194
+- author: BudaLope
+  changes:
+    - type: Fix
+      message: Certain tiles can now be placed on RCD built plating
+  id: 9576
+  time: '2026-07-02T04:46:38.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1195
+- author: BudaLope
+  changes:
+    - type: Tweak
+      message: Most lathes can now print metal rods
+  id: 9577
+  time: '2026-07-02T04:49:42.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1198

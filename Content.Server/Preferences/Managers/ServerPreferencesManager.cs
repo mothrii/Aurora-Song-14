@@ -171,6 +171,7 @@ namespace Content.Server.Preferences.Managers
             }
 
             return new HumanoidCharacterProfile(
+                profile.Id, // Aurora's Song - Add profile id
                 profile.CharacterName,
                 profile.FlavorText,
                 profile.NsfwFlavorText, // DEN

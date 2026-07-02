@@ -3,6 +3,7 @@ using Content.Shared.PDA;
 using Robust.Shared.Utility;
 using Content.Shared.CartridgeLoader;
 using Content.Client.Message;
+using Content.Shared._AS.PersistentSystems; // Aurora's Song
 using Content.Shared._AS.Utils; // Aurora's Song - Allow round timer to go over 24h
 using Content.Shared._NF.Bank;
 using Robust.Client.UserInterface;
@@ -30,6 +31,7 @@ namespace Content.Client.PDA
 
         private string _pdaOwner = Loc.GetString("comp-pda-ui-unknown");
         private string _owner = Loc.GetString("comp-pda-ui-unknown");
+        private string _idNumber = Loc.GetString("comp-pda-ui-unknown"); // Aurora add id number to pda
         private string _jobTitle = Loc.GetString("comp-pda-ui-unassigned");
         private string _stationName = Loc.GetString("comp-pda-ui-unknown");
         private string _alertLevel = Loc.GetString("comp-pda-ui-unknown");
@@ -165,18 +167,23 @@ namespace Content.Client.PDA
             }
 
 
-            if (state.PdaOwnerInfo.IdOwner != null || state.PdaOwnerInfo.JobTitle != null)
+            if (state.PdaOwnerInfo.IdOwner != null || state.PdaOwnerInfo.IdNumber != null) // Aurora add id number to pda
             {
                 _owner = state.PdaOwnerInfo.IdOwner ?? Loc.GetString("comp-pda-ui-unknown");
-                _jobTitle = state.PdaOwnerInfo.JobTitle ?? Loc.GetString("comp-pda-ui-unassigned");
+                _idNumber = state.PdaOwnerInfo.IdNumber ?? ""; // Aurora add id number to pda
                 IdInfoLabel.SetMarkup(Loc.GetString("comp-pda-ui",
                     ("owner", _owner),
-                    ("jobTitle", _jobTitle)));
+                    ("canonIdNumber", _idNumber))); // Aurora's Song - swaped out job for id number
             }
             else
             {
                 IdInfoLabel.SetMarkup(Loc.GetString("comp-pda-ui-blank"));
             }
+
+            // Aurora's Song Start - add id number to pda
+            _jobTitle = state.PdaOwnerInfo.JobTitle ?? Loc.GetString("comp-pda-ui-unassigned");
+            JobInfoLabel.SetMarkup(Loc.GetString("comp-pda-ui-job", ("jobTitle", _jobTitle)));
+            // Aurora's Song End
 
             _stationName = state.StationName ?? Loc.GetString("comp-pda-ui-unknown");
             StationNameLabel.SetMarkup(Loc.GetString("comp-pda-ui-station",
@@ -378,6 +385,8 @@ namespace Content.Client.PDA
 
             StationTimeLabel.SetMarkup(Loc.GetString("comp-pda-ui-station-time",
                 ("time", RoundTimerUtils.ToString(stationTime)))); // Aurora's Song - Allow round timer to go over 24h
+
+            DateLabel.Text = CanonicalFormat.CanonDateTime().ToString("yyyy-MM-dd HH:mm"); // Aurora's Song - add canon datetime to display.
 
             // Frontier
             if (_roundEndTime is not null)

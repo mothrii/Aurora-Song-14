@@ -689,6 +689,7 @@
     - NFBioGenAnimalCubesStatic #Frontier
     - ASBioGenMaterialsStatic # Aurora's Song
     - ASBioGenAnimalCubesStatic # Aurora's Song
+    - ASBioGenSeedsStatic # Aurora's Song
   - type: EmagLatheRecipes
     emagStaticPacks:
     - BioGenEmagStatic

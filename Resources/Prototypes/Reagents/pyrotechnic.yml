@@ -164,6 +164,8 @@
   friction: 0.4
   tileReactions:
   - !type:FlammableTileReaction {}
+  tags: # Aurora's Song
+  - IPC
   metabolisms:
     Bloodstream:
       effects:
@@ -182,6 +184,13 @@
             Poison: 1
       - !type:Flammable
         multiplier: 0.4
+      # Aurora's Song Start - IPCs can get drunk from welding fuel
+      - !type:Drunk
+        boozePower: 20 # As potent as ethanol per unit, ethanol gives 2 every 0.05 and this digests at 0.5
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+      # Aurora's Song End
 
 - type: reagent
   id: Fluorosurfactant

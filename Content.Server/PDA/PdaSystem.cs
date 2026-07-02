@@ -28,6 +28,7 @@ using Content.Shared._NF.Shipyard.Components; // Frontier
 using Content.Server._NF.Shipyard.Systems; // Frontier
 using Content.Shared._NF.SectorServices; // Frontier
 using Content.Server.RoundEnd; // Frontier
+using Content.Shared._AS.PersistentSystems; // Aurora's Song
 
 namespace Content.Server.PDA
 {
@@ -230,6 +231,7 @@ namespace Content.Server.PDA
                 {
                     ActualOwnerName = pda.OwnerName,
                     IdOwner = id?.FullName,
+                    IdNumber = CanonicalFormat.CanonId(id?.ProfileId).ToString(), // Aurora's Song
                     JobTitle = id?.LocalizedJobTitle,
                     StationAlertLevel = pda.StationAlertLevel,
                     StationAlertColor = pda.StationAlertColor

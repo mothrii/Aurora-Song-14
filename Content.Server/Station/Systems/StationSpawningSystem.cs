@@ -274,7 +274,7 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
 
         if (prototype != null && TryComp(entity.Value, out MetaDataComponent? metaData))
         {
-            SetPdaAndIdCardData(entity.Value, metaData.EntityName, prototype, station);
+            SetPdaAndIdCardData(entity.Value, profile!.ProfileId, metaData.EntityName, prototype, station); // Aurora - add ProfileId
         }
 
         DoJobSpecials(job, entity.Value);
@@ -311,10 +311,11 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
     /// Sets the ID card and PDA name, job, and access data.
     /// </summary>
     /// <param name="entity">Entity to load out.</param>
+    /// <param name="profileId">The ID associated with the profile stored in the database.</param>
     /// <param name="characterName">Character name to use for the ID.</param>
     /// <param name="jobPrototype">Job prototype to use for the PDA and ID.</param>
     /// <param name="station">The station this player is being spawned on.</param>
-    public void SetPdaAndIdCardData(EntityUid entity, string characterName, JobPrototype jobPrototype, EntityUid? station)
+    public void SetPdaAndIdCardData(EntityUid entity, int? profileId, string characterName, JobPrototype jobPrototype, EntityUid? station) // Aurora - add ProfileId
     {
         if (!InventorySystem.TryGetSlotEntity(entity, "id", out var idUid))
             return;
@@ -326,6 +327,7 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
         if (!TryComp<IdCardComponent>(cardId, out var card))
             return;
 
+        card.ProfileId = profileId; // Aurora - add ProfileId
         _cardSystem.TryChangeFullName(cardId, characterName, card);
         _cardSystem.TryChangeJobTitle(cardId, jobPrototype.LocalizedName, card);
 
