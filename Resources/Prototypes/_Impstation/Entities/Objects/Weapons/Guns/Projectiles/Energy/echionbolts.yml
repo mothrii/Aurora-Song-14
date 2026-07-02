@@ -34,8 +34,32 @@
     impactEffect: BulletImpactEffectSyndicate
     damage:
       types:
-        Heat: 9.5
-        Piercing: 9.5
+        Heat: 12.5
+        Piercing: 12.5
+
+- type: entity
+  name: shuvit plasma bolt
+  id: BulletPlasmaShuvit
+  parent: BulletPlasmaAdder
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Heat: 12
+        Piercing: 12
+
+- type: entity
+  name: casper plasma bolt
+  id: BulletPlasmaCasper
+  parent: BulletPlasmaAdder
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Heat: 14
+        Piercing: 14
 
 - type: entity
   name: akurra plasma bolt
@@ -51,8 +75,8 @@
   - type: Projectile
     damage:
       types:
-        Heat: 8.5
-        Piercing: 8.5
+        Heat: 11
+        Piercing: 11
 
 - type: entity
   name: ananke plasma bolt

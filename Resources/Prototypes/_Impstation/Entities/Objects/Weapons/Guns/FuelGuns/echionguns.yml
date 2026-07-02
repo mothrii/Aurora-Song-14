@@ -85,11 +85,11 @@
         reagents:
         - ReagentId: Echion
           Quantity: 30
-        maxVol: 30 #30 shots
+        maxVol: 30 #40 shots
   - type: SolutionAmmoProvider
     solutionId: chamber
     proto: BulletPlasmaAkurra
-    fireCost: 1
+    fireCost: 0.75
 
 - type: entity
   name: Ananke
