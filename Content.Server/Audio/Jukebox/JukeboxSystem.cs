@@ -7,6 +7,7 @@ using Robust.Shared.Audio;
 using Robust.Shared.Audio.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random; // Aurora's Song
 
 namespace Content.Server.Audio.Jukebox;
 
@@ -14,6 +15,8 @@ public sealed partial class JukeboxSystem : SharedJukeboxSystem
 {
     [Dependency] private IPrototypeManager _protoManager = default!;
     [Dependency] private AppearanceSystem _appearanceSystem = default!;
+    [Dependency] private IRobustRandom _random = default!; // Aurora's Song
+    [Dependency] private UserInterfaceSystem _userInterface = default!; // Frontier
 
     public override void Initialize()
     {
@@ -23,9 +26,11 @@ public sealed partial class JukeboxSystem : SharedJukeboxSystem
         SubscribeLocalEvent<JukeboxComponent, JukeboxPauseMessage>(OnJukeboxPause);
         SubscribeLocalEvent<JukeboxComponent, JukeboxStopMessage>(OnJukeboxStop);
         SubscribeLocalEvent<JukeboxComponent, JukeboxSetTimeMessage>(OnJukeboxSetTime);
+        SubscribeLocalEvent<JukeboxComponent, JukeboxSetPlaybackModeMessage>(OnJukeboxSetPlayback); // Frontier
         SubscribeLocalEvent<JukeboxComponent, ComponentInit>(OnComponentInit);
         SubscribeLocalEvent<JukeboxComponent, ComponentShutdown>(OnComponentShutdown);
 
+        SubscribeLocalEvent<JukeboxComponent, ComponentStartup>(OnComponentStartup); // Frontier
         SubscribeLocalEvent<JukeboxComponent, PowerChangedEvent>(OnPowerChanged);
     }
 
@@ -36,6 +41,19 @@ public sealed partial class JukeboxSystem : SharedJukeboxSystem
             TryUpdateVisualState(ent.AsNullable());
         }
     }
+
+    // Frontier: Shuffle & Repeat
+    private void OnComponentStartup(Entity<JukeboxComponent> entity, ref ComponentStartup ev)
+    {
+        UpdateUI(entity);
+    }
+
+    private void UpdateUI(Entity<JukeboxComponent> ent)
+    {
+        var state = new JukeboxInterfaceState(ent.Comp.PlaybackMode);
+        _userInterface.SetUiState(ent.Owner, JukeboxUiKey.Key, state);
+    }
+    // End Frontier: Shuffle & Repeat
 
     private void OnJukeboxPlay(Entity<JukeboxComponent> ent, ref JukeboxPlayingMessage args)
     {
@@ -71,9 +89,44 @@ public sealed partial class JukeboxSystem : SharedJukeboxSystem
         Stop(entity.AsNullable());
     }
 
+    // Aurora's Song Start - Shuffling redone
+    private void PlayJukeboxPlaybackMode(Entity<JukeboxComponent> entity)
+    {
+        switch (entity.Comp.PlaybackMode)
+        {
+            case JukeboxPlaybackMode.Shuffle:
+            {
+                if (!_protoManager.TryGetRandom<JukeboxPrototype>(_random, out var prototype))
+                {
+                    Stop(entity.AsNullable());
+                    return;
+                }
+
+                SetSelectedTrack(entity.AsNullable(), prototype.ID);
+                TryPlay(entity.AsNullable());
+                return;
+            }
+            case JukeboxPlaybackMode.Repeat:
+                TryPlay(entity.AsNullable());
+                break;
+        }
+    }
+    // Aurora's Song End
+
     private void OnJukeboxSelected(EntityUid uid, JukeboxComponent component, JukeboxSelectedMessage args)
     {
         SetSelectedTrack((uid, component), args.SongId);
+    }
+
+    // Frontier: Shuffle & Repeat
+    private void OnJukeboxSetPlayback(Entity<JukeboxComponent> ent, ref JukeboxSetPlaybackModeMessage playbackModeMessage)
+    {
+        if (ent.Comp.PlaybackMode != playbackModeMessage.PlaybackMode)
+        {
+            ent.Comp.PlaybackMode = playbackModeMessage.PlaybackMode;
+            UpdateUI(ent);
+            Dirty(ent);
+        }
     }
 
     public override void Update(float frameTime)
@@ -94,6 +147,14 @@ public sealed partial class JukeboxSystem : SharedJukeboxSystem
                     TryUpdateVisualState((uid, comp));
                 }
             }
+
+            // Frontier: Replay feature. Please pitch in if you have better ideas. This is a pretty bad implementation.
+            if (comp.PlaybackMode != JukeboxPlaybackMode.Single && comp.AudioStream != null &&
+                GetAudioState(comp.AudioStream) == AudioState.Stopped && !comp.ManuallyStopped) // Aurora's Song - Make sure it's not manually stopped
+            {
+                PlayJukeboxPlaybackMode((uid, comp)); // Aurora's Song - Rewrite the function
+            }
+            // End Frontier
         }
     }
 
@@ -140,6 +201,16 @@ public sealed partial class JukeboxSystem : SharedJukeboxSystem
         }
     }
 
+    // Frontier: Shuffle & Repeat
+    public AudioState GetAudioState(EntityUid? entity, AudioComponent? component = null)
+    {
+        if (entity == null || !Resolve(entity.Value, ref component, false))
+            return AudioState.Stopped; // Consider no audio as stopped.
+
+        return component.State;
+    }
+    // End Frontier: Shuffle & Repeat
+
     /// <summary>
     /// Attempts to play the jukebox's current selected track.
     /// </summary>
@@ -149,6 +220,7 @@ public sealed partial class JukeboxSystem : SharedJukeboxSystem
         if (!Resolve(ent, ref ent.Comp))
             return false;
 
+        ent.Comp.ManuallyStopped = false; // Aurora's Song - Reset manually stopped
         if (Exists(ent.Comp.AudioStream))
         {
             Audio.SetState(ent.Comp.AudioStream, AudioState.Playing);
@@ -175,6 +247,7 @@ public sealed partial class JukeboxSystem : SharedJukeboxSystem
         if (!Resolve(entity, ref entity.Comp, logMissing: false))
             return;
 
+        entity.Comp.ManuallyStopped = true; // Aurora's Song - Track stopping
         Audio.SetState(entity.Comp.AudioStream, AudioState.Stopped);
     }
 
