@@ -29,6 +29,7 @@ public sealed partial class JobWhitelistsCommand : LocalizedCommands
         {
             shell.WriteLine(Loc.GetString("cmd-ban-invalid-arguments"));
             shell.WriteLine(Help);
+            return; // Aurora's Song - Why did this not exist?
         }
 
         var located = await _locator.LookupIdByNameOrIdAsync(args[0]);
