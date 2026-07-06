@@ -1851,3 +1851,10 @@ Entries:
   id: 9590
   time: '2026-07-06T02:44:30.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1218
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: IPCs can now select alternative speech and emote sounds.
+  id: 9591
+  time: '2026-07-06T03:13:43.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1209
