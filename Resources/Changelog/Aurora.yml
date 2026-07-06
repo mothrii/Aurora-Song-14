@@ -1813,3 +1813,10 @@ Entries:
   id: 9586
   time: '2026-07-06T01:56:38.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1206
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: Aurora now has its own definitions page in the guidebook!
+  id: 9587
+  time: '2026-07-06T02:06:24.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1199
