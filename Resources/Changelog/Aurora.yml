@@ -1779,3 +1779,12 @@ Entries:
   id: 9582
   time: '2026-07-06T01:04:00.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1213
+- author: Sunburstschitin
+  changes:
+    - type: Add
+      message: >-
+        Added a version of the towel crate from LBK that's purchasable from the
+        cargo request console.
+  id: 9583
+  time: '2026-07-06T01:13:00.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1214
