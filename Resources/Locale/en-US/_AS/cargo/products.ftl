@@ -1,3 +1,6 @@
+cargo-product-towel-crate = towel crate
+cargo-product-description-towel-crate = A rainbow of towels, for when the space tsunami rolls in.
+
 cargo-product-description-old-mech = An old mech with an integral forklift, useful for moving trade crates.
 
 # Barrels
