@@ -92,10 +92,13 @@
 
 #region Chems
 - type: Tag
+  id: Aphrodisiac
+
+- type: Tag
   id: Cryogenic
 
 - type: Tag
-  id: IPC
+  id: IPCCompatible
 
 - type: Tag
   id: Narcotic
@@ -104,7 +107,7 @@
   id: Toxin
 
 - type: Tag
-  id: Sheleg
+  id: ShelegCompatible
 #endregion
 
 #region shotgun 8g
