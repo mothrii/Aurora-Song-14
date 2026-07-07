@@ -105,7 +105,7 @@
       reflects:
       - Energy
     - type: Appearance
-    - type: Damageable
+    - type: Injurable # Aurora's Song - Damageable>Injurable
       damageContainer: Shield
     - type: Battery
       maxCharge: 180

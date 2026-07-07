@@ -4,7 +4,7 @@
   suffix: Filled
   components:
   - type: GasTank
-    outputPressure: 21.3
+    releasePressure: 21.3 # Aurora's Song - outputPressure>releasePressure
     air:
       # 4 minutes
       volume: 0.66
@@ -18,7 +18,7 @@
   suffix: Filled
   components:
   - type: GasTank
-    outputPressure: 21.3
+    releasePressure: 21.3 # Aurora's Song - outputPressure>releasePressure
     air:
       # 4 minutes
       volume: 0.66
@@ -33,7 +33,7 @@
   suffix: Filled
   components:
   - type: GasTank
-    outputPressure: 21.3
+    releasePressure: 21.3 # Aurora's Song - outputPressure>releasePressure
     air:
       # 9 minutes
       volume: 1.5
@@ -47,7 +47,7 @@
   suffix: Filled
   components:
   - type: GasTank
-    outputPressure: 21.3
+    releasePressure: 21.3 # Aurora's Song - outputPressure>releasePressure
     air:
       # 9 minutes
       volume: 1.5
