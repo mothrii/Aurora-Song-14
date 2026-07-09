@@ -1,32 +1,32 @@
+using Content.Shared.CartridgeLoader.Cartridges;
 using Content.Shared._DV.CartridgeLoader.Cartridges; // DeltaV
-using Content.Shared.Paper;
+﻿using Content.Shared.Paper;
 using Robust.Shared.Audio;
-using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
-namespace Content.Shared.CartridgeLoader.Cartridges;
+namespace Content.Server.CartridgeLoader.Cartridges;
 
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState, AutoGenerateComponentPause]
-[Access(typeof(LogProbeCartridgeSystem))]
+[RegisterComponent, Access(typeof(LogProbeCartridgeSystem))]
+[AutoGenerateComponentPause]
 public sealed partial class LogProbeCartridgeComponent : Component
 {
     /// <summary>
     /// The name of the scanned entity, sent to clients when they open the UI.
     /// </summary>
-    [DataField, AutoNetworkedField]
+    [DataField]
     public string EntityName = string.Empty;
 
     /// <summary>
     /// The list of pulled access logs
     /// </summary>
-    [DataField, AutoNetworkedField]
+    [DataField, ViewVariables]
     public List<PulledAccessLog> PulledAccessLogs = new();
 
     /// <summary>
     /// The sound to make when we scan something with access
     /// </summary>
-    [DataField]
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
     public SoundSpecifier SoundScan = new SoundPathSpecifier("/Audio/Machines/scan_finish.ogg", AudioParams.Default.WithVariation(0.25f));
 
     /// <summary>
@@ -53,6 +53,6 @@ public sealed partial class LogProbeCartridgeComponent : Component
     /// <summary>
     /// When anyone is allowed to spawn another printout.
     /// </summary>
-    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoNetworkedField, AutoPausedField]
+    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField]
     public TimeSpan NextPrintAllowed = TimeSpan.Zero;
 }

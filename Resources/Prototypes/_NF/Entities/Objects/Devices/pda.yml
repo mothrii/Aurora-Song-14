@@ -14,23 +14,20 @@
   components:
   - type: CartridgeLoader
     diskSpace: 20
-  - type: EntityTableContainerFill # Aurora's Song - preinstalled>ETCF
-    containers:
-      preinstalled-program-container: !type:AllSelector
-        children:
-        - id: CrewManifestCartridge
-        - id: NotekeeperCartridge
-        - id: NanoTaskCartridge
-        - id: NewsReaderCartridge
-        - id: BountyContractsCartridge
-        - id: AstroNavCartridge
-        - id: WantedListCartridge
-        - id: LedgerCartridge
-        - id: LogProbeCartridge
-        - id: MailMetricsCartridge
-        - id: AppraisalCartridge
-        - id: NetProbeCartridge
-        - id: NanoChatCartridge # Auroras Song
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NanoTaskCartridge
+      - NewsReaderCartridge
+      - BountyContractsCartridge
+      - AstroNavCartridge
+      - WantedListCartridge
+      - LedgerCartridge
+      - LogProbeCartridge
+      - MailMetricsCartridge
+      - AppraisalCartridge
+      - NetProbeCartridge
+      - NanoChatCartridge # Auroras Song
 
 - type: entity
   parent: BasePDA
@@ -152,19 +149,17 @@
     accentHColor: "#896b49"
   - type: Icon
     state: pda-sheriff
-  - type: EntityTableContainerFill # Aurora's Song - preinstalled>ETCF
-    containers:
-      preinstalled-program-container: !type:AllSelector
-        children:
-        - id: CrewManifestCartridge
-        - id: NotekeeperCartridge
-        - id: NanoTaskCartridge
-        - id: NewsReaderCartridge
-        - id: BountyContractsCartridge
-        - id: AstroNavCartridge
-        - id: WantedListCartridge
-        - id: LedgerCartridge
-        - id: NanoChatCartridge # Auroras Song
+  - type: CartridgeLoader # Extended with the ledger
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - BountyContractsCartridge
+    - AstroNavCartridge
+    - WantedListCartridge
+    - LedgerCartridge
+    - NanoChatCartridge # Auroras Song
 
 - type: entity
   parent: BaseSecurityPDA
@@ -377,19 +372,17 @@
     accentHColor: "#447987"
   - type: Icon
     state: pda-sr
-  - type: EntityTableContainerFill # Aurora's Song - preinstalled>ETCF
-    containers:
-      preinstalled-program-container: !type:AllSelector
-        children:
-        - id: CrewManifestCartridge
-        - id: NotekeeperCartridge
-        - id: NanoTaskCartridge
-        - id: NewsReaderCartridge
-        - id: BountyContractsCartridge
-        - id: AstroNavCartridge
-        - id: LedgerCartridge
-        - id: MailMetricsCartridge
-        - id: NanoChatCartridge # Auroras Song
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - BountyContractsCartridge
+    - AstroNavCartridge
+    - LedgerCartridge
+    - MailMetricsCartridge
+    - NanoChatCartridge # Auroras Song
 
 - type: entity
   parent: PiratePDA
@@ -495,19 +488,17 @@
   - type: Icon
     sprite: _NF/Objects/Devices/pda.rsi
     state: pda-doc
-  - type: EntityTableContainerFill # Aurora's Song - preinstalled>ETCF
-    containers:
-      preinstalled-program-container: !type:AllSelector
-        children:
-        - id: CrewManifestCartridge
-        - id: NotekeeperCartridge
-        - id: NanoTaskCartridge
-        - id: NewsReaderCartridge
-        - id: BountyContractsCartridge
-        - id: AstroNavCartridge
-        - id: LedgerCartridge
-        - id: MedTekCartridge
-        - id: NanoChatCartridge # Auroras Song
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - BountyContractsCartridge
+    - AstroNavCartridge
+    - LedgerCartridge
+    - MedTekCartridge
+    - NanoChatCartridge # Auroras Song
 
 #- type: entity # Autora's Song - disabled
 #  parent: BasePDA

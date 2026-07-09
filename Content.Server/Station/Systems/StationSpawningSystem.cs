@@ -366,7 +366,7 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
         foreach (var entProto in pdaCartridges)
         {
             var spawnedEntity = Spawn(entProto, coords);
-            if (!_cartridgeLoader.InstallCartridge((slotEnt.Value, cartridgeLoader), spawnedEntity)) // Aurora's Song - Use new syntax
+            if (!_cartridgeLoader.InstallCartridge(slotEnt.Value, spawnedEntity, cartridgeLoader))
                 DebugTools.Assert(false, $"Entity {entity} could not install cartridge {entProto} into their PDA {slotEnt.Value}!");
 
             QueueDel(spawnedEntity);

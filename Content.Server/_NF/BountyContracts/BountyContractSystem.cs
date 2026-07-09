@@ -218,8 +218,8 @@ public sealed partial class BountyContractSystem : SharedBountyContractSystem
             var pdaList = EntityQueryEnumerator<CartridgeLoaderComponent>();
             while (pdaList.MoveNext(out var loaderUid, out var loaderComp))
             {
-                if (_cartridgeLoader.TryGetProgram<BountyContractsCartridgeComponent>((loaderUid, loaderComp)) is { } program // Aurora's Song - Use new syntax
-                    && program.Comp.NotificationsEnabled) // Aurora's Song - Use new syntax
+                if (_cartridgeLoader.TryGetProgram<BountyContractsCartridgeComponent>(loaderUid, out _, out var cartComp, true, loaderComp)
+                    && cartComp.NotificationsEnabled)
                 {
                     _cartridgeLoader.SendNotification(loaderUid, sender, msg, loaderComp);
                 }

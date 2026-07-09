@@ -1,9 +1,10 @@
-using Content.Shared._DV.NanoChat; // DeltaV
 using Content.Shared.Access.Components;
 using Content.Shared.Administration.Logs;
+using Content.Shared.CartridgeLoader;
+using Content.Shared.CartridgeLoader.Cartridges;
+using Content.Shared._DV.NanoChat; // DeltaV
 using Content.Shared.Database;
 using Content.Shared.Hands.EntitySystems;
-using Content.Shared.Interaction;
 using Content.Shared.Labels.EntitySystems;
 using Content.Shared.Paper;
 using Content.Shared.Popups;
@@ -11,7 +12,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Timing;
 using System.Text;
 
-namespace Content.Shared.CartridgeLoader.Cartridges;
+namespace Content.Server.CartridgeLoader.Cartridges;
 
 public sealed partial class LogProbeCartridgeSystem : EntitySystem
 {
@@ -31,23 +32,26 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem
         InitializeNanoChat(); // DeltaV
 
         SubscribeLocalEvent<LogProbeCartridgeComponent, CartridgeUiReadyEvent>(OnUiReady);
-        SubscribeLocalEvent<LogProbeCartridgeComponent, CartridgeRelayedEvent<AfterInteractEvent>>(AfterInteract);
+        SubscribeLocalEvent<LogProbeCartridgeComponent, CartridgeAfterInteractEvent>(AfterInteract);
         SubscribeLocalEvent<LogProbeCartridgeComponent, CartridgeMessageEvent>(OnMessage);
     }
 
     /// <summary>
+    /// The <see cref="CartridgeAfterInteractEvent" /> gets relayed to this system if the cartridge loader is running
+    /// the LogProbe program and someone clicks on something with it. <br/>
+    /// <br/>
     /// Updates the program's list of logs with those from the device.
     /// </summary>
-    private void AfterInteract(Entity<LogProbeCartridgeComponent> ent, ref CartridgeRelayedEvent<AfterInteractEvent> args)
+    private void AfterInteract(Entity<LogProbeCartridgeComponent> ent, ref CartridgeAfterInteractEvent args)
     {
-        if (args.Args.Handled || !args.Args.CanReach || args.Args.Target is not { } target)
+        if (args.InteractEvent.Handled || !args.InteractEvent.CanReach || args.InteractEvent.Target is not { } target)
             return;
 
         // DeltaV begin - Add NanoChat card scanning
         if (TryComp<NanoChatCardComponent>(target, out var nanoChatCard))
         {
             ScanNanoChatCard(ent, args, target, nanoChatCard);
-            args.Args.Handled = true;
+            args.InteractEvent.Handled = true;
             return;
         }
         // DeltaV end
@@ -56,8 +60,8 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem
             return;
 
         //Play scanning sound with slightly randomized pitch
-        _audio.PlayPredicted(ent.Comp.SoundScan, target, args.Args.User);
-        _popup.PopupPredictedCursor(Loc.GetString("log-probe-scan", ("device", target)), args.Args.User);
+        _audio.PlayEntity(ent.Comp.SoundScan, args.InteractEvent.User, target);
+        _popup.PopupCursor(Loc.GetString("log-probe-scan", ("device", target)), args.InteractEvent.User);
 
         ent.Comp.EntityName = Name(target);
         ent.Comp.PulledAccessLogs.Clear();
@@ -76,7 +80,6 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem
         // Reverse the list so the oldest is at the bottom
         ent.Comp.PulledAccessLogs.Reverse();
 
-        Dirty(ent);
         UpdateUiState(ent, args.Loader);
     }
 
@@ -104,7 +107,7 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem
 
         ent.Comp.NextPrintAllowed = _timing.CurTime + ent.Comp.PrintCooldown;
 
-        var paper = EntityManager.PredictedSpawn(ent.Comp.PaperPrototype, _transform.GetMapCoordinates(user));
+        var paper = Spawn(ent.Comp.PaperPrototype, _transform.GetMapCoordinates(user));
         _label.Label(paper, ent.Comp.EntityName); // label it for easy identification
 
         _audio.PlayEntity(ent.Comp.PrintSound, user, paper);
@@ -126,12 +129,11 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem
         _paper.SetContent((paper, paperComp), builder.ToString());
 
         _adminLogger.Add(LogType.EntitySpawn, LogImpact.Low, $"{ToPrettyString(user):user} printed out LogProbe logs ({paper}) of {ent.Comp.EntityName}");
-        Dirty(ent);
     }
 
     private void UpdateUiState(Entity<LogProbeCartridgeComponent> ent, EntityUid loaderUid)
     {
-        var state = new LogProbeUiState(ent.Comp.EntityName, ent.Comp.PulledAccessLogs);
-        _cartridge.UpdateCartridgeUiState(loaderUid, state);
+        var state = new LogProbeUiState(ent.Comp.EntityName, ent.Comp.PulledAccessLogs, ent.Comp.ScannedNanoChatData); // DeltaV - NanoChat support
+        _cartridge?.UpdateCartridgeUiState(loaderUid, state);
     }
 }
