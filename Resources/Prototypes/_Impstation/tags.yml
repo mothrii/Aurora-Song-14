@@ -7,6 +7,9 @@
   id: EchionGun
 
 - type: Tag
+  id: Plushie
+
+- type: Tag
   id: SpeedLoaderAM
 
 - type: Tag
