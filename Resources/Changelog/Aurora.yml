@@ -1926,3 +1926,10 @@ Entries:
   id: 9599
   time: '2026-07-11T00:29:02.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1241
+- author: heirdragonair
+  changes:
+    - type: Add
+      message: offset canes are now obtainable! yay! yay! yippee!
+  id: 9600
+  time: '2026-07-11T01:35:32.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1238
