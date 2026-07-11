@@ -1940,3 +1940,12 @@ Entries:
   id: 9601
   time: '2026-07-11T03:52:20.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1224
+- author: GreyScaleHarlequin
+  changes:
+    - type: Fix
+      message: >-
+        Fixed Replicant blood volumes, fairy replicants no longer choke to death
+        on arrival.
+  id: 9602
+  time: '2026-07-11T04:26:32.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1234
