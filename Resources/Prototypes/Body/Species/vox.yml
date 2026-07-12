@@ -304,6 +304,12 @@
 - type: entity
   parent: [ OrganBaseTorso, OrganVoxExternal ]
   id: OrganVoxTorso
+  # Aurora's Song Start - hideable tail
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Tail
+  # Aurora's Song End
 
 - type: entity
   parent: [ OrganBaseHead, OrganVoxExternal ]

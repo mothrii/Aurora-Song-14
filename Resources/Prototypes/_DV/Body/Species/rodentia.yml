@@ -175,6 +175,12 @@
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganRodentiaExternal ] # Aurora's Song - Add sexed organs
   id: OrganRodentiaTorso
+  # Aurora's Song Start - hideable tail
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Tail
+  # Aurora's Song End
 
 - type: entity
   parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganRodentiaExternal ] # Aurora's Song - Add sexed organs

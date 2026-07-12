@@ -245,6 +245,12 @@
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganMothExternal ]
   id: OrganMothTorso
+  # Aurora's Song Start - hideable wings
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Tail
+  # Aurora's Song End
 
 - type: entity
   parent: [ OrganBaseHead, OrganMothExternal ]
