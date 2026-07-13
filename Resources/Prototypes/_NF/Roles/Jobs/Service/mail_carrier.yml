@@ -40,6 +40,7 @@
     - ShipVoucherFrontierMailCarrier # Frontier
     - MailMetricsCartridge # Frontier
     - CrayonBox # Aurora's Song - for labeling mail areas
+    - HoloBellProjector # Aurora's Song - notify people of mail
   encryptionKeys: # Aurora's Song - Added traffic, shipboard, and service encryption keys
   - EncryptionKeyTraffic
   - EncryptionKeyShipboard

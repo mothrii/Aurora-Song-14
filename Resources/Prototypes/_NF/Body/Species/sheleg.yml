@@ -220,9 +220,11 @@
     damage:
       types:
         Heat: -0.025
-  - type: BlockInjection
-    #blockHypospray: true # Aurora's Song: This field is broken and thus no longer used
-    blockInjectOnProjectile: true
+  # Aurora's Song Edit: BlockInjection rewrite
+  - type: SpeciesBlockInjection
+    messageSelf: sheleg-injector-component-blocked-user
+    messageOther: sheleg-injector-component-blocked-other
+  # End Aurora's Song Edit
   - type: InventorySlotFriction
   - type: AutoToggleableOuterClothing
 

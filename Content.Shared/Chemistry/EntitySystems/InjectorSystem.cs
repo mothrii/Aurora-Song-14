@@ -21,7 +21,7 @@ using Content.Shared.Weapons.Melee.Events;
 using JetBrains.Annotations;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
-using Content.Shared._DV.Chemistry.Components; // Frontier
+using Content.Shared._AS.Chemistry.Events; // Aurora's Song
 
 namespace Content.Shared.Chemistry.EntitySystems;
 
@@ -484,13 +484,26 @@ public sealed partial class InjectorSystem : EntitySystem
         RaiseLocalEvent(target, ref ev);
 
         // Jugsuit blocking Hyposprays when
-        if (ev.Cancelled || HasComp<BlockInjectionComponent>(target)) // Aurora's Song: Check for BlockInjectionComponent
+        if (ev.Cancelled)
         {
             var userMessage = Loc.GetString("injector-component-blocked-user");
             var otherMessage = Loc.GetString("injector-component-blocked-other", ("target", target), ("user", user));
             _popup.PopupPredicted(userMessage, otherMessage, target, user, PopupType.SmallCaution);
             return true;
         }
+
+        // Aurora's Song Edit: Species trait injection blocking
+        var speciesEv = new TargetBeforeInjectEventSpecies(user, injector, target);
+        RaiseLocalEvent(target, ref speciesEv);
+
+        if (speciesEv.Cancelled)
+        {
+            var userMessage = Loc.GetString(speciesEv.BlockMessageSelf, ("injector", injector), ("target", target));
+            var otherMessage = Loc.GetString(speciesEv.BlockMessageOther, ("injector", injector), ("target", target), ("user", user));
+            _popup.PopupPredicted(userMessage, otherMessage, target, user, PopupType.SmallCaution);
+            return false;
+        }
+        // Aurora's Song Edit End
 
         // Get transfer amount. It may be smaller than _transferAmount if not enough room
         var plannedTransferAmount = FixedPoint2.Min(injector.Comp.CurrentTransferAmount ?? injectorSolution.Volume, injectorSolution.Volume);
@@ -560,6 +573,19 @@ public sealed partial class InjectorSystem : EntitySystem
             _popup.PopupClient("injector-component-cannot-toggle-draw-message", user, user);
             return false;
         }
+
+        // Aurora's Song Edit: BlockInjection stops drawing, too.
+        var speciesEv = new TargetBeforeInjectEventSpecies(user, injector, target);
+        RaiseLocalEvent(target, ref speciesEv);
+
+        if (speciesEv.Cancelled)
+        {
+            var userMessage = Loc.GetString(speciesEv.BlockMessageSelf, ("injector", injector), ("target", target));
+            var otherMessage = Loc.GetString(speciesEv.BlockMessageOther, ("injector", injector), ("target", target), ("user", user));
+            _popup.PopupPredicted(userMessage, otherMessage, target, user, PopupType.SmallCaution);
+            return false;
+        }
+        // Aurora's Song Edit End
 
         var applicableTargetSolution = targetSolution.Comp.Solution;
         // If a whitelist exists, remove all non-whitelisted reagents from the target solution temporarily

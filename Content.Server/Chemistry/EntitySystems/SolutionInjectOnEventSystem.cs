@@ -1,6 +1,6 @@
 using Content.Server.Body.Systems;
 using Content.Server.Chemistry.Components;
-using Content.Shared._DV.Chemistry.Components;
+using Content.Shared._AS.Chemistry.Components; // Aurora's Song
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Body.Components;
 using Content.Shared.Chemistry.Events;
@@ -96,7 +96,7 @@ public sealed partial class SolutionInjectOnCollideSystem : EntitySystem
                 continue;
 
             // Frontier: Block injections
-            if (TryComp<BlockInjectionComponent>(target, out var blockInjection) && blockInjection.BlockInjectOnProjectile)
+            if (HasComp<SpeciesBlockInjectionComponent>(target)) // Aurora's Song: BlockInjectionComponent rewrite
                 continue;
             // End Frontier
 

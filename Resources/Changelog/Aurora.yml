@@ -1910,3 +1910,84 @@ Entries:
   id: 9597
   time: '2026-07-09T20:24:50.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1231
+- author: SolStar2
+  changes:
+    - type: Tweak
+      message: Replaced notekeeper with a new and improved note keeping app, NeoNote.
+    - type: Add
+      message: Added persistence to NeoNote!
+  id: 9598
+  time: '2026-07-10T22:51:33.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1200
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: Ore bags (and other magets) work like before the upmerge!
+  id: 9599
+  time: '2026-07-11T00:29:02.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1241
+- author: heirdragonair
+  changes:
+    - type: Add
+      message: offset canes are now obtainable! yay! yay! yippee!
+  id: 9600
+  time: '2026-07-11T01:35:32.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1238
+- author: Dizzy-Eevee
+  changes:
+    - type: Tweak
+      message: You can no longer draw blood from IPCs and Sheleg
+  id: 9601
+  time: '2026-07-11T03:52:20.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1224
+- author: GreyScaleHarlequin
+  changes:
+    - type: Fix
+      message: >-
+        Fixed Replicant blood volumes, fairy replicants no longer choke to death
+        on arrival.
+  id: 9602
+  time: '2026-07-11T04:26:32.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1234
+- author: portfiend, meatsmall
+  changes:
+    - type: Add
+      message: Fairies now have antenna!
+  id: 9603
+  time: '2026-07-11T16:54:30.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1225
+- author: mothrii
+  changes:
+    - type: Add
+      message: Ports the Holobell Projector for any doorbell needs
+  id: 9604
+  time: '2026-07-11T19:40:59.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1228
+- author: ZigTag
+  changes:
+    - type: Tweak
+      message: increase price of placebo from 18500 to 19000 to fix test
+  id: 9605
+  time: '2026-07-12T07:08:36.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1245
+- author: mothrii
+  changes:
+    - type: Add
+      message: Some new colorful glasses available for your loadout!
+  id: 9606
+  time: '2026-07-12T20:17:36.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1244
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: You can now select your character's blood reagent in the traits menu.
+  id: 9607
+  time: '2026-07-12T20:37:17.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1215
+- author: Toasterblast
+  changes:
+    - type: Add
+      message: A new shuttle in the Syndicate shipyard console, the Fang.
+  id: 9608
+  time: '2026-07-12T21:07:07.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1070
