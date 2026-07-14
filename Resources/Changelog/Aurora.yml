@@ -1991,3 +1991,10 @@ Entries:
   id: 9608
   time: '2026-07-12T21:07:07.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1070
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: CONTRIBUTING.md formatting update
+  id: 9609
+  time: '2026-07-14T01:22:44.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/994
