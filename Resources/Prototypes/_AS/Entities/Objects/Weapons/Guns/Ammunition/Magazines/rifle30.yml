@@ -35,11 +35,51 @@
       right:
       - state: inhand-right-mag
 
+- type: entity
+  id: ASBaseMagazineEnblocRifle30Long
+  parent: NFBaseMagazineRifle30
+  name: en-bloc clip (.30 long rifle)
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - ASMagazineEnblocRifle30Long
+  - type: Sprite
+    sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Magazine/lever_rifle_mags.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-1
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+      - ASCartridgeRifle30Long
+    proto: ASCartridgeRifle30Long
+    capacity: 8
+  - type: Item
+    sprite: _AS/Objects/Weapons/Guns/Ammunition/Magazine/Rifle/marksmanrifle30_mag.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      right:
+      - state: inhand-right-mag
+
 #region .30 magazines
 - type: entity
   id: ASMagazineMarksmanRifle30Empty
   name: marksman magazine (.30 rifle, any)
   parent: ASBaseMagazineMarksmanRifle30
+  suffix: empty
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+- type: entity
+  id: ASMagazineEnblocRifle30LongEmpty
+  name: en-bloc clip (.30 rifle, any)
+  parent: ASBaseMagazineEnblocRifle30Long
   suffix: empty
   components:
   - type: BallisticAmmoProvider
@@ -52,6 +92,14 @@
   components:
   - type: BallisticAmmoProvider
     proto: NFCartridgeRifle30
+
+- type: entity
+  id: ASMagazineEnblocRifle30Long
+  name: en-bloc clip (.30 Long rifle)
+  parent: ASBaseMagazineEnblocRifle30Long
+  components:
+  - type: BallisticAmmoProvider
+    proto: ASCartridgeRifle30Long
 
 - type: entity
   id: ASMagazineMarksmanRifle30Overpressure
