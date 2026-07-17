@@ -2,9 +2,9 @@
   id: HumanEyesGlow
   bodyPart: Eyes
   # markingCategory: Head # Aurora's Song
-  speciesRestriction: [Human , Oni , Harpy , Felinid, IPC , Fairy] # Aurora's Song - remove den species, add fairy
-  forcedColoring: false
-  followSkinColor: false
+  groupWhitelist: [Human , Oni , Harpy , Felinid, IPC , Fairy] # Aurora's Song - species tweak, speciesRestriction>groupWhitelist
+  # forcedColoring: false # Aurora's Song
+  # followSkinColor: false # Aurora's Song
   sprites:
   - sprite: _DEN/Mobs/Customization/Head/eyes.rsi
     state: glowingeyes
@@ -14,9 +14,9 @@
   id: HumanEyesGlowR
   bodyPart: Eyes
   # markingCategory: Head # Aurora's Song
-  speciesRestriction: [Human , Oni , Harpy , Felinid, IPC , Fairy] # Aurora's Song - remove den species, add fairy
-  forcedColoring: false
-  followSkinColor: false
+  groupWhitelist: [Human , Oni , Harpy , Felinid, IPC , Fairy] # Aurora's Song - species tweak, speciesRestriction>groupWhitelist
+  # forcedColoring: false # Aurora's Song
+  # followSkinColor: false # Aurora's Song
   sprites:
   - sprite: _DEN/Mobs/Customization/Head/eyes.rsi
     state: glowingeyer
@@ -26,9 +26,9 @@
   id: HumanEyesGlowL
   bodyPart: Eyes
   # markingCategory: Head # Aurora's Song
-  speciesRestriction: [Human , Oni , Harpy , Felinid, IPC , Fairy] # Aurora's Song - remove den species, add fairy
-  forcedColoring: false
-  followSkinColor: false
+  groupWhitelist: [Human , Oni , Harpy , Felinid, IPC , Fairy] # Aurora's Song - species tweak, speciesRestriction>groupWhitelist
+  # forcedColoring: false # Aurora's Song
+  # followSkinColor: false # Aurora's Song
   sprites:
   - sprite: _DEN/Mobs/Customization/Head/eyes.rsi
     state: glowingeyel

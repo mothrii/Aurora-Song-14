@@ -40,8 +40,8 @@
   id: AlienEyes
   bodyPart: Eyes
   # markingCategory: Face # Aurora's Song
-  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora's Song - removed den species
-  invertSpeciesRestriction: true
+  groupWhitelist: [ Moth, Arachnid, IPC, Vox ] # Aurora's Song - removed den species, speciesRestriction>groupWhitelist
+  invertGroupWhitelist: true # Aurora's Song - invertSpeciesRestriction>invertGroupWhitelist
   coloring:
     default:
       type:
@@ -54,8 +54,8 @@
   id: AlienEyesBig
   bodyPart: Eyes
   # markingCategory: Face # Aurora's Song
-  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora's Song - removed den species
-  invertSpeciesRestriction: true
+  groupWhitelist: [ Moth, Arachnid, IPC, Vox ] # Aurora's Song - removed den species, speciesRestriction>groupWhitelist
+  invertGroupWhitelist: true # Aurora's Song - invertSpeciesRestriction>invertGroupWhitelist
   coloring:
     default:
       type:
@@ -68,8 +68,8 @@
   id: AlienEyesThree
   bodyPart: Eyes
   # markingCategory: Face # Aurora's Song
-  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora's Song - removed den species
-  invertSpeciesRestriction: true
+  groupWhitelist: [ Moth, Arachnid, IPC, Vox ] # Aurora's Song - removed den species, speciesRestriction>groupWhitelist
+  invertGroupWhitelist: true # Aurora's Song - invertSpeciesRestriction>invertGroupWhitelist
   coloring:
     default:
       type:
@@ -82,8 +82,8 @@
   id: AlienEyesWide
   bodyPart: Eyes
   # markingCategory: Face # Aurora's Song
-  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora's Song - removed den species
-  invertSpeciesRestriction: true
+  groupWhitelist: [ Moth, Arachnid, IPC, Vox ] # Aurora's Song - removed den species, speciesRestriction>groupWhitelist
+  invertGroupWhitelist: true # Aurora's Song - invertSpeciesRestriction>invertGroupWhitelist
   coloring:
     default:
       type:
@@ -91,3 +91,15 @@
   sprites:
   - sprite: _DEN/Mobs/Customization/Head/alien_markings.rsi
     state: eyes_alien_wide
+
+# OVERLAYS # Aurora's Song - ignore overlay
+#
+#- type: marking
+#  id: AlienOverlayHead
+#  bodyPart: Head
+#  markingCategory: Head
+#  # Specifically includes "flat-faced" species; not recommended to add this to species with prominent snouts.
+#  speciesRestriction: [ Human, Felinid, Canid, Harpy, Oni, Ovinia, Rodentia, Tajaran ]
+#  sprites:
+#  - sprite: _DEN/Mobs/Customization/Head/alien_markings.rsi
+#    state: head
