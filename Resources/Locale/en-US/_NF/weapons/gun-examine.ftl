@@ -13,10 +13,14 @@ gun-examine-caliber-35 = .35 pistol ammo
 gun-examine-caliber-45 = .45 pistol ammo
 gun-examine-caliber-45-cap = .45 cap ammo
 gun-examine-caliber-10 = .10 rifle ammo
+#Aurora's Song | insert 8g caliber examine
+gun-examine-caliber-8g = 8 gauge shells
 gun-examine-caliber-12g = 12g shotgun shells
 gun-examine-caliber-25 = .25 rifle ammo
 gun-examine-caliber-20 = .20 rifle ammo
 gun-examine-caliber-30 = .30 rifle ammo
+# Aurora's Song | insert .30 long rifle caliber examine
+gun-examine-caliber-30-long = .30 long rifle ammo
 gun-examine-caliber-60 = .60 rifle ammo
 gun-examine-caliber-asmgt = .35 pistol / .20 rifle / .25 rifle / .30 rifle ammo
 gun-examine-caliber-foam = foam darts

@@ -1,19 +1,9 @@
-
-using Content.Shared.Chemistry.Components; // VDS
 using Robust.Shared.GameStates;
 
 namespace Content.Shared._AS.Traits;
 
 /// <summary>
-/// Set player blood to Oxidant and chagnes their typing indicator to "Robot"
-/// Used for Replicant trait.
+/// Used for Replicant trait. Used with <see cref="ReplicantSystem"/> to change the player's typing indicator.
 /// </summary>
 [RegisterComponent, NetworkedComponent, Access(typeof(ReplicantSystem))]
-public sealed partial class ReplicantComponent : Component
-{
-    /// <summary>
-    /// VDS - The reagent that replaces the synth's blood
-    /// </summary>
-    [DataField]
-    public Solution OxidantReagent = new([new("Oxidant", 600)]); // Aurora's Song | changed from 300 to 600 due to metabolism and bloodstream changes from upstream
-}
+public sealed partial class ReplicantComponent : Component { }

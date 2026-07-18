@@ -41,3 +41,67 @@
     This rifle rehashes an old design, a battle-tested workhorse with many scars. Marked for the Colonial Armed Forces.
   suffix: Overpressure
   components: *jackhammerComponents
+
+- type: entity
+  id: ASWeaponRifleGarandCeremonial
+  parent: [ ASBaseWeaponRifleEnblocChamber30Long , ASBaseWeaponFrameRifleMarksmanAuroraGunsmith ]
+  suffix: AS
+  name: Garand rifle
+  description: |-
+    A ceremonial version of an ancient battle rifle, used for parades and honor guards. The bolt carrier is engraved with the words "lest we forget."
+  components:
+  - type: Gun
+    availableModes:
+    - SemiAuto
+    selectedMode: SemiAuto
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: true
+    autoEject: true
+    soundAutoEject:
+      path: /Audio/_Goobstation/Weapons/Guns/MagOut/garand_eject.ogg
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Rifles/ceremonial_grand.rsi
+  - type: Clothing
+    sprite: _DV/Objects/Weapons/Guns/Rifles/ceremonial_grand.rsi
+
+- type: entity
+  id: ASWeaponRifleMosinBolt
+  parent: [ ASBaseWeaponRifleEnblocChamber30Long, NFBaseWeaponFrameRifleSteelbolt, BaseGunMelee ]
+  name: Mosin bolt-action rifle #please do not look upon my wretched creation, my hubris is boundless and my shame is immeasurable
+  description: A weapon for hunting, or endless trench warfare. Equipped with bayonet.
+  suffix: AS
+  components:
+  - type: Gun
+    fireRate: 0.9
+    availableModes:
+    - SemiAuto
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    autoEject: true
+    soundAutoEject:
+      path: /Audio/Weapons/Guns/Cock/batrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: ASSpeedLoaderRifle30Long
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - ASSpeedLoaderRifle30Long
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: ASCartridgeRifle30Long
+        priority: 1
+        whitelist:
+          tags:
+          - ASCartridgeRifle30Long
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
+  - type: AltFireMelee
+    attackType: Light
