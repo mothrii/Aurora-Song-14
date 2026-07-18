@@ -204,7 +204,7 @@
       - id: WeaponCaseShortLuckyExpedition
       - id: WeaponCaseShortDeckardExpedition
       #- id: WeaponCaseShortRitland45Expedition
-      - id: WeaponCaseLongBarlowsBoltExpedition
+      - id: WeaponCaseLongMosinExpedition # Aurora's Song | Mosin reworked
       - id: WeaponCaseLongRepeaterExpedition
       - id: WeaponCaseLongSniperCeremonialExpedition
       - id: WeaponCaseShortSvalinnExpedition # Svalinn to T1 | Aurora Song

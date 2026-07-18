@@ -1,9 +1,23 @@
 ﻿- type: entity
   parent:
+  - BaseExpeditionWeaponTier2
+  - ASWeaponPistolBRDIP15
+  categories: [ HideSpawnMenu ]
+  id: ASWeaponPistolBRDIP15Expedition
+  
+﻿- type: entity
+  parent:
   - BaseExpeditionWeaponTier1
   - ASWeaponEchionBSShuvit
   categories: [ HideSpawnMenu ]
   id: ASWeaponShuvitExpedition
+  
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2
+  - ASWeaponPistolBRDIP15BSO
+  categories: [ HideSpawnMenu ]
+  id: ASWeaponPistolBRDIP15BSOExpedition
 
 - type: entity
   parent:
@@ -82,6 +96,11 @@
   categories: [ HideSpawnMenu ]
   id: ASWeaponShotgunHushpupExpedition
 
+- type: entity
+  parent: [ASWeaponEnergyPistolPulse, BaseC3NanoTrasenContrabandLowValue, BaseExpeditionWeaponTier5]
+  categories: [ HideSpawnMenu ]
+  id: ASWeaponEnergyPistolPulseExpedition
+  
 - type: entity
   parent:
   - BaseExpeditionWeaponTier5

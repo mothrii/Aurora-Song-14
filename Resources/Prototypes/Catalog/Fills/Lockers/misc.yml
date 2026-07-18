@@ -179,7 +179,7 @@
     - id: ClothingShoesBootsCombatFilled
     - id: ToolboxSyndicateFilled
     - id: BalloonSyn
-    - id: NFWeaponRifleBarlowsBolt # Frontier: WeaponSniperMosin<NFWeaponRifleBarlowsBolt
+    - id: ASWeaponRifleMosinBolt # Aurora's Song | NFWeaponRifleBarlowsBolt<ASWeaponRifleMosinBolt
       weight: 2
     - id: ClothingHandsKnuckleDustersSyndicate
 

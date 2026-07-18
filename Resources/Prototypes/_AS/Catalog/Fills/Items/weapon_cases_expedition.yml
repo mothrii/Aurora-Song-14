@@ -1,4 +1,48 @@
+# T2
+- type: entity
+  parent: WeaponCaseShort
+  id: WeaponCaseBRDPIExpedition
+  suffix: Dungeon, BRDPI 15
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ASWeaponPistolBRDIP15Expedition
+          amount: 1
+        - id: MagazineBRDIP15
+          amount: 2
 
+- type: entity
+  parent: WeaponCaseShort
+  id: WeaponCaseBRDPIBSOExpedition
+  suffix: Dungeon, BRDPI 15
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ASWeaponPistolBRDIP15BSOExpedition
+          amount: 1
+        - id: MagazineBRDIP15
+          amount: 2
+
+- type: entity
+  parent: WeaponCaseShort
+  id: WeaponCaseInspectorExpedition
+  suffix: Dungeon, Inspector
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: NFWeaponRevolverInspectorExpedition
+          amount: 1
+        - id: NFSpeedLoaderPistol45
+          amount: 2
 
 # T3
 - type: entity
@@ -180,6 +224,23 @@
           amount: 1
         - id: ASMagazineSubMachineGun40
           amount: 4
+
+- type: entity
+  parent: WeaponCaseLong
+  id: WeaponCaseChesterExpeditionT4
+  suffix: Dungeon, Chester
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ASWeaponShotgunLeverChesterExpedition
+          amount: 1
+        - id: MagazineShotgunLever
+          amount: 2
+        - id: ASBlueprintShotgun8gMunitionsBasic
+          amount: 1
 
 - type: entity
   parent: WeaponCaseLong
