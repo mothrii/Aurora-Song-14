@@ -6,16 +6,16 @@ namespace Content.Shared.Power.Components;
 /// <summary>
 /// Handles <see cref="PoweredComponentComponent"/> component manipulation.
 /// </summary>
-public sealed class PoweredComponentSystem : EntitySystem
+public sealed partial class PoweredComponentSystem : EntitySystem
 {
-    [Dependency] private readonly SharedPowerReceiverSystem _receiver = default!;
+    [Dependency] private SharedPowerReceiverSystem _receiver = default!;
 
-public override void Initialize()
-{
-base.Initialize();
+    public override void Initialize()
+    {
+        base.Initialize();
 
-SubscribeLocalEvent<PoweredComponentComponent, PowerChangedEvent>(OnPowerChanged);
-}
+        SubscribeLocalEvent<PoweredComponentComponent, PowerChangedEvent>(OnPowerChanged);
+    }
     private void OnPowerChanged(Entity<PoweredComponentComponent> ent, ref PowerChangedEvent args)
     {
         if (args.Powered && !ent.Comp.Broken)
