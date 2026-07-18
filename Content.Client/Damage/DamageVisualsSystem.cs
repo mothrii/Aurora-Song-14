@@ -363,7 +363,7 @@ public sealed partial class DamageVisualsSystem : VisualizerSystem<DamageVisuals
             return;
 
         if (AppearanceSystem.TryGetData<string>(uid,  DamageVisualizerKeys.Displacement,  out var displacement, args.Component) &&
-            ProtoMan.Resolve<DisplacementDataPrototype>(displacement, out var displacementProto))
+            _prototypeManager.Resolve<DisplacementDataPrototype>(displacement, out var displacementProto)) // Aurora's Song - Use _prototypeManager
             damageVisComp.Displacement = displacementProto.Displacement;
         else
             damageVisComp.Displacement = null;

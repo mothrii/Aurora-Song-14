@@ -3,6 +3,7 @@ using Content.Shared.Anomaly.Components;
 using Content.Shared.Anomaly.Effects;
 using Content.Shared.Humanoid;
 using Robust.Client.GameObjects;
+using Robust.Shared.Prototypes; // Aurora's Song - Use _prototype
 
 namespace Content.Client.Anomaly.Effects;
 
@@ -10,6 +11,7 @@ public sealed partial class ClientInnerBodyAnomalySystem : SharedInnerBodyAnomal
 {
     [Dependency] private SpriteSystem _sprite = default!;
     [Dependency] private DisplacementMapSystem _displacement = default!;
+    [Dependency] private IPrototypeManager _prototype = default!; // Aurora's Song - Use _prototype
 
     [Dependency] private EntityQuery<InnerBodyAnomalyVisualsComponent> _visualsQuery = default!;
 
@@ -44,7 +46,7 @@ public sealed partial class ClientInnerBodyAnomalySystem : SharedInnerBodyAnomal
 
         if (_visualsQuery.TryGetComponent(ent, out var visuals) && visuals.Displacement != null)
         {
-            if (ProtoMan.Resolve(visuals.Displacement, out var displacement))
+            if (_prototype.Resolve(visuals.Displacement, out var displacement)) // Aurora's Song - Use _prototype
             {
                 _displacement.TryAddDisplacement(displacement.Displacement,
                     (ent.Owner, sprite),

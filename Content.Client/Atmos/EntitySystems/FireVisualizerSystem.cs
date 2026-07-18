@@ -4,6 +4,7 @@ using Content.Shared.Atmos;
 using Content.Shared.DisplacementMap;
 using Robust.Client.GameObjects;
 using Robust.Shared.Map;
+using Robust.Shared.Prototypes; // Aurora's Song - Use _prototype
 using Robust.Shared.Utility;
 
 namespace Content.Client.Atmos.EntitySystems;
@@ -15,6 +16,7 @@ public sealed partial class FireVisualizerSystem : VisualizerSystem<FireVisualsC
 {
     [Dependency] private PointLightSystem _lights = default!;
     [Dependency] private DisplacementMapSystem _displacement = default!;
+    [Dependency] private IPrototypeManager _prototype = default!; // Aurora's Song - Use _prototype
 
     public override void Initialize()
     {
@@ -92,7 +94,7 @@ public sealed partial class FireVisualizerSystem : VisualizerSystem<FireVisualsC
 
         if (component.CurrentDisplacement != fireDisplacement)
         {
-            if (fireDisplacement != null && ProtoMan.Resolve<DisplacementDataPrototype>(fireDisplacement, out var displacementProto))
+            if (fireDisplacement != null && _prototype.Resolve<DisplacementDataPrototype>(fireDisplacement, out var displacementProto)) // Aurora's Song - Use _prototype
                 _displacement.TryAddDisplacement(displacementProto.Displacement, (uid, sprite), index, FireVisualLayers.Fire, out _);
             else
                 _displacement.EnsureDisplacementIsNotOnSprite((uid, sprite), FireVisualLayers.Fire);

@@ -78,7 +78,7 @@ public sealed partial class VisualBodySystem : SharedVisualBodySystem
         _sprite.LayerSetData(target, index, ent.Comp.Data);
 
         var displacement = ent.Comp.Displacement;
-        if (displacement != null && ProtoMan.Resolve(displacement, out var displacementProto))
+        if (displacement != null && _prototype.Resolve(displacement, out var displacementProto)) // Aurora's Song - Use _prototype
         {
             _displacement.TryAddDisplacement(displacementProto.Displacement,
                 (target, Comp<SpriteComponent>(target)),
