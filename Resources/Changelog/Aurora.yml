@@ -2021,3 +2021,10 @@ Entries:
   id: 9612
   time: '2026-07-16T06:14:14.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1252
+- author: BudaLope
+  changes:
+    - type: Add
+      message: Biogenerator now has a buffer that fills over time
+  id: 9613
+  time: '2026-07-18T02:34:19.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1260
