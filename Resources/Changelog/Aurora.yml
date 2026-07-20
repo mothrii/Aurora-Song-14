@@ -2096,3 +2096,10 @@ Entries:
   id: 9621
   time: '2026-07-20T07:52:01.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1270
+- author: Danielemental
+  changes:
+    - type: Add
+      message: Adds the GHE Runabout, a new budget mining/salvage shuttle.
+  id: 9622
+  time: '2026-07-20T10:34:08.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1272
