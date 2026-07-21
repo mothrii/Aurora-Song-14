@@ -1,7 +1,7 @@
 - type: entity
   name : flamethrower fireball
   id: BulletFlamethrower
-  parent: NFBaseBulletIncendiary
+  parent: [SolutionSmall, NFBaseBulletIncendiary] # Aurora's Song - Solution refactor
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn

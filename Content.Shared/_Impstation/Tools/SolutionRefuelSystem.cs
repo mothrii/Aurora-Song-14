@@ -25,15 +25,15 @@ public abstract partial class SharedToolSystem
         return Loc.GetString(entity.Comp.Name);
     }
 
-    public bool TryGetSolutionFuelAndCapacity(EntityUid uid, out FixedPoint2 fuel, out FixedPoint2 capacity, SolutionRefuelComponent? welder = null, SolutionContainerManagerComponent? solutionContainer = null)
+    public bool TryGetSolutionFuelAndCapacity(EntityUid uid, out FixedPoint2 fuel, out FixedPoint2 capacity, SolutionRefuelComponent? welder = null) // Aurora's Song - Solution refactor
     {
         fuel = default;
         capacity = default;
-        if (!Resolve(uid, ref welder, ref solutionContainer))
+        if (!Resolve(uid, ref welder)) // Aurora's Song - Solution refactor
             return false;
 
         if (!SolutionContainerSystem.TryGetSolution(
-                (uid, solutionContainer),
+                uid, // Aurora's Song - Solution refactor
                 welder.FuelSolutionName,
                 out _,
                 out var fuelSolution))

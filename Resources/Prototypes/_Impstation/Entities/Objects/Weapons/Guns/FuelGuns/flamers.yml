@@ -1,7 +1,7 @@
 # Different from loading a water gun or fire extinguisher with phlog, these will use welding fuel and shoot limited-range fireballs
 - type: entity
   name: FG13 Xiuhcoatl
-  parent: [BaseWeaponFlamer, BaseC3SyndicateContraband]
+  parent: [SolutionGun, BaseWeaponFlamer, BaseC3SyndicateContraband] # Aurora's Song - Solution refactor
   id: WeaponFlamerXiuhcoatl
   description: Simple as it is deadly, the Xiuhcoatl fulfills a long-standing craving of the Gorlex Marauders for Nanotrasen Barbeque.
   components:
@@ -16,13 +16,12 @@
     magState: mag
     steps: 5
     zeroVisible: true
-  - type: SolutionContainerManager
-    solutions:
-      chamber:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 600
-        maxVol: 600 #25 seconds of flaming
+  - type: Solution # Aurora's Song - Solution refactor
+    solution:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 600
+      maxVol: 600 #25 seconds of flaming
   - type: SolutionAmmoProvider
     solutionId: chamber
     proto: BulletFlamethrower

@@ -37,7 +37,7 @@
 
 - type: entity
   name: Akurra
-  parent: [BaseWeaponEchion, BaseGunWieldable, BaseC3SyndicateContraband]
+  parent: [SolutionToolSmall, BaseWeaponEchion, BaseGunWieldable, BaseC3SyndicateContraband] # Aurora's Song - Solution refactor
   id: WeaponPlasmaAkurra
   description: A beautiful marriage of technology and malice in a single package. Uses Echion, produced from advanced synthesizers.
   components:
@@ -79,13 +79,11 @@
     angleDecay: 18
     soundGunshot:
       path: /Audio/_Impstation/Weapons/Guns/Gunshots/adder.ogg
-  - type: SolutionContainerManager
-    solutions:
-      chamber:
-        reagents:
-        - ReagentId: Echion
-          Quantity: 30
-        maxVol: 30 #40 shots
+  - type: Solution # Aurora's Song - Solution refactor
+    solution:
+      reagents:
+      - ReagentId: Echion
+        Quantity: 30
   - type: SolutionAmmoProvider
     solutionId: chamber
     proto: BulletPlasmaAkurra
@@ -93,7 +91,7 @@
 
 - type: entity
   name: Ananke
-  parent: [BaseWeaponEchion, BaseGunWieldable, BaseC3SyndicateContraband]
+  parent: [SolutionToolSmall, BaseWeaponEchion, BaseGunWieldable, BaseC3SyndicateContraband] # Aurora's Song - Solution refactor
   id: WeaponPlasmaAnanke
   description: The short-range of this brutal shotgun makes it a favorite among operatives who wish to see the whites of Nanotrasen eyes in the heat of combat. Uses Echion, produced from advanced synthesizers.
   components:
@@ -131,13 +129,11 @@
     soundGunshot:
       path: /Audio/_Impstation/Weapons/Guns/Gunshots/ananke.ogg
   - type: GunRequiresWield
-  - type: SolutionContainerManager
-    solutions:
-      chamber:
-        reagents:
-        - ReagentId: Echion
-          Quantity: 30
-        maxVol: 30 #6 shots
+  - type: Solution # Aurora's Song - Solution refactor
+    solution:
+      reagents:
+      - ReagentId: Echion
+        Quantity: 30
   - type: SolutionAmmoProvider
     solutionId: chamber
     proto: BulletPlasmaSpread
@@ -145,7 +141,7 @@
 
 - type: entity
   name: Glykon
-  parent: [BaseWeaponEchion, BaseGunWieldable, BaseC3SyndicateContraband]
+  parent: [SolutionToolVeryTiny, BaseWeaponEchion, BaseGunWieldable, BaseC3SyndicateContraband] # Aurora's Song - Solution refactor
   id: WeaponPlasmaGlykon
   description: Deadly, precise, and beautiful-- a state-of-the-art tool for the most merciless of assassins. Uses Echion, produced from advanced synthesizers.
   components:
@@ -183,13 +179,11 @@
     soundGunshot:
       path: /Audio/_Impstation/Weapons/Guns/Gunshots/glykon.ogg
   - type: GunRequiresWield
-  - type: SolutionContainerManager
-    solutions:
-      chamber:
-        reagents:
-        - ReagentId: Echion
-          Quantity: 7.5
-        maxVol: 7.5 #5 shots
+  - type: Solution # Aurora's Song - Solution refactor
+    solution:
+      reagents:
+      - ReagentId: Echion
+        Quantity: 7.5
   - type: SolutionAmmoProvider
     solutionId: chamber
     proto: GlykonBeam

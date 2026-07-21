@@ -1,7 +1,7 @@
 - type: entity
   name: adder plasma bolt
   id: BulletPlasmaAdder
-  parent: NFBaseBulletLaser
+  parent: [SolutionSmall, NFBaseBulletLaser] # Aurora's Song - Solution refactor
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
