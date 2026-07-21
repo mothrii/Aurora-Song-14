@@ -106,6 +106,7 @@
       types:
         Blunt: 4
   - type: Damageable
+  - type: Injurable # Aurora's Song - Add injurable
     damageContainer: Inorganic
   - type: Destructible
     thresholds:

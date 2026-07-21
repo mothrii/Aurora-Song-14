@@ -17,7 +17,7 @@
   - !type:FlammableTileReaction
     temperatureMultiplier: 5
   metabolisms:
-    Poison:
+    Bloodstream: # Aurora's Song - Poison>Bloodstream
       effects:
       - !type:HealthChange
         damage:

@@ -80,7 +80,6 @@
   - type: PoweredComponent
     components:
     - type: SolutionRegeneration
-      solution: tank
       generated:
           reagents:
           - ReagentId: Echion
@@ -132,7 +131,6 @@
   - type: PoweredComponent
     components:
     - type: SolutionRegeneration
-      solution: tank
       generated:
           reagents:
           - ReagentId: Echion
