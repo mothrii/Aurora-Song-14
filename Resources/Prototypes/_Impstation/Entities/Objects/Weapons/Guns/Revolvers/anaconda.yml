@@ -53,3 +53,6 @@
     popupText: null
     ignoreResistances: true
     damageSound: /Audio/Weapons/boxingpunch3.ogg
+  - type: ContainerContainer # Aurora's Song
+    containers:
+      revolver-ammo: !type:Container
