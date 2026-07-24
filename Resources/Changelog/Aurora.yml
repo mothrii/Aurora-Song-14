@@ -2158,3 +2158,10 @@ Entries:
   id: 9629
   time: '2026-07-24T01:49:27.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1271
+- author: assignedgod
+  changes:
+    - type: Tweak
+      message: 'Fairies have been made shorter once again '
+  id: 9630
+  time: '2026-07-24T01:52:58.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1284
