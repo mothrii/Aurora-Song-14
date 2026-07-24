@@ -1,5 +1,5 @@
 - type: entity
-  parent: BasicHitscan
+  parent: [ SolutionSmall, BasicHitscan ] # Aurora's Song - Add solution so ammo works
   id: GlykonBeam
   categories: [ HideSpawnMenu ]
   components:
