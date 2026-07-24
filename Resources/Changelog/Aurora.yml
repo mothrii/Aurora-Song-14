@@ -2142,3 +2142,10 @@ Entries:
   id: 9627
   time: '2026-07-23T11:48:50.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1281
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: ID Card Computer works again!
+  id: 9628
+  time: '2026-07-24T01:37:00.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1282
