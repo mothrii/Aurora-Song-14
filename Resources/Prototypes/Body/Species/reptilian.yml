@@ -210,7 +210,7 @@
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganReptilianExternal ]
   id: OrganReptilianTorso
-# Aurora's Song
+# Aurora's Song - In base organ now
 #  components:
 #  - type: VisualOrganMarkings
 #    hideableLayers:
