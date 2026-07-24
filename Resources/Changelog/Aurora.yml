@@ -2165,3 +2165,13 @@ Entries:
   id: 9630
   time: '2026-07-24T01:52:58.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1284
+- author: BenadrylJackson
+  changes:
+    - type: Tweak
+      message: >-
+        Added spoon type to chopsticks, noodle enjoyers everywhere rejoice in
+        not having to RP the bowl falling on the ground after you consume
+        noodle.
+  id: 9631
+  time: '2026-07-24T02:12:59.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1285
