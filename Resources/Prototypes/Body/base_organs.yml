@@ -64,6 +64,7 @@
     hideableLayers: # Aurora's Song - Hidable undergarments
     - enum.HumanoidVisualLayers.UndergarmentTop
     - enum.HumanoidVisualLayers.UndergarmentBottom
+    - enum.HumanoidVisualLayers.Tail
     markingData:
       layers:
       - Chest
