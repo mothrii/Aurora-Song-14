@@ -2149,3 +2149,12 @@ Entries:
   id: 9628
   time: '2026-07-24T01:37:00.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1282
+- author: heirdragonair
+  changes:
+    - type: Add
+      message: three new pants to choose from in the loadout!
+    - type: Tweak
+      message: made the coyote pants more swagful
+  id: 9629
+  time: '2026-07-24T01:49:27.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1271
