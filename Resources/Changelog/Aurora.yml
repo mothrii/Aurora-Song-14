@@ -2175,3 +2175,12 @@ Entries:
   id: 9631
   time: '2026-07-24T02:12:59.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1285
+- author: DVDPlayerOfDiscordFame
+  changes:
+    - type: Add
+      message: >-
+        Ten new weapons have been added to the loot ecosystem, including some
+        Spicy Green Ones you may know!
+  id: 9632
+  time: '2026-07-24T02:29:43.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1014
